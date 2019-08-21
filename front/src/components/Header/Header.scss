@@ -1,6 +1,9 @@
 @import '../../sass/variables';
 
 #header{
+  position: fixed;
+width: 100%;
+top: 0;
   background: #20232a;
   color: white;
   border-bottom: green solid 2px;

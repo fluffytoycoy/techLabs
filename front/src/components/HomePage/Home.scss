@@ -1,0 +1,45 @@
+#home{
+  #hero{
+    background: linear-gradient(345deg,rgba(50, 0, 255, 0.9), rgb(0, 128, 0)), url(https://p7.hiclipart.com/preview/84/723/691/shading-technology-shading-decoration.jpg);
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    .jumbo{
+          flex: 1;
+    }
+
+    .grid{
+      display: flex;
+      width: 100%;
+      height: 300px;
+      >div{
+        background: white;
+        width: 25%;
+        height: 100%;
+        &.clouds{
+          background: url(https://live.staticflickr.com/3110/2826471801_787aedb379_b.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.data{
+          background: url(https://warwick.ac.uk/fac/sci/eng/postgraduate/cie/edit-contents/cie.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.science{
+          background: url(https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/shutterstock_1164560377_0.jpg?itok=4BzAqKlK);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.community{
+          background: url(https://www.personneltoday.com/wp-content/uploads/sites/8/2014/11/Community-ideas-sharing.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}
