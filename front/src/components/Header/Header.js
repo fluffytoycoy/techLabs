@@ -33,13 +33,18 @@ function Header(){
     closeAllMenusExcept(toggleCultureMenu);
     toggleCultureMenu(!cultureOpen)
   }
+
+  function handleMenuClick(){
+    toggleNavMenu(!menuOpen)
+  }
     return (
       <div id="header">
       <div>
+        <div onClick={handleMenuClick}className="menu-btn">x</div>
         <div className="logo">
           <h3>techLabs</h3>
         </div>
-        <div className="nav-wrapper">
+        <div className={`${menuOpen ? 'open' : ''} nav-wrapper`}>
           <ul className="navigation">
             <li>
               <div className="dropdown-btn">

@@ -2,11 +2,16 @@
 
 #header{
   position: fixed;
-width: 100%;
-top: 0;
+  width: 100%;
+  top: 0;
   background: #20232a;
   color: white;
   border-bottom: green solid 2px;
+  .menu-btn{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+  }
   >div{
     align-items: center;
         margin: 0 40px;
@@ -19,6 +24,15 @@ top: 0;
       }
     }
     .nav-wrapper{
+      max-height: 0;
+      transition: all .5s ease-out;
+      overflow: hidden;
+      opacity: 0;
+          &.open{
+            max-height: 500px;
+            opacity: 1;
+            transition: all 1s ease-out;
+          }
       .navigation{
         > li{
           &:first-child{
@@ -86,6 +100,8 @@ top: 0;
         }
       }
       .nav-wrapper{
+        opacity: 1;
+        max-height: unset;
         .navigation{
           display: flex;
           flex-direction: row;
