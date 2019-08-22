@@ -26,7 +26,7 @@ class Services extends Component{
 
   render(){
     return (
-      <div id="services">
+      <div id="root-link">
         <div className={`jumbo services`}>
           <h1>Services</h1>
         </div>
@@ -45,7 +45,7 @@ class Services extends Component{
                   <img src="/img/science_icon.svg"/>
                 </div>
                 <div className="info">
-                  <h3>Decision Science</h3>
+                  <Link to="Services/>Decision-Science"><h3>Decision Science</h3></Link>
                   <p>Our Decision Science practice focuses on enabling clients to derive insights from their data that
                   facilitate data-based decision making. We work with clients during problem discovery to identify issues
                   that could be solved with data. Next, we help identify their data needs and assist in building data collection
@@ -57,7 +57,7 @@ class Services extends Component{
                   <img src="/img/data_icon.svg"/>
                 </div>
                 <div className="info">
-                  <h3>Data Engineering</h3>
+                  <Link to="Services/Data-Engineering"><h3>Data Engineering</h3></Link>
                   <p>Our Data Engineering practice is focused on developing highly efficient, distributed and easily customizable data solutions.
                    We focus on streaming and batch data pipelines, in transit data enrichment and standardization, data modeling and storage, data
                    governance and data access. We are motivated by our desire to transform businesses into data driven enterprises.</p>
@@ -68,7 +68,7 @@ class Services extends Component{
                   <img src="/img/cloud_icon.svg"/>
                 </div>
                 <div className="info">
-                  <h3>Cloud</h3>
+                  <Link to="Services/Cloud"><h3>Cloud</h3></Link>
                   <p>We revolutionize the way applications are designed, built, and managed. Starting with users and then creating modern cloud
                    based solutions that align to their needs. We manage delivery using an agile process that was developed in
                      by our full-stack engineers to help us stay focused on the right solutions to your toughest engineering problems.</p>
