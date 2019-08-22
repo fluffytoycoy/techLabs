@@ -1,7 +1,7 @@
 #home {
 
   .grid-wrapper {
-    margin: 0 10px;
+    margin: 10px;
 
     .grid {
       display: flex;
@@ -18,7 +18,7 @@
           justify-content: center;
           align-items: center;
           color: white;
-          font-size: 2rem;
+          font-size: 1.7rem;
           font-weight: 100;
           text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px;
           text-transform: uppercase;
@@ -61,22 +61,7 @@
     }
   }
 
-  .info {
-    display: flex;
-    height: 600px;
-    background: linear-gradient(rgb(1, 9, 61), rgba(0, 0, 0, 0.8)), url("https://wustl.edu/wp-content/uploads/2014/08/hero-aboutSTL.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100%;
 
-    .picture-col {
-      width: 40%;
-    }
-
-    .info-col {
-      width: 60%;
-    }
-  }
 }
 @media only screen and (min-width: 768px) {
   #home {

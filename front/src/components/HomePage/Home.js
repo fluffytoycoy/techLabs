@@ -4,6 +4,7 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '@material-ui/core/Button';
 import Hero from './Hero/Hero';
+import Info from './Info/Info';
 import './Home.scss';
 
 function Home(){
@@ -18,15 +19,7 @@ function Home(){
               <ScrollAnimation offset={50} animateOnce delay={300}animateIn="fadeInUp"><div className="community"><h3>Community Driven</h3></div></ScrollAnimation>
           </section>
         </div>
-        <section className="info">
-          <div className="picture-col">
-          <h1>modern software</h1>
-          <h1>data solutions</h1>
-          <h1>innovation </h1>
-          </div>
-          <div className="info-col">
-          </div>
-        </section>
+        <Info/>
       </div>
     );
 }

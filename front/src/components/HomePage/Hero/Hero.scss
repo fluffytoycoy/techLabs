@@ -11,6 +11,7 @@
   .jumbo {
     position: relative;
     background: url(https://trello-attachments.s3.amazonaws.com/5d5df12f8b3a6735af0f512d/960x540/416eea08e52ccdbd1da87597d4308275/map.jpg);
+    background-attachment: fixed;
     .img-wrapper {
       height: 100%;
       position: absolute;
@@ -34,6 +35,7 @@
       > div {
         margin: 0 20px;
         display: flex;
+        max-width: 1400px;
       }
 
       .title {
