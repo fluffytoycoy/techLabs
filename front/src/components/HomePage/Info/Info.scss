@@ -1,4 +1,4 @@
-.info {
+#info {
   display: flex;
   background: linear-gradient(rgba(32, 35, 42, 0.95), rgba(32, 35, 42, 0.95)), url('/img/stl.jpg');
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@
 
 @media only screen and (min-width: 768px) {
   #home {
-    .info {
+    #info {
       .info-wrapper{
         > div{
           flex-direction: row;

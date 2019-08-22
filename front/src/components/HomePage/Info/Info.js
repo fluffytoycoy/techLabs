@@ -4,7 +4,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 function Info(){
   return(
-    <section className="info">
+    <section id="info">
       <div className="info-wrapper">
         <div>
           <ScrollAnimation animateOnce animateIn="fadeInLeft">

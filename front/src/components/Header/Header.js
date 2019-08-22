@@ -48,7 +48,7 @@ function Header(){
           <ul className="navigation">
             <li>
               <div className="dropdown-btn">
-                <p>Services</p><i onClick={handleServiceClick}className="fas fa-chevron-down"></i>
+                <Link to="Services"><p>Services</p></Link><i onClick={handleServiceClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${servicesOpen ? 'open' : ''}`}>
                 <li>Cloud Systems</li>
@@ -58,7 +58,7 @@ function Header(){
             </li>
             <li>
               <div className="dropdown-btn">
-                <p>Work</p><i onClick={handleWorkClick}className="fas fa-chevron-down"></i>
+                <Link to="Work"><p>Work</p></Link><i onClick={handleWorkClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${workOpen ? 'open' : ''}`}>
                 <li>Cloud Systems</li>

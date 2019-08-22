@@ -42,6 +42,10 @@
       }
 
       .navigation {
+        a{
+          text-decoration: none;
+          color: white;
+        }
         > li {
           &:first-child {
             border-top: green solid 2px;
