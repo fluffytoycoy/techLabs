@@ -1,91 +1,99 @@
 #home {
-
-  .grid-wrapper {
-    margin: 10px;
-
-    .grid {
+  #blog{
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    background: green;
+    flex-direction: column;
+    align-items: center;
+    h1{
+      font-size: 3rem;
+          font-family: 'Oswald', sans-serif;
+          font-weight: 600;
+          text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+    .blog-grid {
       display: flex;
+      max-width: 1200px;
       width: 100%;
       flex-wrap: wrap;
-
       .animated {
         width: 100%;
         padding: 10px;
-
-        > div {
-          height: 300px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          font-size: 1.7rem;
-          font-weight: 100;
-          text-shadow:  0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
-          text-transform: uppercase;
-          cursor: pointer;
+        margin: 0 auto;
+        >div{
+          background: rgba(255, 255, 255, 0.5);
+          padding-bottom: 15px;
+          border-radius: 4px;
+          overflow: hidden;
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-          transition: all 0.5s ease-in-out;
+          > div {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
 
-          &:hover {
-            transform: scale(1.05);
-            box-shadow: 0 1px 10px 0 rgb(0, 0, 0), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+            &.clouds {
+              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/img/blog1.jpg);
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
+
+            &.data {
+              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/img/data.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+            }
 
           }
+        }
 
-          &.clouds {
-            background: linear-gradient(rgba(204, 160, 3, 0.8), rgba(0, 0, 0, 0.8)), url("/img/clouds.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &.data {
-            background: linear-gradient(rgba(0, 6, 183, 0.8), rgba(0, 0, 0, 0.8)), url("/img/data.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &.science {
-            background: linear-gradient(rgba(228, 0, 84, 0.8), rgba(0, 0, 0, 0.8)), url("/img/science.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
-
-          &.community {
-            background: linear-gradient(rgba(0, 123, 15, 0.8), rgba(0, 0, 0, 0.8)), url("/img/community.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-          }
+        h3{
+          font-size: 1.2rem;
+          margin-top: 10px;
+          color: #20232a;
+          margin-left: 10px;
         }
       }
     }
-  }
 
 
 }
-@media only screen and (min-width: 768px) {
-  #home {
-
-    .jumbo {}
-
-    .grid {
-      .animated {
-        width: 50% !important;
-
-        > div {}
-      }
-    }
-  }
 }
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 768px){
   #home {
-    .jumbo {}
+    #blog{
+      padding: 50px 20px;
 
-    .grid {
-      .animated {
-        width: 25% !important;
-
-        > div {}
+      h1{
+        font-size: 3rem;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 50px;
       }
-    }
+      .blog-grid {
+        display: flex;
+        max-width: 1200px;
+        width: 100%;
+        flex-wrap: nowrap;
+        .animated {
+          width: 100%;
+          padding: 10px;
+          margin: 0 auto;
+
+        }
+      }
+
+
+  }
   }
 }
