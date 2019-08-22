@@ -20,39 +20,38 @@
           color: white;
           font-size: 1.7rem;
           font-weight: 100;
-          text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px;
+          text-shadow:  0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
           text-transform: uppercase;
           cursor: pointer;
-          h3{
-            transition: all 0.5s ease-in-out;
-          }
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          transition: all 0.5s ease-in-out;
+
           &:hover {
-            h3{
-              font-size: 2.1rem;
-            }
-            text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px, black 0 0 20px, black 0 0 5px, black 0 0 1px;
+            transform: scale(1.05);
+            box-shadow: 0 1px 10px 0 rgb(0, 0, 0), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+
           }
 
           &.clouds {
-            background: linear-gradient(rgba(204, 160, 3, 0.8), rgba(0, 0, 0, 0.8)), url("https://live.staticflickr.com/3110/2826471801_787aedb379_b.jpg");
+            background: linear-gradient(rgba(204, 160, 3, 0.8), rgba(0, 0, 0, 0.8)), url("/img/clouds.jpg");
             background-repeat: no-repeat;
             background-size: cover;
           }
 
           &.data {
-            background: linear-gradient(rgba(0, 6, 183, 0.8), rgba(0, 0, 0, 0.8)), url("https://warwick.ac.uk/fac/sci/eng/postgraduate/cie/edit-contents/cie.jpg");
+            background: linear-gradient(rgba(0, 6, 183, 0.8), rgba(0, 0, 0, 0.8)), url("/img/data.jpg");
             background-repeat: no-repeat;
             background-size: cover;
           }
 
           &.science {
-            background: linear-gradient(rgba(228, 0, 84, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/shutterstock_1164560377_0.jpg?itok=4BzAqKlK");
+            background: linear-gradient(rgba(228, 0, 84, 0.8), rgba(0, 0, 0, 0.8)), url("/img/science.jpg");
             background-repeat: no-repeat;
             background-size: cover;
           }
 
           &.community {
-            background: linear-gradient(rgba(0, 123, 15, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.personneltoday.com/wp-content/uploads/sites/8/2014/11/Community-ideas-sharing.jpg");
+            background: linear-gradient(rgba(0, 123, 15, 0.8), rgba(0, 0, 0, 0.8)), url("/img/community.jpg");
             background-repeat: no-repeat;
             background-size: cover;
           }

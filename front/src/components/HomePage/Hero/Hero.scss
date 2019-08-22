@@ -10,7 +10,7 @@
 
   .jumbo {
     position: relative;
-    background: url(https://trello-attachments.s3.amazonaws.com/5d5df12f8b3a6735af0f512d/960x540/416eea08e52ccdbd1da87597d4308275/map.jpg);
+    background: url('/img/map.jpg');
     background-attachment: fixed;
     .img-wrapper {
       height: 100%;
@@ -69,6 +69,11 @@
           font-size: 1.1rem;
           margin-top: 30px;
           font-family: 'Oswald', sans-serif;
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+          &:hover{
+            box-shadow: none;
+            background: rgba(0, 128, 0, 0.9);
+          }
         }
       }
 
@@ -91,7 +96,7 @@
       .col {
         .title {
           h1 {
-            font-size: 2.2rem;
+            font-size: 2.2rem !important;
             span {
               font-size: 3.5rem;
             }
@@ -105,6 +110,14 @@
 @media only screen and (min-width: 767px) {
   #hero {
     .jumbo {
+      .title {
+        h1 {
+          font-size: 1.7rem !important;
+          span {
+            font-size: 2rem;
+          }
+        }
+      }
       .img-wrapper {
         img{
               display: block;
@@ -113,9 +126,9 @@
       .col {
         .title {
           margin-left: 344px;
-          -webkit-transform: translateX(-10%);
-          transform: translateX(-14%);
-          -ms-transform:translateX(-14%);
+          -webkit-transform:  translateX(-16%);
+          transform: translateX(-16%);
+          -ms-transform: translateX(-16%);
         }
       }
     }

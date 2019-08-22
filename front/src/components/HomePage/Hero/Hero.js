@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
+import ScrollAnimation from 'react-animate-on-scroll';
 import './Hero.scss'
 
 
@@ -9,7 +10,7 @@ function Hero(){
     <section id="hero">
       <div className="jumbo">
         <div className="img-wrapper">
-          <img src="/img/labs_logo.png"/>
+          <ScrollAnimation animateOnce animateIn="fadeInLeft"><img src="/img/labs_logo.png"/></ScrollAnimation >
         </div>
         <div className="header-col col">
             <div>

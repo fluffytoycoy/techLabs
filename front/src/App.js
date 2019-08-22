@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import "animate.css/animate.min.css";
 import './App.scss';
 import Header from './components/Header/Header';
 import Home from './components/HomePage/Home';
