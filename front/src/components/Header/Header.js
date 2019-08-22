@@ -20,6 +20,7 @@ function Header(){
   }
 
   function handleServiceClick() {
+    if(window.innerWidth )
     closeAllMenusExcept(toggleServicesMenu);
     toggleServicesMenu(!servicesOpen)
   }

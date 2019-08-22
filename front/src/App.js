@@ -23,10 +23,10 @@ class App extends Component {
 				<Header/>
 					<Switch>
 						<Route exact  path="/" component={Home} />
-            <Route exact patch="/Services/" render={props => <Services {...props} />}/>
-            <Route exact patch="/Services/:service" render={props => <Services {...props} />}/>
+            <Route exact path="/Services/" render={props => <Services {...props} />}/>
+            <Route exact path="/Services/:service" render={props => <Services {...props} />}/>
             <Route component={NotFound}/>
-				</Switch>
+				       </Switch>
         <Footer/>
         </ScrollToTop>
       </Router>

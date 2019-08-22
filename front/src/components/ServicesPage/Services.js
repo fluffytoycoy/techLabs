@@ -19,8 +19,9 @@ class Services extends Component{
 
   shouldComponentUpdate(nextProps, nextState) {
     console.log(this.props.location.pathname === nextProps.location.pathname)
-    if(this.props.location.pathname === nextProps.location.pathname) return false;
-      return true;
+    if(this.props.location.pathname === nextProps.location.pathname)
+      return false;
+    return true;
   }
 
   render(){
@@ -41,7 +42,7 @@ class Services extends Component{
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <img src="/img/cloud_icon.svg"/>
+                  <img src="/img/science_icon.svg"/>
                 </div>
                 <div className="info">
                   <h3>Decision Science</h3>
@@ -53,7 +54,7 @@ class Services extends Component{
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/cloud_icon.svg"/>
+                  <img src="/img/data_icon.svg"/>
                 </div>
                 <div className="info">
                   <h3>Data Engineering</h3>
