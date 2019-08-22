@@ -36,6 +36,7 @@
           }
       .navigation{
         > li{
+
           &:first-child{
             border-top: green solid 2px;
           }
@@ -49,6 +50,7 @@
           font-weight: 200;
           border-top: green solid 1px;
           letter-spacing: 2px;
+          cursor: pointer;
           .dropdown-btn{
             display: flex;
             align-items: center;
@@ -109,6 +111,17 @@
           flex-direction: row;
           > li{
             position: relative;
+                &:hover{
+                  ul{
+                    height: 120px;
+                    background: #171d16;
+                    display: block !important;
+                    &.culture{
+                      height: 80px;
+                    }
+                  }
+
+                }
             &:first-child{
               border-top: none;
             }

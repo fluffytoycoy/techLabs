@@ -1,95 +1,91 @@
 #home {
-  #hero {
-    background: linear-gradient(345deg, rgba(234, 236, 255, 0.9), #d4d4d4), url("https://p7.hiclipart.com/preview/84/723/691/shading-technology-shading-decoration.jpg");
-    width: 100%;
-    height: calc(100vh - 74px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
 
-    .jumbo {
-      flex: 1;
-    }
-  }
+  .grid-wrapper {
+    margin: 0 10px;
 
-  .grid {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-
-    .animated {
+    .grid {
+      display: flex;
       width: 100%;
+      flex-wrap: wrap;
 
-      > div {
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 2rem;
-        font-weight: 100;
-        text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px;
-        transition: all 0.5s ease-in-out;
-        cursor: pointer;
+      .animated {
+        width: 100%;
+        padding: 10px;
 
-        &:hover {
-          text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px, black 0 0 20px, black 0 0 5px, black 0 0 1px;
-        }
+        > div {
+          height: 300px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 2rem;
+          font-weight: 100;
+          text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px;
+          text-transform: uppercase;
+          cursor: pointer;
+          h3{
+            transition: all 0.5s ease-in-out;
+          }
+          &:hover {
+            h3{
+              font-size: 2.1rem;
+            }
+            text-shadow: black 0 0 20px, black 0 0 5px, black 0 0 1px, black 0 0 20px, black 0 0 5px, black 0 0 1px;
+          }
 
-        &.clouds {
-          background: linear-gradient(rgba(204, 160, 3, 0.8), rgba(0, 0, 0, 0.8)), url("https://live.staticflickr.com/3110/2826471801_787aedb379_b.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+          &.clouds {
+            background: linear-gradient(rgba(204, 160, 3, 0.8), rgba(0, 0, 0, 0.8)), url("https://live.staticflickr.com/3110/2826471801_787aedb379_b.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
-        &.data {
-          background: linear-gradient(rgba(0, 6, 183, 0.8), rgba(0, 0, 0, 0.8)), url("https://warwick.ac.uk/fac/sci/eng/postgraduate/cie/edit-contents/cie.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+          &.data {
+            background: linear-gradient(rgba(0, 6, 183, 0.8), rgba(0, 0, 0, 0.8)), url("https://warwick.ac.uk/fac/sci/eng/postgraduate/cie/edit-contents/cie.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
-        &.science {
-          background: linear-gradient(rgba(228, 0, 84, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/shutterstock_1164560377_0.jpg?itok=4BzAqKlK");
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+          &.science {
+            background: linear-gradient(rgba(228, 0, 84, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.pnnl.gov/sites/default/files/styles/hero_1600x1200/public/media/image/shutterstock_1164560377_0.jpg?itok=4BzAqKlK");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
 
-        &.community {
-          background: linear-gradient(rgba(0, 123, 15, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.personneltoday.com/wp-content/uploads/sites/8/2014/11/Community-ideas-sharing.jpg");
-          background-repeat: no-repeat;
-          background-size: cover;
+          &.community {
+            background: linear-gradient(rgba(0, 123, 15, 0.8), rgba(0, 0, 0, 0.8)), url("https://www.personneltoday.com/wp-content/uploads/sites/8/2014/11/Community-ideas-sharing.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
         }
       }
     }
   }
-  .info{
+
+  .info {
     display: flex;
     height: 600px;
-    background: linear-gradient(rgb(1, 9, 61), rgba(0, 0, 0, 0.8)), url(https://wustl.edu/wp-content/uploads/2014/08/hero-aboutSTL.jpg);
+    background: linear-gradient(rgb(1, 9, 61), rgba(0, 0, 0, 0.8)), url("https://wustl.edu/wp-content/uploads/2014/08/hero-aboutSTL.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-size: 100%;
-    .picture-col{
+
+    .picture-col {
       width: 40%;
-
     }
-    .info-col{
-      width: 60%;
 
+    .info-col {
+      width: 60%;
     }
   }
 }
 @media only screen and (min-width: 768px) {
   #home {
-    #hero {}
 
     .jumbo {}
 
     .grid {
       .animated {
-        width: 50%;
+        width: 50% !important;
 
         > div {}
       }
@@ -98,13 +94,11 @@
 }
 @media only screen and (min-width: 1200px) {
   #home {
-    #hero {}
-
     .jumbo {}
 
     .grid {
       .animated {
-        width: 25%;
+        width: 25% !important;
 
         > div {}
       }
