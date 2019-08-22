@@ -45,7 +45,7 @@ class Services extends Component{
                   <img src="/img/science_icon.svg"/>
                 </div>
                 <div className="info">
-                  <Link to="Services/>Decision-Science"><h3>Decision Science</h3></Link>
+                  <Link to="/Services/Decision-Science"><h3>Decision Science</h3></Link>
                   <p>Our Decision Science practice focuses on enabling clients to derive insights from their data that
                   facilitate data-based decision making. We work with clients during problem discovery to identify issues
                   that could be solved with data. Next, we help identify their data needs and assist in building data collection
@@ -57,7 +57,7 @@ class Services extends Component{
                   <img src="/img/data_icon.svg"/>
                 </div>
                 <div className="info">
-                  <Link to="Services/Data-Engineering"><h3>Data Engineering</h3></Link>
+                  <Link to="/Services/Data-Engineering"><h3>Data Engineering</h3></Link>
                   <p>Our Data Engineering practice is focused on developing highly efficient, distributed and easily customizable data solutions.
                    We focus on streaming and batch data pipelines, in transit data enrichment and standardization, data modeling and storage, data
                    governance and data access. We are motivated by our desire to transform businesses into data driven enterprises.</p>

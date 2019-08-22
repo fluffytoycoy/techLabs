@@ -11,7 +11,10 @@ html {
   h1 {
     font-family: 'Oswald', sans-serif;
   }
-
+  a{
+    text-decoration: none;
+    color: white;
+  }
   .MuiButton-outlined {
     border: 1px solid #20232a;
     background: rgba(0, 128, 0, 0.7);

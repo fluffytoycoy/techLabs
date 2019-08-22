@@ -19,7 +19,7 @@ function Header(){
   }
 
   function handleServiceClick() {
-    if(window.innerWidth )
+    if(window.innerWidth)
     closeAllMenusExcept(toggleServicesMenu);
     toggleServicesMenu(!servicesOpen)
   }
@@ -37,7 +37,7 @@ function Header(){
       <div>
         <div onClick={handleMenuClick}className="menu-btn">x</div>
         <div className="logo">
-          <h3>techLabs</h3>
+          <Link to="/"><h3>techLabs</h3></Link>
         </div>
         <div className={`${menuOpen ? 'open' : ''} nav-wrapper`}>
           <ul className="navigation">
