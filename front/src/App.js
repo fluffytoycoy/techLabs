@@ -4,10 +4,10 @@ import "animate.css/animate.min.css";
 import './App.scss';
 import Header from './components/Header/Header';
 import Home from './components/HomePage/Home';
-import NotFound from './components/NotFound/NotFound';
-//import SingleProduct from './components/SingleProductPage/SingleProduct';
+import Services from './components/ServicesPage/Services'
 import ScrollToTop from './components/Utils/Scroll/Scroll';
 import Footer from './components/Footer/Footer';
+import NotFound from './components/NotFound/NotFound';
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +23,8 @@ class App extends Component {
 				<Header/>
 					<Switch>
 						<Route exact  path="/" component={Home} />
+            <Route exact patch="/Services/" render={props => <Services {...props} />}/>
+            <Route exact patch="/Services/:service" render={props => <Services {...props} />}/>
             <Route component={NotFound}/>
 				</Switch>
         <Footer/>

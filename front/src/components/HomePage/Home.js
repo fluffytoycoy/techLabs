@@ -5,6 +5,8 @@ import Button from '@material-ui/core/Button';
 import Hero from './Hero/Hero';
 import Info from './Info/Info';
 import LinkGrid from './LinkGrid/LinkGrid';
+import BlogLinks from './BlogLinks/BlogLinks';
+import Contact from './Contact/Contact';
 import './Home.scss';
 
 function Home(){
@@ -13,13 +15,8 @@ function Home(){
         <Hero/>
         <LinkGrid/>
         <Info/>
-        <section id="blog">
-          <ScrollAnimation offset={50} animateOnce animateIn="fadeInDown"><div><h1>Blog</h1></div></ScrollAnimation>
-          <section className="blog-grid">
-              <ScrollAnimation offset={50} animateOnce animateIn="fadeInLeft"><div><div className="clouds"></div><h3>Data Manageable</h3></div></ScrollAnimation>
-              <ScrollAnimation offset={50} animateOnce delay={100} animateIn="fadeInRight"><div><div className="data"></div><h3>The Secret Little Code</h3></div></ScrollAnimation>
-          </section>
-        </section>
+        <BlogLinks/>
+        <Contact/>
       </div>
     );
 }

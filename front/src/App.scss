@@ -2,31 +2,50 @@
 @import 'sass/variables';
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,600&display=swap');
 
-html, body, #root {
-    height: 100%;
-    color: $light-black;
-}
+#root,
+body,
+html {
+  height: 100%;
+  color: $light-black;
 
-body{
-  padding: 74px 0 0 0;
-}
+  h1 {
+    font-family: 'Oswald', sans-serif;
+  }
 
-#root{
+  .MuiButton-outlined {
+    border: 1px solid #20232a;
+    background: rgba(0, 128, 0, 0.7);
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    font-family: 'Oswald', sans-serif;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 
-}
-
-.container{
-  max-width: 1400px;
-  margin: 0 auto;
-  width: 100%;
-  > div{
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 100%;
+    &:hover {
+      box-shadow: none;
+      background: rgba(0, 128, 0, 0.9);
+    }
   }
 }
 
-.flex-center{
+body {
+  padding: 74px 0 0;
+}
+
+#root {}
+
+.container {
+
+
+  > div {
+
+  }
+}
+
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
