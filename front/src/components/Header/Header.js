@@ -57,7 +57,7 @@ function Header(){
                 <Link to="/Culture"><p>Culture</p></Link ><i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${cultureOpen ? 'open' : ''} culture`}>
-                <li>Core Beliefs</li>
+                <Link to="/Culture/#core-beliefs"><li>Core Beliefs</li></Link>
                 <li>Community</li>
               </ul>
             </li>

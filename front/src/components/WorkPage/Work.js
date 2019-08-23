@@ -15,14 +15,6 @@ class Services extends Component{
 
 
 
-
-  shouldComponentUpdate(nextProps, nextState) {
-    console.log(this.props.location.pathname === nextProps.location.pathname)
-    if(this.props.location.pathname === nextProps.location.pathname)
-      return false;
-    return true;
-  }
-
   render(){
     return (
       <div id="root-link">
@@ -45,7 +37,7 @@ class Services extends Component{
                   <h3>Human-Centered Design Agile</h3>
                   <p>Our Agile process ensures that the specialized software solutions we design and
                   develop are useful and usable by intensely focusing on users, and designing around their wants and needs
-                  at all stages of the development lifecycle. Human-Centered Design (HCD) Agile is a framework that
+                  at all stages of the development lifecycle.</p> <p>Human-Centered Design (HCD) Agile is a framework that
                   designs and develops products and solutions by involving the human perspective in all steps of the
                   process: observing the problem within context, conceptualizing, developing, testing, and implementing the solution..</p>
                 </div>
@@ -55,7 +47,7 @@ class Services extends Component{
             <div className="selection-body">
               <div className="reverse">
                 <div className="icon">
-                  <img src="https://1904labs.com/wp-content/uploads/2018/10/foxhound.jpg"/>
+                  <img />
                 </div>
                 <div className="info">
                   <h3>Field Reporting Tools</h3>
@@ -66,7 +58,7 @@ class Services extends Component{
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="https://1904labs.com/wp-content/uploads/2019/01/Bricks.jpg"/>
+                  <img />
                 </div>
                 <div className="info">
                   <h3>Breaking Monoliths</h3>

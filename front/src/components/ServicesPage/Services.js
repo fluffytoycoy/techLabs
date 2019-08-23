@@ -58,9 +58,11 @@ class Services extends Component{
                 </div>
                 <div className="info">
                   <Link to="/Services/Data-Engineering"><h3>Data Engineering</h3></Link>
-                  <p>Our Data Engineering practice is focused on developing highly efficient, distributed and easily customizable data solutions.
-                   We focus on streaming and batch data pipelines, in transit data enrichment and standardization, data modeling and storage, data
-                   governance and data access. We are motivated by our desire to transform businesses into data driven enterprises.</p>
+                  <p>
+                     Our Data Engineering practice is focused on developing highly efficient, distributed and easily customizable data solutions.
+                     We focus on streaming and batch data pipelines, in transit data enrichment and standardization, data modeling and storage, data
+                     governance and data access. We are motivated by our desire to transform businesses into data driven enterprises.
+                   </p>
                 </div>
               </div>
               <div>
@@ -69,9 +71,11 @@ class Services extends Component{
                 </div>
                 <div className="info">
                   <Link to="Services/Cloud"><h3>Cloud</h3></Link>
-                  <p>We revolutionize the way applications are designed, built, and managed. Starting with users and then creating modern cloud
-                   based solutions that align to their needs. We manage delivery using an agile process that was developed in
-                     by our full-stack engineers to help us stay focused on the right solutions to your toughest engineering problems.</p>
+                  <p>
+                      We revolutionize the way applications are designed, built, and managed. Starting with users and then creating modern cloud
+                      based solutions that align to their needs. We manage delivery using an agile process that was developed in
+                      by our full-stack engineers to help us stay focused on the right solutions to your toughest engineering problems.
+                  </p>
                 </div>
               </div>
             </div>

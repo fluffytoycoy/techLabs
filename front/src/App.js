@@ -9,6 +9,7 @@ import Cloud from './components/ServicesPage/Cloud/Cloud'
 import DataEngineering from './components/ServicesPage/DataEngineering/DataEngineering'
 import DecisionScience from './components/ServicesPage/DecisionScience/DecisionScience'
 import ScrollToTop from './components/Utils/Scroll/Scroll';
+import Culture from './components/CulturePage/Culture'
 import Footer from './components/Footer/Footer';
 import Work from './components/WorkPage/Work';
 import NotFound from './components/NotFound/NotFound';
@@ -33,7 +34,8 @@ class App extends Component {
             <Route exact path="/Services/Cloud" render={props => <Cloud {...props} />}/>
 
             <Route exact path="/Work/" render={props => <Work {...props} />}/>
-            <Route exact path="/Work/:subtype" render={props => <Work {...props} />}/>
+
+            <Route exact path="/Culture/" render={props => <Culture {...props} />}/>
             <Route component={NotFound}/>
 				       </Switch>
         <Footer/>

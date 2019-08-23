@@ -102,11 +102,11 @@
         > div {
           display: flex;
           align-items: center;
-          margin: 40px 0;
+          margin: 20px 0 10px;
           justify-content: space-evenly;
           flex-direction: column;
           background: #fcffff;
-          padding: 50px 0;
+          padding: 25px 0;
           .icon {
             max-width: 200px;
             margin-bottom: 20PX;
@@ -133,11 +133,14 @@
             .grid-50 {
               display: flex;
               justify-content: space-around;
-
+              flex-wrap: wrap;
               li {
                 display: flex;
+                              flex-direction: column;
                 margin-bottom: 20px;
-
+                h3{
+                    min-width: 300px;
+                }
                 p {
                   margin-bottom: 0;
                 }
@@ -173,9 +176,13 @@
             }
 
             p {
+              &:last-child{
+                margin-bottom: 0px;
+              }
               font-size: 1.2rem;
               line-height: 1.4rem;
               margin-bottom: 20px;
+              text-align: left;
             }
           }
         }
@@ -262,7 +269,20 @@
               p {
                 font-size: 1.5rem;
                 line-height: 2rem;
-                text-indent: 3rem;
+              }
+
+              .grid-50 {
+                li {
+                  flex-direction: row;
+
+    align-items: center;
+                  h3{
+                      min-width: 300px;
+                  }
+                  p {
+                    margin-bottom: 0;
+                  }
+                }
               }
             }
           }
