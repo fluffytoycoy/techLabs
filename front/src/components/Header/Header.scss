@@ -42,10 +42,6 @@
       }
 
       .navigation {
-        a{
-          text-decoration: none;
-          color: white;
-        }
         > li {
           &:first-child {
             border-top: green solid 2px;
@@ -84,6 +80,7 @@
             i {
               padding: 10px;
               cursor: pointer;
+              font-size: .5rem;
 
               &:hover {
                 text-shadow: white 0 0;

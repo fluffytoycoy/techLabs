@@ -52,8 +52,8 @@ class Services extends Component{
               </div>
 
             </div>
-            <div className="selection-body reverse">
-              <div>
+            <div className="selection-body">
+              <div className="reverse">
                 <div className="icon">
                   <img src="https://1904labs.com/wp-content/uploads/2018/10/foxhound.jpg"/>
                 </div>
@@ -64,7 +64,7 @@ class Services extends Component{
                   solution that offered more powerful analytic capabilities and improved the overall user experience.</p>
                 </div>
               </div>
-              <div>
+              <div className="reverse">
                 <div className="icon">
                   <img src="https://1904labs.com/wp-content/uploads/2019/01/Bricks.jpg"/>
                 </div>

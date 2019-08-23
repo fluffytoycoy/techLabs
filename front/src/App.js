@@ -5,6 +5,9 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Home from './components/HomePage/Home';
 import Services from './components/ServicesPage/Services'
+import Cloud from './components/ServicesPage/Cloud/Cloud'
+import DataEngineering from './components/ServicesPage/DataEngineering/DataEngineering'
+import DecisionScience from './components/ServicesPage/DecisionScience/DecisionScience'
 import ScrollToTop from './components/Utils/Scroll/Scroll';
 import Footer from './components/Footer/Footer';
 import Work from './components/WorkPage/Work';
@@ -25,7 +28,9 @@ class App extends Component {
 					<Switch>
 						<Route exact  path="/" component={Home} />
             <Route exact path="/Services/" render={props => <Services {...props} />}/>
-            <Route exact path="/Services/:subtype" render={props => <Services {...props} />}/>
+            <Route exact path="/Services/Decision-Science" render={props => <DecisionScience {...props} />}/>
+            <Route exact path="/Services/Data-Engineering" render={props => <DataEngineering {...props} />}/>
+            <Route exact path="/Services/Cloud" render={props => <Cloud {...props} />}/>
 
             <Route exact path="/Work/" render={props => <Work {...props} />}/>
             <Route exact path="/Work/:subtype" render={props => <Work {...props} />}/>

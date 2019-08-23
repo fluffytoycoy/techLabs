@@ -3,32 +3,64 @@
 
   .jumbo {
     min-height: 300px;
-
+    position: relative;
     background-attachment: fixed !important;
     background-size: cover !important;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     background-repeat: no-repeat !important;
+
+    .corner-icon {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff8f;
+      border-radius: 50%;
+
+      img {
+        width: 200px;
+        padding: 30px;
+      }
+    }
+
     &.services {
-        background: url('/img/service_bg.jpg');
-      h1 {
-        color: green;
-        font-weight: 600;
-        font-size: 3rem;
-        border-top-left-radius: 100%;
-        width: 100%;
-        text-shadow: 0 -1px 3px #20232a, 0 -1px 0 rgba(0, 0, 0, 0.27), -2px -2px 1px #20232a;
-        background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), to(rgba(255, 255, 255, 0.95))), url(/img/bg-tri.jpg);
-        background: -webkit-linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/img/bg-tri.jpg);
-        background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/img/bg-tri.jpg);
-        height: 154px;
-        text-transform: uppercase;
-        letter-spacing: 1rem;
-        text-align: right;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
+      background: url("/img/service_bg.jpg");
+    }
+
+    &.cloud {
+      background: url("/img/clouds_large.jpg");
+      background-position: bottom;
+    }
+
+    h1 {
+      color: green;
+      font-weight: 600;
+      font-size: 3rem;
+      border-top-left-radius: 100%;
+      width: 100%;
+      text-shadow: 0 0 14px rgba(0, 0, 0, 0.27), -2px 0 1px #20232a;
+      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), to(rgba(255, 255, 255, 0.95))), url("/img/bg-tri.jpg");
+      background: -webkit-linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/bg-tri.jpg");
+      background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/bg-tri.jpg");
+      height: 154px;
+      text-transform: uppercase;
+      letter-spacing: 1rem;
+      text-align: right;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      z-index: 2;
+      &.long-word{
+        font-size: 10vw;
+        letter-spacing: .5rem;
+        text-align: center;
       }
     }
   }
@@ -66,33 +98,73 @@
         display: flex;
         flex-direction: column;
         border-top: solid #8282ff;
+
         > div {
           display: flex;
           align-items: center;
           margin: 40px 0;
           justify-content: space-evenly;
           flex-direction: column;
-
+          background: #fcffff;
+          padding: 50px 0;
           .icon {
             max-width: 200px;
             margin-bottom: 20PX;
 
             img {
-                  width: 100%;
-                      filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.64));
+              width: 100%;
+              filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.64));
             }
           }
 
           .info {
             text-align: center;
-            a{
+
+            a {
               color: #8282ff;
-              transition: all .5s ease-in-out;
-              &:hover{
-                text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.12), 0px 3px 3px rgba(0, 0, 0, 0.23);
+              transition: all 0.5s ease-in-out;
+
+              &:hover {
+                text-shadow: 0 5px 4px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.23);
                 transform: scale(1.1);
               }
             }
+
+            .grid-50 {
+              display: flex;
+              justify-content: space-around;
+
+              li {
+                display: flex;
+                margin-bottom: 20px;
+
+                p {
+                  margin-bottom: 0;
+                }
+              }
+            }
+
+            ul {
+              text-align: left;
+              margin-top: 40px;
+
+              li {
+                ul{
+                  margin-top: 0;
+                }
+                p {
+                  border-left: solid green;
+                  padding: 0 0 0 30px;
+                }
+
+                &:last-child {
+                  p {
+                    margin-bottom: 0;
+                  }
+                }
+              }
+            }
+
             h3 {
               font-size: 1.5rem;
               text-transform: uppercase;
@@ -102,16 +174,20 @@
 
             p {
               font-size: 1.2rem;
-              line-height: 1.5rem;
+              line-height: 1.4rem;
+              margin-bottom: 20px;
             }
           }
         }
-        &.reverse{
-          > div{
-            .icon{
+
+        .reverse {
+          &.col-reverse{
+            flex-direction: column-reverse;
+          }
+            .icon {
               margin-right: 0;
               max-width: 300px;
-            }
+
           }
         }
       }
@@ -120,14 +196,17 @@
 }
 @media only screen and(min-width: 768px) {
   #root-link {
-
     .jumbo {
       min-height: 400px;
-      &.services {
-        h1 {
-          font-size: 5rem;
-          text-transform: uppercase;
-          letter-spacing: 1rem;
+
+      &.services {}
+
+      h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+        letter-spacing: 1rem;
+        &.long-word{
+          font-size: 4.5rem;
         }
       }
     }
@@ -143,7 +222,6 @@
             font-size: 1.5rem;
             line-height: 2.5rem;
             text-indent: 5rem;
-            text-align: LEFT;
             font-weight: 500;
           }
         }
@@ -162,25 +240,40 @@
             .info {
               max-width: 60%;
               text-align: left;
+              width: 100%;
 
+              &.no-img {
+                text-align: center;
+                max-width: 1200px;
+              }
+              &.list{
+                max-width: 25%;
+              }
               h3 {
                 font-size: 2rem;
               }
 
+              li {
+                p {
+                  text-indent: 0;
+                }
+              }
+
               p {
                 font-size: 1.5rem;
-                line-height: 2.5rem;
+                line-height: 2rem;
+                text-indent: 3rem;
               }
             }
           }
-          &.reverse{
-            > div{
-              flex-direction: row-reverse;
-              .icon{
+
+          .reverse {
+              flex-direction: row-reverse !important ;
+              .icon {
                 margin-left: 20px;
                 margin-right: 0;
                 width: 300px;
-              }
+
             }
           }
         }

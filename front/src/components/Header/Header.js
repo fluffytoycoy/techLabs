@@ -46,16 +46,12 @@ function Header(){
                 <Link to="/Services"><p>Services</p></Link><i onClick={handleServiceClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${servicesOpen ? 'open' : ''}`}>
-                <li>Cloud Systems</li>
-                <li>Data Engineering</li>
-                <li>Decision Science</li>
+                <Link to="/Services/Cloud"><li>Cloud Systems</li></Link>
+                <Link to="/Services/Data-Engineering"><li>Data Engineering</li></Link>
+                <Link to="/Services/Decision-Science"><li>Decision Science</li></Link>
               </ul>
             </li>
-            <li>
-              <div className="dropdown-btn">
-                <Link to="/Work"><p>Work</p></Link>
-              </div>
-            </li>
+
             <li>
               <div className="dropdown-btn">
                 <Link to="/Culture"><p>Culture</p></Link ><i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
@@ -64,6 +60,11 @@ function Header(){
                 <li>Core Beliefs</li>
                 <li>Community</li>
               </ul>
+            </li>
+            <li>
+              <div className="dropdown-btn">
+                <Link to="/Work"><p>Work</p></Link>
+              </div>
             </li>
             <li>
               <div className="dropdown-btn">
