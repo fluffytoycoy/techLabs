@@ -13,6 +13,14 @@ class Culture extends Component{
   }
 
   componentDidMount(){
+    this.scrollTo();
+  }
+
+  componentDidUpdate(prevProps) {
+    this.scrollTo();
+  }
+
+  scrollTo(){
     if(this.props.location.hash){
       setTimeout(() => {
       const id = this.props.location.hash.replace('#','');
@@ -25,6 +33,7 @@ class Culture extends Component{
          }, 0);
     }
   }
+
   render(){
     return (
       <div id="root-link">
@@ -92,8 +101,8 @@ class Culture extends Component{
               </div>
             </div>
             <CultureCarousel/>
-            <div id="core-beliefs" className="selection-body">
-
+            <div className="selection-body">
+               <div id="core-beliefs" style={{position: 'absolute', top: '-100px', left: 0}} />
               <div>
                 <div className="info no-img">
                   <h3>Clients Are Our Cornerstone</h3>

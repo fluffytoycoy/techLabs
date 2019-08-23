@@ -58,7 +58,7 @@ function Header(){
               </div>
               <ul className={`${cultureOpen ? 'open' : ''} culture`}>
                 <Link to="/Culture/#core-beliefs"><li>Core Beliefs</li></Link>
-                <li>Community</li>
+                <Link to="/Culture/Community"><li>Community</li></Link>
               </ul>
             </li>
             <li>

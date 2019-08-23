@@ -98,6 +98,7 @@
         display: flex;
         flex-direction: column;
         border-top: solid #8282ff;
+        position: relative;
 
         > div {
           display: flex;
@@ -136,9 +137,12 @@
               flex-wrap: wrap;
               li {
                 display: flex;
-                              flex-direction: column;
-                margin-bottom: 20px;
+                flex-direction: column;
+                &:not(:last-child){
+                  margin-bottom: 40px;
+                }
                 h3{
+                  margin-bottom: 0;
                     min-width: 300px;
                 }
                 p {
@@ -149,9 +153,9 @@
 
             ul {
               text-align: left;
-              margin-top: 40px;
 
               li {
+                margin-bottom: 20px;
                 ul{
                   margin-top: 0;
                 }
@@ -274,7 +278,6 @@
               .grid-50 {
                 li {
                   flex-direction: row;
-
     align-items: center;
                   h3{
                       min-width: 300px;
