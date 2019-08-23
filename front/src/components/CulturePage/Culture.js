@@ -61,7 +61,7 @@ class Culture extends Component{
               </div>
               <div>
                 <div className="info no-img">
-                <ul className="grid-50">
+                <ul className="grid-50 wrap">
                   <li>
                     <h3>Great Working Environment</h3>
                     <p>
@@ -113,7 +113,7 @@ class Culture extends Component{
               </div>
               <div>
                 <div className="info no-img">
-                <ul className="grid-50">
+                <ul className="grid-50 wrap">
                   <li>
                     <h3>The Foundation</h3>
                     <p>

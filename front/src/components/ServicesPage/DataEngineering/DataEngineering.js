@@ -46,7 +46,7 @@ function DataEngineering(){
               <div>
                 <div className="info no-img">
                   <h3>What will Data Engineering Do for You?</h3>
-                  <ul className="grid-50">
+                  <ul className="grid-50 double">
                     <li>
                       <ul>
                         <li><p>Tailored Fit</p></li>
