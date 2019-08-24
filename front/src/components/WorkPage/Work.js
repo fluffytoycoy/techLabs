@@ -4,14 +4,11 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '@material-ui/core/Button';
 
 class Services extends Component{
-  constructor(props){
-    super(props);
-    this.state={
 
-    }
+  animationStyle={
+    display: 'flex',
+    justifyContent: 'flex-end'
   }
-
-
 
 
 
@@ -47,7 +44,7 @@ class Services extends Component{
             <div className="selection-body">
               <div className="reverse">
                 <div className="icon">
-                  <img />
+                  <img src="/img/HeroSquares/field.jpeg"/>
                 </div>
                 <div className="info">
                   <h3>Field Reporting Tools</h3>
@@ -58,7 +55,7 @@ class Services extends Component{
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img />
+                  <img src="/img/HeroSquares/mono.jpg" />
                 </div>
                 <div className="info">
                   <h3>Breaking Monoliths</h3>

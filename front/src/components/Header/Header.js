@@ -45,7 +45,7 @@ function Header(){
     return (
       <div id="header">
       <div>
-        <div onClick={handleMenuClick}className="menu-btn">x</div>
+        <div onClick={handleMenuClick}className="menu-btn"><i class="fas fa-bars"></i></div>
         <div className="logo">
           <Link to="/" onClick={closeNav}>
             <h3>techLabs</h3>

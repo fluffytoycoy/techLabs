@@ -19,15 +19,14 @@ class CultureCarousel extends Component {
     width: '300px'
   }
 
-slide2={
-  background: 'url("/img/science.jpg")',
+  slide2={
+    background: 'url("/img/science.jpg")',
+  }
 
-}
 
-
-slide1={
-  background: 'url("/img/clouds.jpg")'
-}
+  slide1={
+    background: 'url("/img/clouds.jpg")'
+  }
 
   componentWillUnmount(){
 

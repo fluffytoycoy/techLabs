@@ -42,7 +42,7 @@ class Services extends Component{
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <img src="/img/science_icon.svg"/>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/science_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="/Services/Decision-Science"><h3>Decision Science</h3></Link>
@@ -54,7 +54,7 @@ class Services extends Component{
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/data_icon.svg"/>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/data_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="/Services/Data-Engineering"><h3>Data Engineering</h3></Link>
@@ -67,7 +67,7 @@ class Services extends Component{
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/cloud_icon.svg"/>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/cloud_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="Services/Cloud"><h3>Cloud</h3></Link>

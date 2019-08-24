@@ -126,7 +126,9 @@
             display: flex;
             margin-bottom: 20PX;
             justify-content: center;
-
+            .animated {
+                width: 100%;
+            }
             img {
               width: 100%;
               max-width: 300px;

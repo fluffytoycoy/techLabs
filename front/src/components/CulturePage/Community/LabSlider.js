@@ -1,6 +1,5 @@
 import React from 'react';
 import { Zoom } from 'react-slideshow-image';
-import './LabSlider.scss';
 
 const images = [
 

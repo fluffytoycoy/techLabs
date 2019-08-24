@@ -24,7 +24,7 @@ function Cloud(){
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <img src="/img/Logos/science_icon.svg"/>
+                  <img src="/img/Logos/native_cloud.svg"/>
                 </div>
                 <div className="info">
                   <h3>Cloud Native Refactoring</h3>
@@ -81,7 +81,7 @@ function Cloud(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/Logos/cloud_icon.svg"/>
+                  <img src="/img/Logos/research_clound.svg"/>
                 </div>
                 <div className="info">
                   <h3>Research and Development Strategy</h3>
