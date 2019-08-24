@@ -1,7 +1,8 @@
 #root{
   .alice-carousel{
     margin: 40px 0 40px;
-    .alice-carousel__stage{
+    .alice-carousel__stage-item{
+      width: 300px !important;
     }
     .slide{
         height: 300px;

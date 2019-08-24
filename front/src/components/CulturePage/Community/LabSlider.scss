@@ -1,0 +1,77 @@
+.reverse{
+
+}
+
+
+.slide-container {
+  width: 100%;
+}
+.react-slideshow-zoom-wrapper {
+  width: 100%;
+  /* overflow: hidden; */
+  justify-content: center;
+  display: inline;
+  /* flex-direction: row; */
+  .zoom-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    > div {
+      justify-content: center;
+      img {
+        max-width: 400px !important;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .react-slideshow-zoom-wrapper {
+    width: 100%;
+    /* overflow: hidden; */
+    justify-content: center;
+    display: inline;
+    /* flex-direction: row; */
+    .zoom-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      > div {
+        justify-content: flex-start;
+
+        img {
+          max-width: 400px !important;
+        }
+      }
+    }
+  }
+
+  .reverse{
+    .react-slideshow-zoom-wrapper {
+      width: 100%;
+      /* overflow: hidden; */
+      justify-content: center;
+      display: inline;
+      /* flex-direction: row; */
+      .zoom-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        > div {
+          justify-content: flex-end;
+
+          img {
+          }
+        }
+      }
+    }
+  }
+}

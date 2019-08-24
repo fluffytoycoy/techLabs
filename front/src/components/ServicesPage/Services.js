@@ -75,7 +75,7 @@ class Services extends Component{
                       We revolutionize the way applications are designed, built, and managed. Starting with users and then creating modern cloud
                       based solutions that align to their needs. We manage delivery using an agile process that was developed in
                       by our full-stack engineers to help us stay focused on the right solutions to your toughest engineering problems.
-                  </p>
+                    </p>
                 </div>
               </div>
             </div>

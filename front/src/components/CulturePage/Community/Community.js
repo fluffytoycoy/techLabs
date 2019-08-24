@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import LabSlider from './LabSlider';
 function Community(){
 
     return (
@@ -20,7 +20,7 @@ function Community(){
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <img src="/img/community.svg"/>
+                  <LabSlider/>
                 </div>
                 <div className="info">
                   <h3>labCoders</h3>
@@ -46,9 +46,9 @@ function Community(){
                    </p>
                 </div>
               </div>
-              <div>
+              <div className="reverse">
                 <div className="icon">
-                  <img src="/img/community.svg"/>
+                  <img src="/img/life_academy.png"/>
                 </div>
                 <div className="info">
                   <h3>Lift for Life Academy</h3>
@@ -72,9 +72,9 @@ function Community(){
                   </p>
                 </div>
               </div>
-              <div>
+              <div className="reverse">
                 <div className="icon">
-                  <img src="/img/community.svg"/>
+                    <LabSlider/>
                 </div>
                 <div className="info">
                   <h3>St. Louis Area Foodbank</h3>

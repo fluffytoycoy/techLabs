@@ -9,13 +9,14 @@ class CultureCarousel extends Component {
 
   responsive={
     0: {items: 1},
-    700: {items: 3}
+    700: {items: 5}
   }
   handleOnDragStart = e => e.preventDefault()
 
   slide={
     backgroundSize: 'cover',
-    backgroundPosition: 'center'
+    backgroundPosition: 'center',
+    width: '300px'
   }
 
 slide2={
@@ -28,27 +29,33 @@ slide1={
   background: 'url("/img/clouds.jpg")'
 }
 
-change(e){
-  if(e.item === e.itemsInSlide -1){
-    console.log('yes')
+  componentWillUnmount(){
+
   }
-}
+
     render() {
         return (
             <AliceCarousel
-            dotsDisabled={true}
-            responsive={this.responsive}
-            buttonsDisabled={true}
-            autoPlayInterval={3000}
-            autoPlayDirection="lft"
-            autoPlay={true}
-            mouseDragEnabled
-            onSlideChange={this.change} className="test">
+              dotsDisabled={true}
+              responsive={this.responsive}
+              buttonsDisabled={true}
+              autoPlayInterval={3000}
+              autoPlayDirection="lft"
+              autoPlay={false}
+              mouseDragEnabled>
               <div style={{...this.slide2, ...this.slide}}className="slide">
               </div>
               <div style={{...this.slide1, ...this.slide}}className="slide1">
               </div>
-              <div className="slide">
+              <div style={{...this.slide2, ...this.slide}} className="slide">
+              </div>
+              <div style={{...this.slide1, ...this.slide}}className="slide1">
+              </div>
+              <div style={{...this.slide2, ...this.slide}} className="slide">
+              </div>
+              <div style={{...this.slide1, ...this.slide}}className="slide1">
+              </div>
+              <div style={{...this.slide2, ...this.slide}} className="slide">
               </div>
             </AliceCarousel>
         );
