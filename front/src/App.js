@@ -28,7 +28,7 @@ class App extends Component {
       <ScrollToTop >
 				<Header/>
 					<Switch>
-						<Route exact  path="/" component={Home} />
+						<Route exact  path="/" render={props => <Home {...props} />}/>
             <Route exact path="/Services/" render={props => <Services {...props} />}/>
             <Route exact path="/Services/Decision-Science" render={props => <DecisionScience {...props} />}/>
             <Route exact path="/Services/Data-Engineering" render={props => <DataEngineering {...props} />}/>

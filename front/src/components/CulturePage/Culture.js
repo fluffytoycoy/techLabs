@@ -28,7 +28,8 @@ class Culture extends Component{
       const element = document.getElementById(id);
       console.log(element)
       if (element){
-        element.scrollIntoView(true);
+
+        element.scrollIntoView({behavior: "smooth", scroll: true});
       }
          }, 0);
     }

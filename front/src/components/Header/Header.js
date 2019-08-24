@@ -76,12 +76,15 @@ function Header(){
                 </Link >
                 <i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
               </div>
-              <ul className={`${cultureOpen ? 'open' : ''} culture`}>
+              <ul className={`${cultureOpen ? 'open' : ''}`}>
                 <Link to="/Culture/#core-beliefs" onClick={closeNav}>
                   <li>Core Beliefs</li>
                 </Link>
                 <Link to="/Culture/Community" onClick={closeNav}>
                   <li>Community</li>
+                </Link>
+                <Link to="/Blog">
+                  <li>Blog</li>
                 </Link>
               </ul>
             </li>
@@ -94,7 +97,9 @@ function Header(){
             </li>
             <li>
               <div className="dropdown-btn">
-                <p>About Us</p>
+                <Link to="/#contact" onClick={closeNav}>
+                  <p>Contact Us</p>
+                </Link>
               </div>
             </li>
           </ul>

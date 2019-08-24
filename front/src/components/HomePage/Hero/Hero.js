@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Hero.scss'
@@ -26,7 +27,7 @@ function Hero(){
               <h1>1904 WAS A YEAR THAT BROUGHT TREMENDOUS PASSION, TALENT, AND
               INNOVATION TO ST LOUIS with the worldfair. WIth this mind set
               we inspire those same qualities in innovated ways</h1>
-              <Button variant="outlined">Contact Us</Button>
+              <Link to="/#contact"><Button variant="outlined">Contact Us</Button></Link>
             </div>
           </div>
         </div>

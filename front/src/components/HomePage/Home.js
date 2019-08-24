@@ -9,14 +9,14 @@ import BlogLinks from './BlogLinks/BlogLinks';
 import Contact from './Contact/Contact';
 import './Home.scss';
 
-function Home(){
+function Home(props){
     return (
       <div id="home">
         <Hero/>
         <LinkGrid/>
         <Info/>
         <BlogLinks/>
-        <Contact/>
+        <Contact{...props}/>
       </div>
     );
 }
