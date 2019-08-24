@@ -2,6 +2,10 @@
 @import 'sass/variables';
 @import url('https://fonts.googleapis.com/css?family=Oswald:200,300,600&display=swap');
 
+body {
+  padding: 54px 0 0;
+}
+
 #root,
 body,
 html {
@@ -11,10 +15,12 @@ html {
   h1 {
     font-family: 'Oswald', sans-serif;
   }
-  a{
+
+  a {
     text-decoration: none;
     color: white;
   }
+
   .MuiButton-outlined {
     border: 1px solid #20232a;
     background: rgba(0, 128, 0, 0.7);
@@ -34,22 +40,8 @@ html {
   }
 }
 
-body {
-  padding: 74px 0 0;
-}
-
-#root {}
-
-.container {
-
-
-  > div {
-
+@media only screen and (min-width: 769px){
+  body{
+    padding: 62px 0 0;
   }
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

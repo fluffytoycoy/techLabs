@@ -8,7 +8,7 @@
   color: white;
   border-bottom: green solid 2px;
   z-index: 4;
-
+  transition: height .5s ease-in-out;
   .menu-btn {
     position: absolute;
     right: 0;
@@ -21,10 +21,11 @@
 
     .logo {
       margin-right: auto;
+      display: flex;
 
       h3 {
         font-size: 2rem;
-        padding: 20px 0;
+        padding: 10px 0;
         font-weight: 100;
       }
     }
@@ -129,7 +130,7 @@
 
           > li {
             position: relative;
-
+            padding: 10px 0;
             &:hover {
               ul {
                 height: 120px;
@@ -174,7 +175,7 @@
               position: absolute;
               overflow: hidden;
               width: 300px;
-              top: 56px;
+              top: 60px;
 
               li {
                 border-top: green solid 1px;

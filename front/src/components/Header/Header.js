@@ -9,9 +9,10 @@ function Header(){
   const menuArray = [toggleServicesMenu, toggleCultureMenu];
 
   function closeAllMenusExcept(menu){
-    if(window.innerWidth > 768){
+    if(window.innerWidth <= 768){
       menuArray.forEach(func=>{
         if(func !== menu){
+          console.log('here')
           func(false);
         }
       })
@@ -19,51 +20,76 @@ function Header(){
   }
 
   function handleServiceClick() {
-    if(window.innerWidth)
-    closeAllMenusExcept(toggleServicesMenu);
-    toggleServicesMenu(!servicesOpen)
+    if(window.innerWidth <= 768){
+      closeAllMenusExcept(toggleServicesMenu);
+      toggleServicesMenu(!servicesOpen)
+    }
   }
 
   function handleCultureClick() {
-    closeAllMenusExcept(toggleCultureMenu);
-    toggleCultureMenu(!cultureOpen)
+    if(window.innerWidth <= 768){
+      closeAllMenusExcept(toggleCultureMenu);
+      toggleCultureMenu(!cultureOpen)
+    }
   }
 
-  function handleMenuClick(){
-    toggleNavMenu(!menuOpen)
-  }
+    function handleMenuClick(){
+      toggleNavMenu(!menuOpen)
+    }
+
+    function closeNav(){
+      closeAllMenusExcept()
+      toggleNavMenu(false)
+    }
+
     return (
       <div id="header">
       <div>
         <div onClick={handleMenuClick}className="menu-btn">x</div>
         <div className="logo">
-          <Link to="/"><h3>techLabs</h3></Link>
+          <Link to="/" onClick={closeNav}>
+            <h3>techLabs</h3>
+          </Link>
         </div>
         <div className={`${menuOpen ? 'open' : ''} nav-wrapper`}>
           <ul className="navigation">
             <li>
               <div className="dropdown-btn">
-                <Link to="/Services"><p>Services</p></Link><i onClick={handleServiceClick}className="fas fa-chevron-down"></i>
+                <Link to="/Services" onClick={closeNav}>
+                  <p>Services</p>
+                </Link>
+                <i onClick={handleServiceClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${servicesOpen ? 'open' : ''}`}>
-                <Link to="/Services/Cloud"><li>Cloud Systems</li></Link>
-                <Link to="/Services/Data-Engineering"><li>Data Engineering</li></Link>
-                <Link to="/Services/Decision-Science"><li>Decision Science</li></Link>
+                <Link to="/Services/Cloud" onClick={closeNav}>
+                  <li>Cloud Systems</li>
+                </Link>
+                <Link to="/Services/Data-Engineering" onClick={closeNav}><li>Data Engineering</li></Link>
+                <Link to="/Services/Decision-Science" onClick={closeNav}><li>Decision Science</li></Link>
               </ul>
             </li>
 
             <li>
               <div className="dropdown-btn">
-                <Link to="/Culture"><p>Culture</p></Link ><i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
+                <Link to="/Culture" onClick={closeNav}>
+                  <p>Culture</p>
+                </Link >
+                <i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${cultureOpen ? 'open' : ''} culture`}>
-                <Link to="/Culture/#core-beliefs"><li>Core Beliefs</li></Link>
-                <Link to="/Culture/Community"><li>Community</li></Link>
+                <Link to="/Culture/#core-beliefs" onClick={closeNav}>
+                  <li>Core Beliefs</li>
+                </Link>
+                <Link to="/Culture/Community" onClick={closeNav}>
+                  <li>Community</li>
+                </Link>
               </ul>
             </li>
             <li>
               <div className="dropdown-btn">
-                <Link to="/Work"><p>Work</p></Link>
+                <Link to="/Work" onClick={closeNav}>
+                  <p>Work</p>
+                </Link>
               </div>
             </li>
             <li>
