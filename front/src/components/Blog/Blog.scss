@@ -1,0 +1,21 @@
+.blog {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  .blog-grid {
+    flex: auto;
+    .image-element-class{
+      width: 50%;
+
+      img{
+        padding: 0 10px 10px 10px;
+      }
+    }
+  }
+
+  .sidebar {
+    width: 300px;
+    background: red;
+  }
+}

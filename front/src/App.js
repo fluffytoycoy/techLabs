@@ -14,6 +14,7 @@ import Culture from './components/CulturePage/Culture'
 import Footer from './components/Footer/Footer';
 import Work from './components/WorkPage/Work';
 import NotFound from './components/NotFound/NotFound';
+import Blog from './components/Blog/Blog';
 
 class App extends Component {
   constructor(props) {
@@ -38,6 +39,9 @@ class App extends Component {
 
             <Route exact path="/Culture/" render={props => <Culture {...props} />}/>
             <Route exact path="/Culture/Community" render={props => <Community {...props} />}/>
+
+            <Route exact path="/Blog/" render={props => <Blog {...props}/>}/>
+            <Route exact path="/Blog/:blogId" render={props => <Blog {...props}/>}/>
             <Route component={NotFound}/>
 				       </Switch>
         <Footer/>

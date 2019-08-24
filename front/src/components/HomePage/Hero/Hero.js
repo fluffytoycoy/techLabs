@@ -7,6 +7,8 @@ import './Hero.scss'
 
 
 function Hero(){
+
+  
   return(
     <section id="hero">
       <div className="jumbo">
