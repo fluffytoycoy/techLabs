@@ -31,7 +31,7 @@ class Services extends Component{
             <div className="selection-body work">
               <div>
                 <div className="icon">
-                  <img src="/img/heads.png"/>
+                  <img src="/img/Logos/heads.png"/>
                 </div>
                 <div className="info">
                   <h3>Human-Centered Design Agile</h3>

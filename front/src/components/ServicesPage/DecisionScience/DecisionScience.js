@@ -7,7 +7,7 @@ function DecisionScience(){
       <div id="root-link">
         <div className={`jumbo cloud`}>
           <div className="corner-icon">
-            <img src="/img/science_icon.svg"/>
+            <img src="/img/Logos/science_icon.svg"/>
           </div>
           <h1 className="long-word">Decision Science</h1>
         </div>

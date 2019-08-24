@@ -7,7 +7,7 @@ function Community(){
       <div id="root-link">
         <div className={`jumbo cloud`}>
           <div className="corner-icon">
-            <img src="/img/community.svg"/>
+            <img src="/img/Logos/community.svg"/>
           </div>
           <h1 className="long-word">Community</h1>
         </div>
@@ -48,7 +48,7 @@ function Community(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/life_academy.png"/>
+                  <img src="/img/Logos/life_academy.png"/>
                 </div>
                 <div className="info">
                   <h3>Lift for Life Academy</h3>
@@ -61,7 +61,7 @@ function Community(){
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/community.svg"/>
+                  <img src="/img/Logos/community.svg"/>
                 </div>
                 <div className="info">
                   <h3>Places for People</h3>

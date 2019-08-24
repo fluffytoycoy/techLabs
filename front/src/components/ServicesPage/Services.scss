@@ -1,5 +1,5 @@
 #root-link {
-  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/bg-tri.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/Backgrounds/bg-tri.jpg");
 
   .jumbo {
     min-height: 300px;
@@ -31,11 +31,11 @@
     }
 
     &.services {
-      background: url("/img/service_bg.jpg");
+      background: url("/img/Backgrounds/service_bg.jpg");
     }
 
     &.cloud {
-      background: url("/img/clouds_large.jpg");
+      background: url("/img/Backgrounds/clouds_large.jpg");
       background-position: bottom;
     }
 

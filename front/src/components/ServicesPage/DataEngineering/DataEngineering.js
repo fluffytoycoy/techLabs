@@ -7,7 +7,7 @@ function DataEngineering(){
       <div id="root-link">
         <div className={`jumbo cloud`}>
           <div className="corner-icon">
-            <img src="/img/data_icon.svg"/>
+            <img src="/img/Logos/data_icon.svg"/>
           </div>
           <h1 className="long-word">Data Engineering</h1>
         </div>
@@ -24,7 +24,7 @@ function DataEngineering(){
             <div className="selection-body">
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/data_icon.svg"/>
+                  <img src="/img/Logos/data_icon.svg"/>
                 </div>
                 <div className="info">
                   <h3>Data is an Asset</h3>

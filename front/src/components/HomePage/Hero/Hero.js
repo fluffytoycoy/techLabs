@@ -10,7 +10,7 @@ function Hero(){
     <section id="hero">
       <div className="jumbo">
         <div className="img-wrapper">
-          <ScrollAnimation animateOnce animateIn="fadeInLeft"><img src="/img/labs_logo.png"/></ScrollAnimation >
+          <ScrollAnimation animateOnce animateIn="fadeInLeft"><img src="/img/Logos/labs_logo.png"/></ScrollAnimation >
         </div>
         <div className="header-col col">
             <div>
