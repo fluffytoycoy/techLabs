@@ -13,8 +13,28 @@ class Blog extends Component{
     }
   }
 
-
-
+  blogs=[{
+    src: 'https://www.placecage.com/gif/500/300',
+    title: 'Modernize Data Management',
+    description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },{
+    src: 'https://www.placecage.com/gif/500/500',
+    title: 'Modernize Data Management',
+    description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },{
+    src: 'https://www.placecage.com/gif/400/300',
+    title: 'Modernize Data Management',
+    description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },{
+    src: 'https://www.placecage.com/gif/300/300',
+    title: 'Modernize Data Management',
+    description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },{
+    src: 'https://www.placecage.com/gif/500/300',
+    title: 'Modernize Data Management',
+    description: 'Automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },
+]
 
 
 
@@ -34,7 +54,7 @@ class Blog extends Component{
         <div className="service-body">
           <section className="blog">
             <div className="blog-grid">
-              <BlogGrid elements={[{src: '/img/HeroSquares/data.jpg'},{src: 'https://www.placecage.com/gif/500/300'}, {src: 'https://www.placecage.com/200/300'}, {src: 'https://www.placecage.com/300/300'}, {src: 'https://www.placecage.com/300/200'}, {src: 'https://www.placecage.com/gif/200/300'}]}/>
+              <BlogGrid elements={this.blogs}/>
 
             </div>
             <div className="sidebar">

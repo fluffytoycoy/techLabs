@@ -12,7 +12,11 @@ class BlogGrid extends React.Component {
         const childElements = this.props.elements.map(function(element){
            return (
                 <li className="image-element-class">
-                    <img style={{width: '100%'}} src={element.src} />
+                  <div>
+                    <img  src={element.src} />
+                    <h4>{element.title}</h4>
+                    <p>{element.description}</p>
+                  </div>
                 </li>
             );
         });

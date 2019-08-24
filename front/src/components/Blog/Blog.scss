@@ -5,17 +5,69 @@
 
   .blog-grid {
     flex: auto;
-    .image-element-class{
-      width: 50%;
+    margin-top: -10px;
 
-      img{
-        padding: 0 10px 10px 10px;
+    .image-element-class {
+      width: 50%;
+      padding: 10px;
+
+      &:nth-child(odd) {
+        padding: 10px;
+      }
+
+      > div {
+        padding: 10px;
+        border-radius: 4px;
+        box-shadow: 5px 5px rgba(94, 104, 151, 0.30), -5px 5px rgba(94, 104, 151, 0.3), -7px 15px rgba(0, 98, 90, 0), -8px 20px rgba(0, 98, 90, 0), -9px 25px rgba(0, 98, 90, 0);
+
+        h4 {
+          font-size: 1.3rem;
+          font-weight: 500;
+          margin: 15px 10px;
+        }
+
+        p {
+          line-height: 1.4rem;
+          padding: 10px 20px;
+          font-size: 1.2rem;
+          border-radius: 4px;
+          font-weight: 100;
+        }
+      }
+
+      img {
+        width: 100%;
       }
     }
   }
 
   .sidebar {
     width: 300px;
-    background: red;
+    background: white;
+      display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .blog {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .blog-grid {
+      flex: auto;
+
+      .image-element-class {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .sidebar {
+      width: 300px;
+      display: block;
+    }
   }
 }
