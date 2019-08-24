@@ -5,7 +5,7 @@ function DataEngineering(){
 
     return (
       <div id="root-link">
-        <div className={`jumbo cloud`}>
+        <div className={`jumbo data`}>
           <div className="corner-icon">
             <img src="/img/Logos/data_icon.svg"/>
           </div>

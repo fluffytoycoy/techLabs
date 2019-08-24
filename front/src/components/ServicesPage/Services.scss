@@ -21,7 +21,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #ffffff8f;
+      background: rgba(255, 255, 255, 0.9);
+          filter: drop-shadow(0px 5px 4px rgba(0, 0, 0, 0.64));
       border-radius: 50%;
 
       img {
@@ -31,12 +32,24 @@
     }
 
     &.services {
-      background: url("/img/Backgrounds/service_bg.jpg");
+      background:url("/img/Backgrounds/service_bg.jpg");
     }
 
     &.cloud {
-      background: url("/img/Backgrounds/clouds_large.jpg");
+      background:url("/img/Backgrounds/clouds_large.jpg");
       background-position: bottom;
+    }
+    &.data {
+          background: linear-gradient(rgba(0, 67, 255, 0.70), rgba(255, 0, 0, .8)), url(/img/Backgrounds/data.jpg);
+      background-position: bottom;
+    }
+    &.science{
+      background:linear-gradient(#00ffe7b8, #002c6f), url("/img/Backgrounds/science.jpg");
+      background-position: bottom;
+    }
+    &.community{
+      background:url("/img/Backgrounds/stl.jpg");
+      background-position: center;
     }
 
     h1 {
@@ -46,9 +59,8 @@
       border-top-left-radius: 100%;
       width: 100%;
       text-shadow: 0 0 14px rgba(0, 0, 0, 0.27), -2px 0 1px #20232a;
-      background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.95)), to(rgba(255, 255, 255, 0.95))), url("/img/bg-tri.jpg");
-      background: -webkit-linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/bg-tri.jpg");
-      background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/bg-tri.jpg");
+      background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url("/img/Backgrounds/bg-tri.jpg");
+          box-shadow: rgba(41, 41, 41, 0.2) 0px -5px 6px;
       height: 154px;
       text-transform: uppercase;
       letter-spacing: 1rem;
@@ -260,7 +272,7 @@
               margin-right: 20px;
               margin-bottom: 0;
               width: 40%;
-
+              justify-content: flex-start;
               img {}
             }
 

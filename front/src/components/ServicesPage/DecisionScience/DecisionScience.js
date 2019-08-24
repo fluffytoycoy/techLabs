@@ -5,7 +5,7 @@ function DecisionScience(){
 
     return (
       <div id="root-link">
-        <div className={`jumbo cloud`}>
+        <div className={`jumbo science`}>
           <div className="corner-icon">
             <img src="/img/Logos/science_icon.svg"/>
           </div>
