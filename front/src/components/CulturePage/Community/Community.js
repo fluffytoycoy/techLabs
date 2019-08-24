@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import LabSlider from './LabSlider';
+import FoodSlider from './FoodSlider';
+import './Slider.scss';
 function Community(){
 
     return (
@@ -61,7 +63,7 @@ function Community(){
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/Logos/community.svg"/>
+                  <img src="/img/LabSlider/pforp.jpg"/>
                 </div>
                 <div className="info">
                   <h3>Places for People</h3>
@@ -74,7 +76,7 @@ function Community(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                    <LabSlider/>
+                    <FoodSlider/>
                 </div>
                 <div className="info">
                   <h3>St. Louis Area Foodbank</h3>
