@@ -20,8 +20,8 @@ class BlogGrid extends React.Component {
     render(props) {
         const childElements = this.props.categories.map((element)=>{
            return (
-                <li className="image-element-class">
-                    <p  onClick={()=>{this.handleClick(element)}} className={`${element === this.props.currentCategory ? 'selected' : ''}`}>
+                <li  className={`${element === this.props.currentCategory ? 'selected ' : ''}image-element-class`}>
+                    <p  onClick={()=>{this.handleClick(element)}}>
                       {element}
                     </p>
                 </li>
@@ -29,7 +29,7 @@ class BlogGrid extends React.Component {
         });
 
         return (
-            <>
+            <div>
               <h4>Categories</h4>
                 <ul>
                   <li className="image-element-class">
@@ -37,7 +37,7 @@ class BlogGrid extends React.Component {
                   </li>
                   {childElements}
                 </ul>
-            </>
+            </div>
         );
     }
 }

@@ -8,7 +8,7 @@
     margin-top: -10px;
 
     .image-element-class {
-      width: 50%;
+      width: 100%;
       padding: 10px;
 
       &:nth-child(odd) {
@@ -18,8 +18,8 @@
       > div {
         padding: 10px;
         border-radius: 4px;
-        box-shadow: 5px 5px rgba(94, 104, 151, 0.30), -5px 5px rgba(94, 104, 151, 0.3), -7px 15px rgba(0, 98, 90, 0), -8px 20px rgba(0, 98, 90, 0), -9px 25px rgba(0, 98, 90, 0);
-
+        box-shadow: 5px 5px rgba(94, 104, 151, 0.30), -5px 5px rgba(94, 104, 151, 0.3);
+            background: #fbfefe;
         h4 {
           font-size: 1.3rem;
           font-weight: 500;
@@ -36,7 +36,7 @@
       }
 
       img {
-        //width: 100%;
+        width: 100%;
         max-height: 300px;
         object-fit: cover;
       }
@@ -47,11 +47,41 @@
     width: 300px;
     background: white;
     display: none;
-    .selected{
-      background: red;
+        margin-left: 20px;
+        > div{
+          .selected{
+            background: rgb(238, 242, 253);
+            color: lightblue;
+          }
+        }
+
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .blog-grid {
+      flex: auto;
+
+      .image-element-class {
+        width: 50%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .sidebar {
+
     }
   }
 }
+
 @media only screen and (min-width: 1200px) {
   .blog {
     display: flex;
@@ -73,6 +103,26 @@
     .sidebar {
       width: 300px;
       display: block;
+      >div{
+        padding: 20px;
+        /* background: red; */
+        border-radius: 4px;
+        h4{
+          font-size: 2rem;
+          text-align: center;
+          font-weight: 100;
+          padding: 10px;
+        }
+        li{
+
+          p{
+            cursor: pointer;
+            color: blue;
+            text-transform: capitalize;
+              padding: 15px 20px;
+          }
+        }
+      }
     }
   }
 }
