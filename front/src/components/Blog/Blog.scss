@@ -46,7 +46,10 @@
   .sidebar {
     width: 300px;
     background: white;
-      display: none;
+    display: none;
+    .selected{
+      background: red;
+    }
   }
 }
 @media only screen and (min-width: 1200px) {

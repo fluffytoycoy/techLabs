@@ -10,7 +10,7 @@ const imagesLoadedOptions = { background: '.my-bg-image-el' }
 class BlogGrid extends React.Component {
     render(props) {
         const childElements = this.props.elements.filter((element)=>{
-          return element.category === this.props.currentCategory;
+          return !this.props.currentCategory || element.category.toLowerCase() === this.props.currentCategory;
         }).map(element=>{
           return (
                <li className="image-element-class">
