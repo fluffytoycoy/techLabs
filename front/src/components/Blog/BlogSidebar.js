@@ -2,9 +2,21 @@ import * as React from 'react';
 import {createUrlSlug} from '../Utils/UrlHandlers/UrlHandlers';
 
 class BlogGrid extends React.Component {
-
+    constructor(props){
+      super(props);
+      this.state={
+        menuOpen: false
+      }
+      this.toggleMenu = this.toggleMenu.bind(this)
+    }
     handleClick(category){
       this.props.history.push(`/Blog/Category/${createUrlSlug(category)}`)
+    }
+
+    toggleMenu(){
+      this.setState({
+        menuOpen: !this.state.menuOpen
+      })
     }
 
     componentDidMount(){
@@ -30,8 +42,8 @@ class BlogGrid extends React.Component {
 
         return (
             <div>
-              <h4>Categories</h4>
-                <ul>
+              <h4 onClick={this.toggleMenu}>Categories<i className="fas fa-chevron-down"></i></h4>
+                <ul className={`${this.state.menuOpen ? 'open' : ''}`}>
                   <li className="image-element-class">
                     <p  onClick={()=>{this.handleClick('')}}>all </p>
                   </li>

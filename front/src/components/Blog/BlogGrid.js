@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Link} from 'react-router-dom';
+import {createUrlSlug} from '../Utils/UrlHandlers/UrlHandlers';
 
 const masonryOptions = {
     transitionDuration: 0
@@ -16,11 +18,12 @@ class BlogGrid extends React.Component {
         const childElements = this.props.elements.filter((element)=>{
           return !this.props.currentCategory || element.category.toLowerCase() === this.props.currentCategory;
         }).map((element, i)=>{
+          console.log(this.props.currentCategory)
           return (
                <li className="image-element-class">
                  <ScrollAnimation animateOnce animateIn="fadeInUp"><div>
                    <img  src={element.src} />
-                   <h4>{element.title}</h4>
+                   <Link to={`/Blog/Article/${createUrlSlug(element.title)}`}><h4>{element.title}</h4></Link>
                    <p>{element.description}</p>
                  </div></ScrollAnimation>
                </li>

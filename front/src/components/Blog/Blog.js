@@ -21,19 +21,20 @@ class Blog extends Component{
     console.log(this.state)
   }
 
-  blogs=[{
+  blogs=[
+    {
     src: 'https://www.placecage.com/gif/500/300',
     title: 'Modernize Data Management',
     category: 'data engineering',
     description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },{
     src: 'https://www.placecage.com/gif/500/500',
-    title: 'Modernize Data Management',
+    title: 'Agile Data Management',
     category: 'agile',
     description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },{
     src: 'https://www.placecage.com/gif/400/300',
-    title: 'Modernize Data Management',
+    title: 'Agile Testing',
     category: 'agile',
     description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },{
@@ -44,24 +45,25 @@ class Blog extends Component{
   },
   {
     src: 'https://www.placecage.com/gif/500/300',
-    title: 'Modernize Data Management',
-    category: 'data engineering',
+    title: 'Cage it up',
+    category: 'culture',
     description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },{
     src: 'https://www.placecage.com/gif/500/300',
-    title: 'Resource',
+    title: 'New Resources',
     category: 'resource',
     description: 'That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },
   {
     src: 'https://www.placecage.com/gif/400/300',
-    title: 'Modernize Data Management',
+    title: 'Life Like Cage',
     category: 'culture',
     description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },
 ]
 
   static getDerivedStateFromProps(nextProps, prevState) {
+    console.log(parseUrl(nextProps.match.params.category))
     if(prevState.currentCategory !== nextProps.match.params.category){
       return ({currentCategory: parseUrl(nextProps.match.params.category)});
     }
