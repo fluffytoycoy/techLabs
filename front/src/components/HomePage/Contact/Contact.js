@@ -85,7 +85,7 @@ class Contact extends Component{
         <Field name="name" placeholder="Name" />
         <Field name="email" placeholder="Your-Email@email.com"/>
         <Field textarea height='300px'name="message" placeholder="Message"/>
-        <Button type="submit" variant={'outlined'} isabled={this.state.isSubmitting} >Submit</Button>
+        <Button type="submit" variant={'outlined'} disabled={this.state.isSubmitting} >Submit</Button>
       </Form>
     );
   }
@@ -94,7 +94,12 @@ class Contact extends Component{
     return (
       <>
         <h1>Contact Us</h1>
-        <FormContainer validationSchema={schema} onSubmit={this.onSubmit} render={this.renderForm}/>
+        <FormContainer
+        validationSchema={schema}
+        onSubmit={this.onSubmit}
+        render={this.renderForm}
+        initialValues={{name: '', email: '', message: ''}}
+        />
         <div className={`error ${this.state.submitFailure ? 'show' : ''}`}><p >Failure Submiting Contact Info</p><span>x</span></div>
       </>
     )

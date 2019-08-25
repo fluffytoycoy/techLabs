@@ -1,7 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
-import Button from '@material-ui/core/Button';
 
 class Services extends Component{
 
@@ -28,7 +25,7 @@ class Services extends Component{
             <div className="selection-body work">
               <div>
                 <div className="icon">
-                  <img src="/img/Logos/heads.png"/>
+                  <img alt="people clipart" src="/img/Logos/heads.png"/>
                 </div>
                 <div className="info">
                   <h3>Human-Centered Design Agile</h3>
@@ -44,7 +41,7 @@ class Services extends Component{
             <div className="selection-body">
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/HeroSquares/field.jpeg"/>
+                  <img alt="empty field" src="/img/HeroSquares/field.jpeg"/>
                 </div>
                 <div className="info">
                   <h3>Field Reporting Tools</h3>
@@ -55,7 +52,7 @@ class Services extends Component{
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/HeroSquares/mono.jpg" />
+                  <img alt="monolithic stone" src="/img/HeroSquares/mono.jpg" />
                 </div>
                 <div className="info">
                   <h3>Breaking Monoliths</h3>

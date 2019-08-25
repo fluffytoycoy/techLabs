@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import CultureCarousel from './CultureCarousel/CultureCarousel'
-import Button from '@material-ui/core/Button';
 
 class Culture extends Component{
   constructor(props){

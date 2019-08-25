@@ -23,7 +23,7 @@ const LabSlider = () => {
       <div className="slide-container">
         <Zoom {...zoomOutProperties}>
           {
-            images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} />)
+            images.map((each, index) => <img alt='kids learning' key={index} style={{width: "100%"}} src={each} />)
           }
         </Zoom>
       </div>

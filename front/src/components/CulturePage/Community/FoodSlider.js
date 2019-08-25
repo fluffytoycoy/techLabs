@@ -21,7 +21,7 @@ const FoodSlider = () => {
       <div className="slide-container">
         <Zoom {...zoomOutProperties}>
           {
-            images.map((each, index) => <img key={index} style={{width: "100%"}} src={each} />)
+            images.map((each, index) => <img key={index} alt='foodbank 'style={{width: "100%"}} src={each} />)
           }
         </Zoom>
       </div>

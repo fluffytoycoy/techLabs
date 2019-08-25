@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import LabSlider from './LabSlider';
 import FoodSlider from './FoodSlider';
 import './Slider.scss';
@@ -10,7 +9,7 @@ function Community(){
       <div id="root-link">
         <div className={`jumbo community`}>
           <div className="corner-icon">
-            <img src="/img/Logos/community.svg"/>
+            <img alt="people clipart" src="/img/Logos/community.svg"/>
           </div>
           <h1 className="long-word">Community</h1>
         </div>
@@ -51,7 +50,7 @@ function Community(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/Logos/life_academy.png"/>
+                  <img alt="life academy's logo" src="/img/Logos/life_academy.png"/>
                 </div>
                 <div className="info">
                   <h3>Lift for Life Academy</h3>
@@ -64,7 +63,7 @@ function Community(){
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/LabSlider/pforp.jpg"/>
+                  <img alt="surrounding a table places for people" src="/img/LabSlider/pforp.jpg"/>
                 </div>
                 <div className="info">
                   <h3>Places for People</h3>

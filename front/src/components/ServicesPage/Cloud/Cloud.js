@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
 function Cloud(){
 
@@ -7,7 +6,7 @@ function Cloud(){
       <div id="root-link">
         <div className={`jumbo cloud`}>
           <div className="corner-icon">
-            <img src="/img/Logos/cloud_icon.svg"/>
+            <img alt="clip art cloud" src="/img/Logos/cloud_icon.svg"/>
           </div>
           <h1>Cloud</h1>
         </div>
@@ -24,7 +23,7 @@ function Cloud(){
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <img src="/img/Logos/native_cloud.svg"/>
+                  <img alt="cloud clipart" src="/img/Logos/native_cloud.svg"/>
                 </div>
                 <div className="info">
                   <h3>Cloud Native Refactoring</h3>
@@ -43,7 +42,7 @@ function Cloud(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/Logos/data_icon.svg"/>
+                  <img alt="cloud clipart" src="/img/Logos/data_icon.svg"/>
                 </div>
                 <div className="info">
                   <h3>Cloud-Based Development</h3>
@@ -61,7 +60,7 @@ function Cloud(){
               </div>
               <div>
                 <div className="icon">
-                  <img src="/img/Logos/cloud_icon.svg"/>
+                  <img alt="cloud clipart" src="/img/Logos/cloud_icon.svg"/>
                 </div>
                 <div className="info">
                   <h3>Hybrid Cloud Solutions</h3>
@@ -81,7 +80,7 @@ function Cloud(){
               </div>
               <div className="reverse">
                 <div className="icon">
-                  <img src="/img/Logos/research_clound.svg"/>
+                  <img alt="cloud clipart" src="/img/Logos/research_clound.svg"/>
                 </div>
                 <div className="info">
                   <h3>Research and Development Strategy</h3>

@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
-import Button from '@material-ui/core/Button';
 import BlogGrid from './BlogGrid';
 import BlogSidebar from './BlogSidebar';
+import Article from './Article';
 import {parseUrl} from '../Utils/UrlHandlers/UrlHandlers';
 import './Blog.scss';
 
@@ -13,12 +11,10 @@ class Blog extends Component{
     this.state={
       categories: ['data engineering','agile','news','resource','culture','community'],
       currentCategory: parseUrl(this.props.match.params.category),
-      selectedArticle: parseUrl(this.props.match.params.blogId)
     }
   }
 
   componentDidMount() {
-    console.log(this.state)
   }
 
   blogs=[
@@ -63,7 +59,6 @@ class Blog extends Component{
 ]
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(parseUrl(nextProps.match.params.category))
     if(prevState.currentCategory !== nextProps.match.params.category){
       return ({currentCategory: parseUrl(nextProps.match.params.category)});
     }
@@ -79,7 +74,7 @@ class Blog extends Component{
         <div className="service-body">
           <section className="blog">
             <div className="blog-grid">
-              {this.state.selectedArticle ? <>selected</> :
+              {this.props.match.params.blogId ? <Article blogId={this.props.match.params.blogId} blogList={this.blogs}/> :
                 <BlogGrid currentCategory={this.state.currentCategory} elements={this.blogs}/>
               }
             </div>

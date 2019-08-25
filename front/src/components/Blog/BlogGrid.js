@@ -18,11 +18,10 @@ class BlogGrid extends React.Component {
         const childElements = this.props.elements.filter((element)=>{
           return !this.props.currentCategory || element.category.toLowerCase() === this.props.currentCategory;
         }).map((element, i)=>{
-          console.log(this.props.currentCategory)
           return (
-               <li className="image-element-class">
+               <li key={i} className="image-element-class">
                  <ScrollAnimation animateOnce animateIn="fadeInUp"><div>
-                   <img  src={element.src} />
+                   <img alt={element.title} src={element.src} />
                    <Link to={`/Blog/Article/${createUrlSlug(element.title)}`}><h4>{element.title}</h4></Link>
                    <p>{element.description}</p>
                  </div></ScrollAnimation>

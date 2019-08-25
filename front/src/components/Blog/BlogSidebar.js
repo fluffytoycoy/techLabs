@@ -30,9 +30,9 @@ class BlogGrid extends React.Component {
     }
 
     render(props) {
-        const childElements = this.props.categories.map((element)=>{
+        const childElements = this.props.categories.map((element, i)=>{
            return (
-                <li  className={`${element === this.props.currentCategory ? 'selected ' : ''}image-element-class`}>
+                <li  key={i} className={`${element === this.props.currentCategory ? 'selected ' : ''}image-element-class`}>
                     <p  onClick={()=>{this.handleClick(element)}}>
                       {element}
                     </p>

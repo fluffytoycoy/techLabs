@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
 
 function DecisionScience(){
 
@@ -7,7 +7,7 @@ function DecisionScience(){
       <div id="root-link">
         <div className={`jumbo science`}>
           <div className="corner-icon">
-            <img src="/img/Logos/science_icon.svg"/>
+            <img alt="blue sparky" src="/img/Logos/science_icon.svg"/>
           </div>
           <h1 className="long-word">Decision Science</h1>
         </div>

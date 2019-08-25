@@ -9,7 +9,7 @@ function Info(){
         <div>
           <ScrollAnimation animateOnce animateIn="fadeInLeft">
             <div className="icon">
-              <i class="fas fa-laptop-code"></i>
+              <i className="fas fa-laptop-code"></i>
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateOnce  animateIn="fadeInRight">
@@ -22,7 +22,7 @@ function Info(){
         <div>
           <ScrollAnimation animateOnce animateIn="fadeInLeft">
             <div className="icon">
-              <i class="fas fa-server">  </i>
+              <i className="fas fa-server">  </i>
             </div>
           </ScrollAnimation>
           <ScrollAnimation animateOnce animateIn="fadeInRight">
@@ -35,7 +35,7 @@ function Info(){
         <div>
         <ScrollAnimation animateOnce animateIn="fadeInLeft">
           <div className="icon">
-            <i class="far fa-lightbulb"></i>
+            <i className="far fa-lightbulb"></i>
           </div>
         </ScrollAnimation>
           <ScrollAnimation animateOnce animateIn="fadeInRight">

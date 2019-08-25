@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Button from '@material-ui/core/Button';
 import './Services.scss';
 
 class Services extends Component{
@@ -42,7 +41,7 @@ class Services extends Component{
             <div className="selection-body">
               <div>
                 <div className="icon">
-                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/science_icon.svg"/></ScrollAnimation>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img alt="science cloud"src="/img/Logos/science_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="/Services/Decision-Science"><h3>Decision Science</h3></Link>
@@ -54,7 +53,7 @@ class Services extends Component{
               </div>
               <div>
                 <div className="icon">
-                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/data_icon.svg"/></ScrollAnimation>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img alt="data cloud" src="/img/Logos/data_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="/Services/Data-Engineering"><h3>Data Engineering</h3></Link>
@@ -67,7 +66,7 @@ class Services extends Component{
               </div>
               <div>
                 <div className="icon">
-                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img src="/img/Logos/cloud_icon.svg"/></ScrollAnimation>
+                  <ScrollAnimation  animateOnce animateIn="fadeIn"><img alt="cloud clipart"src="/img/Logos/cloud_icon.svg"/></ScrollAnimation>
                 </div>
                 <div className="info">
                   <Link to="Services/Cloud"><h3>Cloud</h3></Link>
