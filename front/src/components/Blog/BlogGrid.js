@@ -8,17 +8,19 @@ const masonryOptions = {
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class BlogGrid extends React.Component {
-    render() {
-        const childElements = this.props.elements.map(function(element){
-           return (
-                <li className="image-element-class">
-                  <div>
-                    <img  src={element.src} />
-                    <h4>{element.title}</h4>
-                    <p>{element.description}</p>
-                  </div>
-                </li>
-            );
+    render(props) {
+        const childElements = this.props.elements.filter((element)=>{
+          return element.category === this.props.currentCategory;
+        }).map(element=>{
+          return (
+               <li className="image-element-class">
+                 <div>
+                   <img  src={element.src} />
+                   <h4>{element.title}</h4>
+                   <p>{element.description}</p>
+                 </div>
+               </li>
+           );
         });
 
         return (

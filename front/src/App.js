@@ -41,6 +41,7 @@ class App extends Component {
             <Route exact path="/Culture/Community" render={props => <Community {...props} />}/>
 
             <Route exact path="/Blog/" render={props => <Blog {...props}/>}/>
+            <Route exact path="/Blog/Category/:category" render={props => <Blog {...props}/>}/>
             <Route exact path="/Blog/:blogId" render={props => <Blog {...props}/>}/>
             <Route component={NotFound}/>
 				       </Switch>
