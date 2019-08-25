@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Masonry from 'react-masonry-component';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const masonryOptions = {
     transitionDuration: 0
@@ -8,17 +9,20 @@ const masonryOptions = {
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 class BlogGrid extends React.Component {
+  shouldComponentUpdate(){
+    return true;
+  }
     render(props) {
         const childElements = this.props.elements.filter((element)=>{
           return !this.props.currentCategory || element.category.toLowerCase() === this.props.currentCategory;
-        }).map(element=>{
+        }).map((element, i)=>{
           return (
                <li className="image-element-class">
-                 <div>
+                 <ScrollAnimation animateOnce animateIn="fadeInUp"><div>
                    <img  src={element.src} />
                    <h4>{element.title}</h4>
                    <p>{element.description}</p>
-                 </div>
+                 </div></ScrollAnimation>
                </li>
            );
         });
@@ -33,6 +37,7 @@ class BlogGrid extends React.Component {
                 imagesLoadedOptions={imagesLoadedOptions} // default {}
             >
               {childElements}
+
             </Masonry>
         );
     }

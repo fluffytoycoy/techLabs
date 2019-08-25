@@ -41,6 +41,12 @@ class Blog extends Component{
     title: 'News',
     category: 'news',
     description: 'St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
+  },
+  {
+    src: 'https://www.placecage.com/gif/500/300',
+    title: 'Modernize Data Management',
+    category: 'data engineering',
+    description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
   },{
     src: 'https://www.placecage.com/gif/500/300',
     title: 'Resource',
@@ -59,6 +65,7 @@ class Blog extends Component{
     if(prevState.currentCategory !== nextProps.match.params.category){
       return ({currentCategory: parseUrl(nextProps.match.params.category)});
     }
+    return null;
   }
 
   render(){
@@ -75,7 +82,7 @@ class Blog extends Component{
               }
             </div>
             <div className="sidebar">
-              <BlogSidebar {...this.props}currentCategory={this.state.currentCategory} categories={this.state.categories}/>
+              <BlogSidebar {...this.props} currentCategory={this.state.currentCategory} categories={this.state.categories}/>
             </div>
           </section>
         </div>
