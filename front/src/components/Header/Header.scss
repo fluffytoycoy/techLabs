@@ -8,6 +8,7 @@
   color: white;
   border-bottom: green solid 2px;
   z-index: 4;
+  transition: height .5s ease-in-out;
   .menu-btn {
     position: absolute;
     right: 0;
@@ -179,7 +180,7 @@
               overflow: hidden;
               width: 300px;
               top: 60px;
-
+                position: fixed;
               li {
                 border-top: green solid 1px;
               }
