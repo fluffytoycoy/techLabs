@@ -25,38 +25,41 @@
         width: 100%;
         padding: 10px;
         margin: 0 auto;
-        >div{
-          background: rgba(255, 255, 255, 0.5);
-          padding-bottom: 15px;
-          border-radius: 4px;
-          overflow: hidden;
-          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-          > div {
-            height: 300px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 1.7rem;
-            font-weight: 100;
-            text-transform: uppercase;
-            cursor: pointer;
-            transition: all 0.5s ease-in-out;
+        a{
+          >div{
+            background: rgba(255, 255, 255, 0.5);
+            padding-bottom: 15px;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+            > div {
+              height: 300px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: white;
+              font-size: 1.7rem;
+              font-weight: 100;
+              text-transform: uppercase;
+              cursor: pointer;
+              transition: all 0.5s ease-in-out;
 
-            &.clouds {
-              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/img/Blog/blog1.jpg');
-              background-repeat: no-repeat;
-              background-size: cover;
+              &.clouds {
+                background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/img/Blog/blog1.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
+              &.data {
+                background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/img/HeroSquares/data.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+
             }
-
-            &.data {
-              background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("/img/HeroSquares/data.jpg");
-              background-repeat: no-repeat;
-              background-size: cover;
-            }
-
           }
         }
+
 
         h3{
           font-size: 1.2rem;

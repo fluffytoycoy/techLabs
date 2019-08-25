@@ -21,12 +21,15 @@ class BlogGrid extends React.Component {
 
     componentDidMount(){
       //If category url isn't a category push back to all blogs
-      const catUrl = this.props.categories.filter(cat=>{
-        return cat === this.props.currentCategory
-      })[0]
-      if(!catUrl){
-        this.props.history.push('/Blog')
+      if(this.props.currentCategory){
+        const catUrl = this.props.categories.filter(cat=>{
+          return cat === this.props.currentCategory
+        })[0]
+        if(!catUrl){
+          this.props.history.push('/Blog')
+        }
       }
+
     }
 
     render(props) {
