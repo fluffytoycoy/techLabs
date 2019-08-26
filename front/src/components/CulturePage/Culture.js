@@ -153,7 +153,7 @@ class Culture extends Component{
                   </li>
                   <li>
                     <ScrollAnimation offset={50} animateOnce animateIn="fadeInLeft"><h3>Work/Life Balance</h3></ScrollAnimation>
-                    <ScrollAnimation  animateOnce animateIn="fadeIn">
+                    <ScrollAnimation  offset={50} animateOnce animateIn="fadeIn">
                     <p>
                         We understand that our team members work so that they can live and not the other way around.
                         We are committed to our team members having an appropriate balance between work and personal commitments.
