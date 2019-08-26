@@ -37,13 +37,10 @@ class Contact extends Component{
   }
 
   scrollTo(){
-    console.log(this)
     if(this.props.location.hash){
       setTimeout(() => {
       const id = this.props.location.hash.replace('#','');
-      console.log(id)
       const element = document.getElementById(id);
-      console.log(element)
       if (element){
         element.scrollIntoView({behavior: "smooth", scroll: true});
       }
@@ -52,7 +49,6 @@ class Contact extends Component{
   }
 
   onSubmit = (values) => {
-    console.log(values)
       var self = this;
       this.setState({
         isSubmitting: true
@@ -64,8 +60,6 @@ class Contact extends Component{
               submitFailure: false,
               isSubmitting: false,
             })
-
-            console.log(response);
           })
           .catch(function (error) {
             self.setState({

@@ -41,7 +41,7 @@ class CultureCarousel extends Component {
     render() {
       const slides = this.slides.map(style=>{
         return (
-          <div style={{...style, ...this.slide}}className="slide">
+          <div key={style.background}style={{...style, ...this.slide}}className="slide">
           </div>)
       })
         return (
