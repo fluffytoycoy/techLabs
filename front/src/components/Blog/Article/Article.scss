@@ -1,0 +1,21 @@
+#article{
+  max-width: 1000px;
+  h4{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  p{
+    margin-bottom: 20px;
+  }
+  img{
+    width: 100%;
+    margin-bottom: 20px;
+    max-height: 500px;
+  }
+  .article-body{
+    line-height: 2.4rem;
+    font-size: 1.2rem;
+    text-indent: 2rem;
+  }
+}
