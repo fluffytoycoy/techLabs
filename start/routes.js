@@ -24,6 +24,5 @@ Route.group(() => {
 
 
 Route.any('*', ({ response }) => {
-  console.log(response)
   response.download(Helpers.publicPath('react/app.html'));
 });
