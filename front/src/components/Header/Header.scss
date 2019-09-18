@@ -4,11 +4,12 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background: #20232a;
+  background: green;
   color: white;
-  border-bottom: green solid 2px;
+  border-bottom: white solid 2px;
   z-index: 4;
-  transition: height .5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+
   .menu-btn {
     position: absolute;
     right: 0;
@@ -19,11 +20,16 @@
 
   > div {
     align-items: center;
-    margin: 0 40px;
+    margin: 0 10px;
 
     .logo {
       margin-right: auto;
       display: flex;
+      font-family: 'Oswald', sans-serif;
+
+      b {
+        font-weight: 600;
+      }
 
       h3 {
         font-size: 2rem;
@@ -45,21 +51,15 @@
       }
 
       .navigation {
-        > li {
-          &:first-child {
-            border-top: green solid 2px;
-          }
-        }
-
         li {
           display: flex;
           flex-direction: column;
           align-items: center;
           min-height: 40px;
           justify-content: center;
-          font-weight: 200;
-          border-top: green solid 1px;
-          letter-spacing: 2px;
+          font-weight: 700;
+          border-top: 1px solid green;
+          letter-spacing: 1px;
           cursor: pointer;
 
           .dropdown-btn {
@@ -83,7 +83,7 @@
             i {
               padding: 10px;
               cursor: pointer;
-              font-size: .5rem;
+              font-size: 0.5rem;
 
               &:hover {
                 text-shadow: white 0 0;
@@ -116,13 +116,16 @@
   #header {
     > div {
       display: flex;
+      margin: 0 0 0 20px;
 
       .logo {
         h3 {}
       }
-      .menu-btn{
+
+      .menu-btn {
         display: none;
       }
+
       .nav-wrapper {
         opacity: 1;
         max-height: 500px;
@@ -135,6 +138,7 @@
           > li {
             position: relative;
             padding: 10px 0;
+
             &:hover {
               ul {
                 height: 120px;
@@ -180,9 +184,15 @@
               overflow: hidden;
               width: 300px;
               top: 60px;
-                position: fixed;
-              li {
-                border-top: green solid 1px;
+              position: fixed;
+              border-top: solid white 2px;
+
+              a {
+                &:not(:first-child) {
+                  li {
+                    border-top: green solid 1px;
+                  }
+                }
               }
             }
           }
