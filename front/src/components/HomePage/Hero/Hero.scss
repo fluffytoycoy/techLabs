@@ -91,6 +91,11 @@
   #hero {
 
     .jumbo {
+      .img-wrapper {
+        img{
+              display: none;
+        }
+      }
       .col {
         .title {
           h1 {

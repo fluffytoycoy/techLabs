@@ -1,17 +1,30 @@
 #home {
-
-  .grid-wrapper {
-    margin: 10px;
-
+  .info-grid {
+    background: white;
+    overflow: hidden;
+    padding: 10px 0;
     .grid {
       display: flex;
-      width: 100%;
       flex-wrap: wrap;
+      margin: 0 10px;
 
       .animated {
         width: 100%;
         padding: 10px;
-        a{
+
+        &:hover {
+          z-index: 2;
+
+          a {
+            > div {
+              &:hover {
+                transform: scale(1.05);
+                box-shadow: 0 1px 10px 0 rgb(0, 0, 0), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+              }
+            }
+          }
+        }
+        a {
           > div {
             height: 300px;
             display: flex;
@@ -20,7 +33,7 @@
             color: white;
             font-size: 1.7rem;
             font-weight: 100;
-            text-shadow:  0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
+            text-shadow: 0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
             text-transform: uppercase;
             cursor: pointer;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
@@ -29,7 +42,6 @@
             &:hover {
               transform: scale(1.05);
               box-shadow: 0 1px 10px 0 rgb(0, 0, 0), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
-
             }
 
             &.clouds {
@@ -57,16 +69,12 @@
             }
           }
         }
-
       }
     }
   }
-
-
 }
 @media only screen and (min-width: 768px) {
   #home {
-
     .jumbo {}
 
     .grid {
@@ -78,7 +86,7 @@
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1201px) {
   #home {
     .jumbo {}
 
