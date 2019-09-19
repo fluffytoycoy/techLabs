@@ -4,6 +4,7 @@ import Info from './Info/Info';
 import LinkGrid from './LinkGrid/LinkGrid';
 import BlogLinks from './BlogLinks/BlogLinks';
 import Contact from './Contact/Contact';
+import LearnMoreBar from './LearnMoreBar/LearnMoreBar';
 import './Home.scss';
 
 function Home(props){
@@ -11,6 +12,7 @@ function Home(props){
       <div id="home">
         <Hero/>
         <LinkGrid/>
+        <LearnMoreBar/>
         <Info/>
         <BlogLinks/>
         <Contact{...props}/>
