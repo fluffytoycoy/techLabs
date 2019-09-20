@@ -1,75 +1,57 @@
 #info {
   display: flex;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(/img/Backgrounds/hex-pattern.png);
   justify-content: center;
   overflow: hidden;
-  padding: 60px;
-  background-attachment: fixed;
-  .info-wrapper{
+  padding: 40px 0;
+  .info-wrapper {
     width: 100%;
     margin: 0 20px;
-    h1{
-      text-align: center;
-      font-size: 5rem;
-      margin-bottom: 60px;
-    }
-    > div{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 20px;
-      .animated{
-        width: 50%;
-        min-height: 100px;
-        display: flex;
-        justify-content: center;
-        >div{
-          img{
-            width: 100%;
-          }
-        }
-      }
+    display: grid;
+    grid-template: 'header header item1' 'item2 item3 item4';
+    grid-gap: 40px;
 
-      h2{
-        font-size: 2rem;
-        text-transform: capitalize;
-        font-weight: 500;
-        margin-bottom: 10px;
-            text-shadow:  0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
-      }
-      p{
-        font-size: 1.2rem;
-        font-weight: 100;
-      }
+    .grid-header {
+      grid-area: header;
+    }
+    img{
+      width: 100%;
+    }
+    h2 {
+      font-size: 2rem;
+      text-transform: capitalize;
+      font-weight: 500;
+      margin-bottom: 10px;
+      text-shadow: 0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 100;
     }
   }
 }
-
 @media only screen and (min-width: 768px) {
   #home {
     #info {
-      .info-wrapper{
-        > div{
+      .info-wrapper {
+        > div {
           flex-direction: row;
           text-align: left;
           justify-content: flex-start;
 
-          h2{
+          h2 {
             font-size: 2rem;
             text-transform: capitalize;
             font-weight: 500;
             margin-bottom: 10px;
           }
-          p{
+
+          p {
             font-size: 1.2rem;
             font-weight: 100;
           }
         }
       }
     }
-
-}
+  }
 }

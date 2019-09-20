@@ -1,40 +1,46 @@
-.learn-more{
+.learn-more {
   background: #20232a;
   display: flex;
   justify-content: center;
-  padding: 50px 0 0 0;
-  >div{
+  padding: 50px 0 0;
+
+  > div {
     display: flex;
     max-width: 1400px;
     margin: 0 20px;
-    .text{
+
+    .text {
       align-self: center;
       padding-bottom: 50px;
-      h3{
+
+      h3 {
         font-size: 2rem;
         text-transform: uppercase;
         color: green;
         font-weight: 700;
         margin-bottom: 40px;
       }
-      p{
+
+      p {
         color: white;
         align-self: center;
         font-size: 1.5rem;
         font-weight: 100;
         line-height: 2rem;
       }
-      a{
-        display: flex;
-    justify-content: flex-end;
-    button.MuiButton-outlined{
-      border: solid green 1px !important;
-      background: none !important;
-    }
-      }
 
+      a {
+        display: flex;
+        justify-content: flex-end;
+
+        button.MuiButton-outlined {
+          border: solid green 1px !important;
+          background: none !important;
+        }
+      }
     }
-    img{
+
+    img {
       max-height: 340px;
     }
   }
