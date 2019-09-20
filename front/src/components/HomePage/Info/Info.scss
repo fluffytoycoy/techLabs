@@ -3,52 +3,178 @@
   justify-content: center;
   overflow: hidden;
   padding: 40px 0;
+  background: url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
+  box-shadow: black inset 0px 10px 8px, black inset 0px 20px 20px;
   .info-wrapper {
     width: 100%;
     margin: 0 20px;
-    display: grid;
-    grid-template: 'header header item1' 'item2 item3 item4';
-    grid-gap: 40px;
+    display: flex;
+    flex-wrap: wrap;
 
-    .grid-header {
-      grid-area: header;
-    }
-    img{
-      width: 100%;
-    }
-    h2 {
-      font-size: 2rem;
-      text-transform: capitalize;
-      font-weight: 500;
-      margin-bottom: 10px;
-      text-shadow: 0 1px 3px rgb(0, 0, 0), 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px rgb(0, 0, 0);
-    }
+    > div {
+      max-height: 400px;
+      >div{
+        box-shadow: black 0 0 5px;
+        display: flex;
+      }
+      &.item {
+        width: 100%;
 
-    p {
-      font-size: 1.2rem;
-      font-weight: 100;
+        &:nth-child(2) {
+          padding: 10px 0;
+        }
+
+        &:nth-child(3) {
+          padding: 10px 0;
+        }
+
+        &:nth-child(4) {
+          padding: 10px 0;
+        }
+
+        &:nth-child(5) {
+          padding: 10px 0 0 0;
+        }
+
+        > div {
+
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+
+          &:before {
+            content: '';
+            display: block;
+            padding-top: 100%;
+          }
+        }
+      }
+
+      &.grid-header {
+        width: 100%;
+        padding-bottom: 10px;
+
+        > div {
+          background: linear-gradient(rgba(32, 35, 42, .95), rgba(32, 35, 42, .95));
+          height: 100%;
+          width: 100%;
+          border-radius: 4px;
+          justify-content: center;
+          align-items: center;
+          h3{
+            font-size: 7rem;
+            text-shadow: #20232a 0px 0px 5px, #20232a 0px 0px 2px, #20232a 0px 0px 5px, #20232a 0px 0px 1px;
+            font-weight: 700;
+            color: white;
+          }
+          &:before {
+            content: '';
+            display: block;
+            padding-top: 50%;
+          }
+        }
+      }
     }
   }
 }
-@media only screen and (min-width: 768px) {
+//ipad
+@media only screen and (min-width: 769px) {
   #home {
     #info {
-      .info-wrapper {
-        > div {
-          flex-direction: row;
-          text-align: left;
-          justify-content: flex-start;
+      padding: 40px 0;
 
-          h2 {
-            font-size: 2rem;
-            text-transform: capitalize;
-            font-weight: 500;
-            margin-bottom: 10px;
+      .info-wrapper {
+        margin: 0 20px;
+        > div {
+          max-height: 500px;
+
+          &.item {
+            width: 50%;
+
+            &:nth-child(2) {
+              padding: 10px 10px 10px 0;
+            }
+
+            &:nth-child(3) {
+              padding: 10px 0 10px 10px;
+            }
+
+            &:nth-child(4) {
+              padding: 10px 10px 0 0;
+            }
+
+            &:nth-child(5) {
+              padding: 10px 0 0 10px;
+            }
+
+            > div {
+
+              &:before {
+                padding-top: 100%;
+              }
+            }
           }
 
-          p {
-            font-size: 1.2rem;
-            font-weight: 100;
+          &.grid-header {
+            width: 100%;
+            > div {
+              &:before {
+                padding-top: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//ipad pro and up
+@media only screen and (min-width: 1025px) {
+  #home {
+    #info {
+      padding: 40px 0;
+
+      .info-wrapper {
+        margin: 0 20px;
+        > div {
+          max-height: 400px;
+
+          &.item {
+            width: 33.33%;
+
+            &:nth-child(2) {
+              padding: 0 0 10px 10px;
+            }
+
+            &:nth-child(3) {
+              padding: 10px 10px 0 0;
+            }
+
+            &:nth-child(4) {
+              padding: 10px 10px 0;
+            }
+
+            &:nth-child(5) {
+              padding: 10px 0 0 10px;
+            }
+
+            > div {
+              &:before {
+                padding-top: 100%;
+              }
+            }
+          }
+
+          &.grid-header {
+            width: 66.66%;
+            padding: 0 10px 10px 0;
+
+            > div {
+
+              &:before {
+                padding-top: 50%;
+              }
+            }
           }
         }
       }

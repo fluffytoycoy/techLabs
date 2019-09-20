@@ -22,6 +22,8 @@
         font-weight: 700;
         margin-bottom: 20px;
         white-space: nowrap;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 4px;
       }
 
       p {
@@ -43,7 +45,7 @@
     }
     .img-wrapper{
       max-width: 240px;
-      align-items: flex-end;
+      align-self: flex-end;
       width: 100%;
       display: flex;
       img {
@@ -71,6 +73,7 @@
             font-weight: 700;
             margin-bottom: 40px;
             white-space: nowrap;
+            letter-spacing: 6px;
           }
 
           p {
@@ -86,7 +89,6 @@
         }
         .img-wrapper{
           max-width: 340px;
-          align-items: flex-end;
           width: 100%;
           display: flex;
           img {

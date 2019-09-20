@@ -3,6 +3,7 @@ import './Info.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 function Info(){
+
   function one(){
     return          <>
     <div>
@@ -19,45 +20,39 @@ function Info(){
               </div>
               </>
   }
+
+  const style1={
+    background: 'url("/img/HeroSquares/field.jpeg")',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover'
+  }
   return(
     <section id="info">
       <div className="info-wrapper">
-        <div className="grid-header">
+      <ScrollAnimation className="grid-header" animateOnce animateIn="fadeInLeft">
+        <div>
+          <h3 title="The techHub">The techHub</h3>
         </div>
-        <ScrollAnimation className="item1" animateOnce animateIn="fadeInLeft">
-          <div>
-            <div className="circle">
-            </div>
-            <div className="img-wrapper">
-              <img src="https://www.placecage.com/g/500/500"/>
-            </div>
+
+      </ScrollAnimation>
+        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+          <div style={style1}>
+
           </div>
         </ScrollAnimation>
-        <ScrollAnimation className="item2" animateOnce animateIn="fadeInLeft">
-          <div>
-            <div className="circle">
-            </div>
-            <div className="img-wrapper">
-              <img src="https://www.placecage.com/g/500/500"/>
-            </div>
+        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+          <div style={style1}>
+
           </div>
         </ScrollAnimation>
-        <ScrollAnimation className="item3" animateOnce animateIn="fadeInLeft">
-          <div>
-            <div className="circle">
-            </div>
-            <div className="img-wrapper">
-              <img src="https://www.placecage.com/g/500/500"/>
-            </div>
+        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+          <div style={style1}>
+
           </div>
         </ScrollAnimation>
-        <ScrollAnimation className="item3" animateOnce animateIn="fadeInLeft">
-          <div>
-            <div className="circle">
-            </div>
-            <div className="img-wrapper">
-              <img src="https://www.placecage.com/g/500/500"/>
-            </div>
+        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+          <div style={style1}>
+
           </div>
         </ScrollAnimation>
       </div>
