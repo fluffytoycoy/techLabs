@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 40px 0;
   background: url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
-  box-shadow: black inset 0px 10px 8px, black inset 0px 20px 20px;
+  box-shadow: black inset 0px 10px 8px, black inset 0px 20px 20px, black inset 0px -10px 8px, black inset 0px -20px 20px;
   .info-wrapper {
     width: 100%;
     margin: 0 20px;
@@ -16,6 +16,7 @@
       >div{
         box-shadow: black 0 0 5px;
         display: flex;
+        overflow: hidden;
       }
       &.item {
         width: 100%;
@@ -41,6 +42,42 @@
           height: 100%;
           width: 100%;
           border-radius: 4px;
+          align-items: flex-end;
+          color: white;
+          .hub-info{
+            background: rgba(0, 0, 0, 0.5);
+            height: 16%;
+            transition: all .5s ease-in-out;
+            &:hover{
+              height: 100%;
+              background: rgba(0, 0, 0, 0.6);
+              img{
+                transform: rotate(180deg);
+              }
+            }
+            .title{
+              display: flex;
+              align-items: center;
+              img{
+                position: absolute;
+                max-height: 40px;
+                left: 20px;
+                filter: drop-shadow(0px 0px 2px white);
+                transition: all .5s ease-in-out;
+              }
+              h4{
+                font-size: 2rem;
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                background: rgba(0, 0, 0, 0.5);
+              }
+            }
+
+            .body{
+              padding: 10px 20px;
+            }
+          }
 
           &:before {
             content: '';
@@ -55,12 +92,13 @@
         padding-bottom: 10px;
 
         > div {
-          background: linear-gradient(rgba(32, 35, 42, .95), rgba(32, 35, 42, .95));
+            background: radial-gradient(circle, white, #0c0c0c, rgba(32, 35, 42, 0.98) 40%,  rgb(32, 35, 42));
           height: 100%;
           width: 100%;
           border-radius: 4px;
           justify-content: center;
           align-items: center;
+
           h3{
             font-size: 7rem;
             text-shadow: #20232a 0px 0px 5px, #20232a 0px 0px 2px, #20232a 0px 0px 5px, #20232a 0px 0px 1px;
@@ -78,7 +116,7 @@
   }
 }
 //ipad
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   #home {
     #info {
       padding: 40px 0;

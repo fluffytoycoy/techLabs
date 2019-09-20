@@ -1,6 +1,7 @@
 import React from 'react';
 import './Info.scss';
 import ScrollAnimation from 'react-animate-on-scroll';
+import Button from '@material-ui/core/Button';
 
 function Info(){
 
@@ -22,10 +23,41 @@ function Info(){
   }
 
   const style1={
-    background: 'url("/img/HeroSquares/field.jpeg")',
+    background: 'radial-gradient(circle, rgb(255, 255, 255), rgba(255, 255, 255, 0), rgb(32, 35, 42) 90%), url("/img/HeroSquares/field.jpeg")',
     backgroundPosition: 'center',
     backgroundSize: 'cover'
   }
+  const gridItems=[
+    {
+      id: 1,
+      title: 'The Green Fields',
+      postType: 'case study',
+      description: 'A multinational pharmaceutical and life sciences company endured tedious, time-intensive processes to compare large sets of crop trial data. We combined reporting platforms into a single solution that offered more powerful analytic capabilities and improved the overall user experience.',
+      img: '/img/HeroSquares/field.jpeg'
+    },
+    {
+      id: 2,
+      title: 'Modernized Data Management',
+      postType: 'blog',
+      description: '',
+      img: '/img/Blog/old-computer-small.png'
+    },
+    {
+      id: 3,
+      title: 'Breaking MonoLiths',
+      postType: 'case study',
+      description: 'A telecommunications client needed to scale its individual applications and services independently and deliver to production faster to provide greater business value.',
+      img: '/img/HeroSquares/mono.jpeg'
+    },
+    {
+      id: 4,
+      title: 'Cage it up',
+      postType: 'blog',
+      description: '',
+      img: '/img/Backgrounds/carrot.gif'
+    },
+  ]
+
   return(
     <section id="info">
       <div className="info-wrapper">
@@ -33,28 +65,67 @@ function Info(){
         <div>
           <h3 title="The techHub">The techHub</h3>
         </div>
-
       </ScrollAnimation>
-        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
-          <div style={style1}>
-
+      <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+        <div style={style1}>
+          <div className="hub-info">
+              <div className="title">
+              <img src="/img/Icons/up-arrows.svg"/>
+                <h4>This is a title</h4>
+              </div>
+              <div className="body">
+              <p>
+                A telecommunications client needed to scale its individual applications and services independently and deliver to production faster to provide greater business value.
+              </p>
+            </div>
           </div>
-        </ScrollAnimation>
-        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
-          <div style={style1}>
-
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+        <div style={style1}>
+          <div className="hub-info">
+              <div className="title">
+              <img src="/img/Icons/up-arrows.svg"/>
+                <h4>This is a title</h4>
+              </div>
+              <div className="body">
+              <p>
+                A telecommunications client needed to scale its individual applications and services independently and deliver to production faster to provide greater business value.
+              </p>
+            </div>
           </div>
-        </ScrollAnimation>
-        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
-          <div style={style1}>
-
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+        <div style={style1}>
+          <div className="hub-info">
+              <div className="title">
+              <img src="/img/Icons/up-arrows.svg"/>
+                <h4>This is a title</h4>
+              </div>
+              <div className="body">
+              <p>
+                A telecommunications client needed to scale its individual applications and services independently and deliver to production faster to provide greater business value.
+              </p>
+            </div>
           </div>
-        </ScrollAnimation>
-        <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
-          <div style={style1}>
-
+        </div>
+      </ScrollAnimation>
+      <ScrollAnimation className="item" animateOnce animateIn="fadeInLeft">
+        <div style={style1}>
+          <div className="hub-info">
+              <div className="title">
+              <img src="/img/Icons/up-arrows.svg"/>
+                <h4>This is a title</h4>
+              </div>
+              <div className="body">
+              <p>
+                A telecommunications client needed to scale its individual applications and services independently and deliver to production faster to provide greater business value.
+              </p>
+            </div>
           </div>
-        </ScrollAnimation>
+        </div>
+      </ScrollAnimation>
       </div>
     </section>
   )
