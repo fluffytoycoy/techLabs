@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 40px 0;
   background: url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
-  box-shadow: black inset 0 10px 8px, black inset 0 20px 20px, black inset 0 -10px 8px, black inset 0 -20px 20px;
+      box-shadow: black inset 0 5px 8px, black inset 0 10px 20px, black inset 0 -5px 8px, black inset 0 -10px 20px;
 
   .info-wrapper {
     width: 100%;
@@ -16,7 +16,7 @@
       max-height: 400px;
 
       > div {
-        box-shadow: black 0 0 5px;
+        box-shadow: black 0px 5px 10px;
         display: flex;
         overflow: hidden;
       }
@@ -70,7 +70,6 @@
               font-weight: 100;
 
               img {
-                position: absolute;
                 max-height: 40px;
                 left: 20px;
                 filter: drop-shadow(0px 0px 2px white);
@@ -78,7 +77,7 @@
               }
 
               h4 {
-                font-size: 1.5rem;
+                font-size: 1.3rem;
                 text-align: center;
                 width: 100%;
                 padding: 10px 0;
@@ -209,7 +208,7 @@
 @media only screen and (min-width: 1025px) {
   #home {
     #info {
-      padding: 40px 0;
+      padding: 60px 0;
 
       .info-wrapper {
         margin: 0 20px;
