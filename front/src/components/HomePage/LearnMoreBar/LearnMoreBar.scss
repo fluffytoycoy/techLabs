@@ -2,46 +2,98 @@
   background: #20232a;
   display: flex;
   justify-content: center;
-  padding: 50px 0 0;
+  padding: 20px 0 0;
 
   > div {
     display: flex;
     max-width: 1400px;
     margin: 0 20px;
-
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
     .text {
       align-self: center;
-      padding-bottom: 50px;
-
+      padding-bottom: 20px;
+      width: 100%;
       h3 {
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-transform: uppercase;
         color: green;
         font-weight: 700;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
+        white-space: nowrap;
       }
 
       p {
         color: white;
         align-self: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         font-weight: 100;
         line-height: 2rem;
       }
-
-      a {
+      .btn-wrapper{
         display: flex;
         justify-content: flex-end;
-
         button.MuiButton-outlined {
           border: solid green 1px !important;
           background: none !important;
+          margin-top: 20px !important;
         }
       }
     }
+    .img-wrapper{
+      max-width: 240px;
+      align-items: flex-end;
+      width: 100%;
+      display: flex;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
 
-    img {
-      max-height: 340px;
+@media only screen and (min-width: 768px) {
+  #home {
+    .learn-more {
+      padding: 40px 0 0;
+      > div {
+        flex-direction: row;
+        .text {
+          align-self: center;
+          padding-bottom: 40px;
+          padding-right: 40px;
+          width: 100%;
+          min-width: 400px;
+          h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 40px;
+            white-space: nowrap;
+          }
+
+          p {
+            align-self: center;
+            font-size: 1.5rem;
+            font-weight: 100;
+            line-height: 2rem;
+          }
+
+          button.MuiButton-outlined {
+            margin-top: 40px !important;
+          }
+        }
+        .img-wrapper{
+          max-width: 340px;
+          align-items: flex-end;
+          width: 100%;
+          display: flex;
+          img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 }

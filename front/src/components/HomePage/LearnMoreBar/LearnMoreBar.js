@@ -14,9 +14,15 @@ function LearnMoreBar(){
         <p>
         We understand the complexity of modern applications and bring an innovative approach to finding the perfect solutions for you.
         </p>
-                      <Link to="/#contact"><Button variant="outlined">Learn More</Button></Link>
+        <div className="btn-wrapper">
+          <Link to="/#contact">
+            <Button variant="outlined">Learn More</Button>
+          </Link>
+        </div>
       </div>
-      <img src="img/Logos/pointing_guy.png"/>
+      <div className="img-wrapper">
+        <img src="img/Logos/pointing_guy.png"/>
+      </div>
     </div>
   </section>
   )
