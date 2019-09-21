@@ -46,6 +46,7 @@ class CultureCarousel extends Component {
       })
         return (
             <AliceCarousel
+            id ="test"
               dotsDisabled={true}
               responsive={this.responsive}
               buttonsDisabled={true}

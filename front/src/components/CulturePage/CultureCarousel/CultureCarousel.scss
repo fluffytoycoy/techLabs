@@ -1,17 +1,20 @@
 #root{
-  .alice-carousel{
-    margin: 40px 0 40px;
-    .alice-carousel__stage-item{
-      width: 300px !important;
-    }
-    .slide{
-        height: 300px;
-        background: blue;
-    }
-    img{
-      max-height: 300px;
-    }
+  .service-body{
+    .alice-carousel{
+      margin: 40px 0 40px;
+      .alice-carousel__stage-item{
+        width: 300px !important;
+      }
+      .slide{
+          height: 300px;
+          background: blue;
+      }
+      img{
+        max-height: 300px;
+      }
 
+    }
   }
+
 
 }
