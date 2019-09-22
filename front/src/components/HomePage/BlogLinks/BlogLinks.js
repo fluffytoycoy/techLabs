@@ -44,15 +44,26 @@ class BlogLinks extends React.Component{
       currentIndex: 0,
       itemsInSlide: 4,
       selectedReview: 0,
+      autoPlay: true,
       responsive: { 0: { items: 1 }},
     }
   }
 
   slideTo = (i) => this.setState({ selectedReview: i })
 
+  endAutoPlay= () => this.setState({autoPlay: false})
+
+  handleClick=(i)=> {
+    this.endAutoPlay();
+    this.setState({
+      clicked: true
+    })
+    this.slideTo(i);
+  }
+
   thumbItem = (item, i) => {
     return (
-    <div className={`img-wrapper ${this.state.selectedReview == i ? 'active' : ''}`} onClick={() => this.slideTo(i)}>
+    <div className={`img-wrapper ${this.state.selectedReview == i ? 'active' : ''}`} onClick={() => this.handleClick(i)}>
       <img src={`${item.img}`}></img>
     </div>
     )
@@ -71,10 +82,13 @@ class BlogLinks extends React.Component{
     });
 
     handleSlideChange =(e) =>{
-      if(e.slide + 1 >= this.state.itemsInSlide){
-        this.slideTo(0);
-      }
-      this.slideTo(e.slide+ 1);
+      if(!this.state.clicked){
+        if((e.slide+1) < this.state.itemsInSlide){
+          this.slideTo(e.slide + 1);
+        }else{
+          this.slideTo(0);
+        }
+      }else{
     }
 
     render(){
@@ -82,14 +96,15 @@ class BlogLinks extends React.Component{
         <div id="blog">
           <div>
             <AliceCarousel
+                fadeOutAnimation={true}
                 dotsDisabled={true}
                 responsive={this.responsive}
-                autoPlayInterval={8000}
+                autoPlayInterval={7000}
                 autoPlayDirection="lft"
                 slideToIndex={this.state.selectedReview}
                 buttonsDisabled={true}
                 onSlideChange={this.handleSlideChange}
-                autoPlay={true}>
+                autoPlay={this.state.autoPlay}>
                   {this.domSlides}
             </AliceCarousel>
           </div>
