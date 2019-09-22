@@ -1,54 +1,38 @@
 
 #footer {
-  background: #4ca54a;
-  padding: 25px 0 0;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  h1{
-    font-size: 3rem;
-  }
-  .share-buttons{
-    display: flex;
-    margin-bottom: 25px;
-    text-align: center;
-    i{
-      font-size: 3rem;
-      margin: 0 10px;
-      color: #20232a;
-      text-shadow: 0 1px 3px #00000085, 0 1px 1px rgba(0, 0, 0, 0.14), 0 2px 1px transparent;
-      &:hover{
-        transform: scale(1.1);
+    background: green;
+    padding: 60px 0;
+    > div{
+      display: flex;
+      flex-direction: row;
+      margin: 0 20px;
+      .logo{
+        &.left{
+          margin-right: 20px;
+        }
+        &.right{
+          margin-left: 20px;
+        }
+        display: flex
+        img{
+          max-width: 150px;
+          width: 100%;
+        }
+      }
+      .footer-body{
+        flex-grow: 1;
+        background: #20232a;
+        border-radius: 4px;
       }
     }
-  }
+
   .copy{
-    width: 100%;
-    background: green;
-    padding: 10px 0;
+
   }
 }
 
 @media screen and (max-width: 767px) {
   #footer {
-    .container {
-      > div {
-        flex-wrap: wrap;
-      }
-    }
-    .row{
-      flex-basis: 100% !important;
-    }
-    .location {
-      margin-bottom: 50px !important;
-      img{
-        width: 100%;
-      min-width: 300px !important;
-      }
-    }
-    .social-media {
 
-    }
   }
 }

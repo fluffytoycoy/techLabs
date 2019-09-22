@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 40px 0;
   background: url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
-      box-shadow: black inset 0 5px 8px, black inset 0 10px 20px, black inset 0 -5px 8px, black inset 0 -10px 20px;
+      box-shadow: inset 0 5px 8px black ,  inset 0 -5px 8px black;
 
   .info-wrapper {
     width: 100%;
@@ -131,11 +131,11 @@
           align-items: center;
 
           h3 {
-
-              font-size: 4rem;
-            text-shadow: #20232a 0 0 5px, #20232a 0 0 2px, #20232a 0 0 5px, #20232a 0 0 1px;
-            font-weight: 700;
-            color: white;
+            font-size: 4rem;
+                text-shadow: #20232a 0 0 5px, #20232a 0 0 2px, #20232a 0 0 5px, #20232a 0 0 1px;
+                color: white;
+                font-family: 'Audiowide', cursive;
+                text-align: center;
           }
 
           &:before {

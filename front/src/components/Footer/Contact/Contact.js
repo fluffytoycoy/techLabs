@@ -29,23 +29,15 @@ class Contact extends Component{
   }
 
   componentDidMount(){
-    this.scrollTo();
+    //this.scrollTo();
   }
 
   componentDidUpdate(prevProps) {
-    this.scrollTo();
+    //this.scrollTo();
   }
 
   scrollTo(){
-    if(this.props.location.hash){
-      setTimeout(() => {
-      const id = this.props.location.hash.replace('#','');
-      const element = document.getElementById(id);
-      if (element){
-        element.scrollIntoView({behavior: "smooth", scroll: true});
-      }
-         }, 0);
-    }
+
   }
 
   onSubmit = (values) => {
