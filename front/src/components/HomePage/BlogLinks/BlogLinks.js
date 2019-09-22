@@ -90,7 +90,7 @@ class BlogLinks extends React.Component{
         }
       }else{
     }
-
+}
     render(){
       return (
         <div id="blog">
