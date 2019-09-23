@@ -1,7 +1,13 @@
 #root{
   .service-body{
     .alice-carousel{
-      margin: 40px 0 40px;
+      border: black solid;
+          background: #003507;
+          padding: 40px 0;
+      > div{
+        max-width: 1400px;
+        margin: 0 auto;
+      }
       .alice-carousel__stage-item{
         width: 300px !important;
       }
