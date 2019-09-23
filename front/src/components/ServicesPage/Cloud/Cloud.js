@@ -13,12 +13,14 @@ function Cloud(){
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Cloud Application Development</h2>
-              <p>We revolutionize the way applications are designed, built, and
-              managed by starting with users and then creating modern cloud-based
-              solutions that align to their needs. We are focused on developing
-              software with improved time to market, flexibility, and cost savings in
-               an iterative, repeatable fashion.</p>
+              <div>
+                <h2>Cloud Application Development</h2>
+                <p>We revolutionize the way applications are designed, built, and
+                managed by starting with users and then creating modern cloud-based
+                solutions that align to their needs. We are focused on developing
+                software with improved time to market, flexibility, and cost savings in
+                 an iterative, repeatable fashion.</p>
+               </div>
             </div>
             <div className="selection-body">
               <div>

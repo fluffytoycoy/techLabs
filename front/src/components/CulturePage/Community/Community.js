@@ -16,8 +16,10 @@ function Community(){
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Committed to Community</h2>
-              <p>We have a focus on serving the community. Some of the recent ways we’ve been able to give back are below. If you have an idea of how we can serve, please contact us.</p>
+              <div>
+                <h2>Committed to Community</h2>
+                <p>We have a focus on serving the community. Some of the recent ways we’ve been able to give back are below. If you have an idea of how we can serve, please contact us.</p>
+              </div>
             </div>
             <div className="selection-body">
               <div>

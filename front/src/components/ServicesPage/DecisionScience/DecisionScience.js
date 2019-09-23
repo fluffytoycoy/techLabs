@@ -14,9 +14,11 @@ function DecisionScience(){
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Descovering Insights from Data</h2>
-              <p>Our Decision Science practice empowers clients to derive insights from their data.
-              These insights facilitate data based decision making to improve efficiency, reduce costs, and provide better service to users and customers.</p>
+              <div>
+                <h2>Descovering Insights from Data</h2>
+                <p>Our Decision Science practice empowers clients to derive insights from their data.
+                These insights facilitate data based decision making to improve efficiency, reduce costs, and provide better service to users and customers.</p>
+              </div>
             </div>
             <div className="selection-body">
               <div className="reverse col-reverse">

@@ -42,10 +42,12 @@ class Culture extends Component{
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Empowering our teams to achieve anything</h2>
-              <p>We know and respect the value of our team members, which is why we’ve created a
-              culture that allows all our employees to thrive, grow and most importantly, feel
-              fulfilled and part of something greater.</p>
+              <div>
+                <h2>Empowering our teams to achieve anything</h2>
+                <p>We know and respect the value of our team members, which is why we’ve created a
+                culture that allows all our employees to thrive, grow and most importantly, feel
+                fulfilled and part of something greater.</p>
+              </div>
             </div>
             <div className="selection-body">
               <div>

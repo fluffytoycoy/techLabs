@@ -32,11 +32,13 @@ class Services extends Component{
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Designing and delivering specialized software solutions</h2>
-              <p>Companies today need specialized software solutions to maintain a competitive advantage.
-              Users expect more both in functionality and usability from the software.
-              Having access to software developers that understand both the right software technologies
-              and the end user’s requirements can be a challenge for companies. We solve this problem.</p>
+              <div>
+                <h2>Designing and delivering specialized software solutions</h2>
+                <p>Companies today need specialized software solutions to maintain a competitive advantage.
+                Users expect more both in functionality and usability from the software.
+                Having access to software developers that understand both the right software technologies
+                and the end user’s requirements can be a challenge for companies. We solve this problem.</p>
+              </div>
             </div>
             <div className="selection-body">
               <div>

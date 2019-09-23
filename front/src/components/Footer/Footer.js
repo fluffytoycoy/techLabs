@@ -20,7 +20,7 @@ function Footer(props){
               <div className="quick-links">
                 <h5>Quick Links</h5>
                 <div>
-                  <Link to="/Home">
+                  <Link to="/">
                     <p>Home</p>
                   </Link>
                   <Link to="/Services">

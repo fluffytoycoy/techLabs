@@ -13,12 +13,14 @@ function DataEngineering(){
         <div className="service-body">
           <div className="body-wrapper">
             <div className="title">
-              <h2>Data-Driven Enterprises</h2>
-              <p>We have a passion for open source technologies, strive to build cloud first applications,
-              and are motivated by our desire to transform businesses into data-driven enterprises. Our Data
-              Engineering practice is focused on developing highly performant, distributed, and easily customizable
-              data solutions for: streaming and batch data pipelines, in transit data enrichment and standardization,
-              data modeling and storage, data governance, and data access.</p>
+              <div>
+                <h2>Data-Driven Enterprises</h2>
+                <p>We have a passion for open source technologies, strive to build cloud first applications,
+                and are motivated by our desire to transform businesses into data-driven enterprises. Our Data
+                Engineering practice is focused on developing highly performant, distributed, and easily customizable
+                data solutions for: streaming and batch data pipelines, in transit data enrichment and standardization,
+                data modeling and storage, data governance, and data access.</p>
+              </div>
             </div>
             <div className="selection-body">
               <div className="reverse">
