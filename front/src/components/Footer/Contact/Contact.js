@@ -106,13 +106,11 @@ class Contact extends Component{
   render(){
     return (
       <div id="contact">
-        <div className="container">
           <div>
             <div className={`form-card ${this.state.submitFailure ? '' : 'no-flex'}`}>
               {this.state.submitSuccess ? this.submitSuccess() : this.form()}
             </div>
           </div>
-        </div>
      </div>
     );
   }
