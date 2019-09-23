@@ -23,7 +23,7 @@ class App extends Component {
     };
   };
 
-  render() {
+  render(props) {
     return (
       <Router>
       <ScrollToTop >
@@ -45,8 +45,8 @@ class App extends Component {
             <Route exact path="/Blog/Category/:category" render={props => <Blog {...props}/>}/>
             <Route exact path="/Blog/Article/:blogId" render={props => <Blog {...props}/>}/>
             <Route component={NotFound}/>
-				       </Switch>
-        <Footer/>
+				   </Switch>
+        <Route render={props => <Footer {...props}/>}/>
         </ScrollToTop>
       </Router>
     );

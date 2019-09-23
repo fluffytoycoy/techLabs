@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import './Header.scss';
 
 function Header(){
@@ -77,7 +77,7 @@ function Header(){
                 <i onClick={handleCultureClick}className="fas fa-chevron-down"></i>
               </div>
               <ul className={`${cultureOpen ? 'open' : ''}`}>
-                <Link to="/Culture/#core-beliefs" onClick={closeNav}>
+                <Link to="/Culture#core-beliefs" onClick={closeNav}>
                   <li>Core Beliefs</li>
                 </Link>
                 <Link to="/Culture/Community" onClick={closeNav}>
