@@ -13,6 +13,9 @@ function Footer(props){
     return (
       <section id="footer">
         <div>
+        <div className="logo top">
+          <img alt="labs square logo" src="/img/Logos/labs_logo_top.png"/>
+        </div>
           <div className="logo left">
             <img alt="labs square logo" src="/img/Logos/labs_logo.png"/>
           </div>
@@ -22,6 +25,9 @@ function Footer(props){
               <div className="quick-links">
                 <h5>Quick Links</h5>
                 <div>
+                  <Link to="/Home">
+                    <p>Home</p>
+                  </Link>
                   <Link to="/Services">
                     <p>Services</p>
                   </Link>
@@ -69,9 +75,6 @@ function Footer(props){
         					<a href="#"><i className="fab fa-linkedin"></i></a>
                   <a href="#"><i className="fab fa-instagram"></i></a>
         				</div>
-                <div className="copy">
-                  <p>©{new Date().getFullYear()} techLabs & CoyCoding | All Rights Reserved</p>
-                </div>
               </div>
             </div>
           </div>

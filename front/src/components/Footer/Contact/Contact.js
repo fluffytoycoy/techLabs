@@ -70,7 +70,7 @@ class Contact extends Component{
       <Form onChange={this.onChange}>
         <Field name="name" placeholder="Name" />
         <Field name="email" placeholder="Your-Email@email.com"/>
-        <Field textarea height='300px'name="message" placeholder="Message"/>
+        <Field className="message" textarea height='300px'name="message" placeholder="Message"/>
         <Button type="submit" variant={'outlined'} disabled={this.state.isSubmitting} >Submit</Button>
       </Form>
     );
@@ -106,11 +106,9 @@ class Contact extends Component{
   render(){
     return (
       <div id="contact">
-          <div>
-            <div className={`form-card ${this.state.submitFailure ? '' : 'no-flex'}`}>
+            <div className={`form-card`}>
               {this.state.submitSuccess ? this.submitSuccess() : this.form()}
             </div>
-          </div>
      </div>
     );
   }
