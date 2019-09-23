@@ -27,7 +27,7 @@ html {
 
   .MuiButton-outlined {
     border: 1px solid #20232a;
-    background: rgba(0, 128, 0, 0.7);
+    background: rgba(0, 128, 0, 0.9);
     font-weight: 600;
     letter-spacing: 1px;
     color: #ffffff;
@@ -40,7 +40,8 @@ html {
 
     &:hover {
       box-shadow: none;
-      background: rgba(0, 128, 0, 0.9);
+
+      background: rgba(0, 128, 0, 0.7);
     }
   }
 }

@@ -19,7 +19,7 @@ function Footer(props){
           <div className="footer-body">
             <Contact />
             <div className="info">
-              <div>
+              <div className="quick-links">
                 <h5>Quick Links</h5>
                 <div>
                   <Link to="/Services">
@@ -40,15 +40,37 @@ function Footer(props){
                 </div>
               </div>
               <div className="company-info">
+                <h5>Info</h5>
                 <div>
-                  <p>21 Revolution Street</p>
-                  <p>Paris, France</p>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <div>
+                    <p>21 Revolution Street</p>
+                    <p>Paris, France</p>
+                  </div>
                 </div>
                 <div>
-                  <p>+1-555-123-4567</p>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <div>
+                    <p>+1-555-123-4567</p>
+                  </div>
                 </div>
                 <div>
-                  <p>support@company.com</p>
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <div>
+                    <p>support@company.com</p>
+                  </div>
+                </div>
+              </div>
+              <div className="media-icons">
+              <h5>Follow Us</h5>
+                <div className="icons">
+        					<a href="#"><i class="fab fa-facebook-square"></i></a>
+        					<a href="#"><i className="fab fa-twitter-square"></i></a>
+        					<a href="#"><i className="fab fa-linkedin"></i></a>
+                  <a href="#"><i className="fab fa-instagram"></i></a>
+        				</div>
+                <div className="copy">
+                  <p>©{new Date().getFullYear()} techLabs & CoyCoding | All Rights Reserved</p>
                 </div>
               </div>
             </div>
