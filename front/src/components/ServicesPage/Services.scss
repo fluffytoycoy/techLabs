@@ -103,7 +103,7 @@
               justify-content: center;
               width: 100%;
               align-items: center;
-              margin-bottom: 0px;
+              margin-bottom: 20px;
 
               .animated {
                 width: 100%;
@@ -181,11 +181,31 @@
             }
           }
 
-          &.reverse {
-            flex-direction: column-reverse;
-
+          .reverse {
             .icon {
               margin-right: 0;
+            }
+          }
+
+          .grid {
+            flex-direction: column;
+
+            ul {
+              width: 100%;
+              order: 0;
+              padding: 0;
+              border-top: solid green 1px;
+              padding-top: 20px;
+              display: flex;
+              flex-wrap: wrap;
+              flex-direction: row;
+
+              li {
+                width: 50%;
+                margin-bottom: 20px;
+                text-align: center;
+                font-weight: 100;
+              }
             }
           }
         }
@@ -292,6 +312,7 @@
                   align-items: center;
                   border-right: solid #20232a;
                   padding: 0 30px 0 0;
+                  margin-bottom: 0;
 
                   .animated {
                     width: 100%;
