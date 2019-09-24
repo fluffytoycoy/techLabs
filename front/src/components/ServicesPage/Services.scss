@@ -153,6 +153,30 @@
               }
             }
           }
+          .list{
+            display: flex;
+                align-self: normal;
+                justify-content: space-around;
+                flex-direction: row;
+                order: 1;
+                margin-top: 20px;
+                border-left: none;
+                padding: 20px 0 0 0;
+                justify-content: end;
+                border-top: green 1px solid;
+                flex-wrap: wrap;
+margin-bottom: -20px;
+                li{
+                  width: 50%;
+                  display: flex;
+                  justify-content: center;
+                  margin-bottom: 20px;
+                }
+            p{
+              font-weight: 100;
+              padding-left: 10px;
+            }
+          }
           &.reverse {
               flex-direction: column-reverse;
             .icon {
@@ -324,6 +348,24 @@
                       margin: 0 60px 0 0;
                   }
                 }
+              }
+              .list{
+                  order: 0;
+                  flex-direction: column;
+                  padding: 0 0 0 30px;
+                  border-left: solid green;
+                  border-top: none;
+                  margin-top: 0px;
+                  justify-content: space-around;
+                  min-width: 300px;
+
+                  li{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 0px;
+                        text-align: center;
+                  }
               }
             }
           }

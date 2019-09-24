@@ -23,15 +23,13 @@ function DecisionScience(){
             <div className="selections">
               <div className="selection-wrapper">
                 <div className="reverse col-reverse">
-                  <div className="info list">
-                    <ul>
+                    <ul className="list">
                       <li><p>Data Visualization</p></li>
                       <li><p>Machine Learning</p></li>
                       <li><p>Artificial Intelligence</p></li>
                       <li><p>Interactive Dashboards</p></li>
                       <li><p>APIs</p></li>
                     </ul>
-                  </div>
                   <div className="info">
                     <h3>Offerings and Capabilities</h3>
                     <p>
