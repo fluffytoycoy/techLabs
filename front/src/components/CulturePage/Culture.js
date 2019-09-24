@@ -40,7 +40,7 @@ class Culture extends Component{
           <h1>Culture</h1>
         </div>
         <div className="service-body">
-          <div className="body-wrapper">
+          <div className="body-wrapper culture">
             <div className="title">
               <div>
                 <h2>Empowering our teams to achieve anything</h2>

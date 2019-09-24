@@ -1,6 +1,7 @@
 import React from 'react';
 import LabSlider from './LabSlider';
 import FoodSlider from './FoodSlider';
+import './CommunitySlider.scss';
 import './Slider.scss';
 
 function Community(){
@@ -14,7 +15,7 @@ function Community(){
           <h1 className="long-word">Community</h1>
         </div>
         <div className="service-body">
-          <div className="body-wrapper">
+          <div className="body-wrapper community">
             <div className="title">
               <div>
                 <h2>Committed to Community</h2>

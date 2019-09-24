@@ -1,33 +1,35 @@
 import React from 'react';
-import { Zoom } from 'react-slideshow-image';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
-const images = [
+  const images = [
+    '/img/LabSlider/lab_slider1.jpg',
+    '/img/LabSlider/lab_slider2.jpg',
+    '/img/LabSlider/lab_slider3.jpg',
+    '/img/LabSlider/lab_slider4.jpg',
+  ];
 
-  '/img/LabSlider/lab_slider1.jpg',
-  '/img/LabSlider/lab_slider2.jpg',
-  '/img/LabSlider/lab_slider3.jpg',
-  '/img/LabSlider/lab_slider4.jpg',
-];
+  const responsive = { 0: { items: 1 }}
 
-const zoomOutProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: false,
-  arrows: false,
-  scale: 1
-}
+  const domSlides = images.map(image=>{
+    return(
+      <img alt="lab community" src={image}/>
+      )
+  });
 
-const LabSlider = () => {
-    return (
-      <div className="slide-container">
-        <Zoom {...zoomOutProperties}>
-          {
-            images.map((each, index) => <img alt='kids learning' key={index} style={{width: "100%"}} src={each} />)
-          }
-        </Zoom>
-      </div>
-    )
-}
+  const LabSlider = () => {
+      return (
+        <AliceCarousel
+            fadeOutAnimation={true}
+            dotsDisabled={true}
+            autoPlayInterval={1000}
+            autoPlayDirection="lft"
+            buttonsDisabled={true}
+            responsive={responsive}
+            >
+              {domSlides}
+        </AliceCarousel>
+      )
+  }
 
 export default LabSlider;

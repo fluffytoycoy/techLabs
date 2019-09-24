@@ -1,5 +1,6 @@
 import React from 'react';
-import { Zoom } from 'react-slideshow-image';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const images = [
   '/img/LabSlider/foodbank.jpg',
@@ -7,24 +8,23 @@ const images = [
   '/img/LabSlider/foodbank3.jpg',
 ];
 
-const zoomOutProperties = {
-  duration: 5000,
-  transitionDuration: 500,
-  infinite: true,
-  indicators: false,
-  arrows: false,
-  scale: 1
-}
+const domSlides = images.map(image=>{
+return(
+  <img alt="lab community" src={image}/>
+  )
+});
 
 const FoodSlider = () => {
     return (
-      <div className="slide-container">
-        <Zoom {...zoomOutProperties}>
-          {
-            images.map((each, index) => <img key={index} alt='foodbank 'style={{width: "100%"}} src={each} />)
-          }
-        </Zoom>
-      </div>
+      <AliceCarousel
+          fadeOutAnimation={true}
+          dotsDisabled={true}
+          autoPlayInterval={1000}
+          autoPlayDirection="lft"
+          buttonsDisabled={true}
+          autoPlay={true}>
+            {domSlides}
+      </AliceCarousel>
     )
 }
 

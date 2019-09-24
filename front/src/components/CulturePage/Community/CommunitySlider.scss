@@ -1,0 +1,19 @@
+.body-wrapper {
+  &.community {
+    .alice-carousel {
+      .alice-carousel__wrapper {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+    }
+
+    .alice-carousel__stage-item {
+      max-width: 300px;
+      width: unset !important;
+    }
+
+    .alice-carousel__stage-item {
+      vertical-align: middle;
+    }
+  }
+}

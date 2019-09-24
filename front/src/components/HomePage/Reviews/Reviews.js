@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './BlogLinks.scss';
+import './Reviews.scss';
 import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import AliceCarousel from 'react-alice-carousel';
@@ -37,7 +37,7 @@ const slides = [
   },
 ]
 
-class BlogLinks extends React.Component{
+class Reviews extends React.Component{
   constructor(props){
     super(props);
     this.state={
@@ -119,4 +119,4 @@ class BlogLinks extends React.Component{
 }
 
 
-export default BlogLinks;
+export default Reviews;

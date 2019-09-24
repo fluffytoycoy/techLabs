@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from './Hero/Hero';
 import Info from './Info/Info';
 import LinkGrid from './LinkGrid/LinkGrid';
-import BlogLinks from './BlogLinks/BlogLinks';
+import Reviews from './Reviews/Reviews';
 import LearnMoreBar from './LearnMoreBar/LearnMoreBar';
 import './Home.scss';
 
@@ -13,7 +13,7 @@ function Home(props){
         <LinkGrid/>
         <LearnMoreBar/>
         <Info/>
-        <BlogLinks/>
+        <Reviews/>
       </div>
     );
 }
