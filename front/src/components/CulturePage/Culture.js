@@ -63,7 +63,7 @@ class Culture extends Component{
                 </div>
                 <div>
                   <div className="info no-img">
-                  <ul className="grid-50 wrap">
+                  <ul className="multi">
                     <li>
                       <ScrollAnimation offset={50} animateOnce animateIn="fadeInLeft"><h3>Great Working Environment</h3></ScrollAnimation>
                       <ScrollAnimation animateOnce animateIn="fadeIn">
@@ -124,7 +124,7 @@ class Culture extends Component{
                 </div>
                 <div>
                   <div className="info no-img">
-                  <ul className="grid-50 wrap">
+                  <ul className="multi">
                     <li>
                       <ScrollAnimation offset={50} animateOnce animateIn="fadeInLeft"><h3>The Foundation</h3></ScrollAnimation>
                       <ScrollAnimation  animateOnce animateIn="fadeIn">

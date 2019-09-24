@@ -55,30 +55,22 @@ function DecisionScience(){
                      </p>
                   </div>
                 </div>
-                <div>
+                <div className="grid">
                   <div className="info no-img">
                     <h3>How Can Decision Science help you?</h3>
-                    <ul className="grid-50">
-                      <li>
-                        <ul>
-                          <li><p>Tailored Fit</p></li>
-                          <li><p>Greater Transparency</p></li>
-                          <li><p>Improved Predictability</p></li>
-                          <li><p>Enhanced Flexibility</p></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <ul>
+                  </div>
+                    <ul>
+                        <li><p>Tailored Fit</p></li>
+                        <li><p>Greater Transparency</p></li>
+                        <li><p>Improved Predictability</p></li>
+                        <li><p>Enhanced Flexibility</p></li>
                         <li><p>Better Quality</p></li>
                         <li><p>Reduce Costs</p></li>
                         <li><p>Increase Revenue</p></li>
                         <li><p>Unify Data Source</p></li>
                         <li><p>Faster Time to Market</p></li>
-                        </ul>
-                      </li>
-
                     </ul>
-                  </div>
+              
                 </div>
               </div>
             </div>

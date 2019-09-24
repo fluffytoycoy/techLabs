@@ -78,7 +78,7 @@ class Blog extends Component{
         <div className={`jumbo services`}>
           <h1>Blog</h1>
         </div>
-        <div className="service-body">
+        <div className="service-body blog-wrapper">
           <section className="blog">
             <div className="blog-grid">
               {this.props.match.params.blogId ? <Article blogId={this.props.match.params.blogId} blogList={this.blogs}/> :
