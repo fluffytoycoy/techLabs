@@ -30,7 +30,7 @@ class Services extends Component{
               <div className="selection-wrapper">
                 <div>
                   <div className="icon">
-                    <img alt="people clipart" src="/img/Logos/heads.png"/>
+                    <img alt="people clipart" src="/img/Logos/people.png"/>
                   </div>
                   <div className="info">
                     <h3>Human-Centered Design Agile</h3>

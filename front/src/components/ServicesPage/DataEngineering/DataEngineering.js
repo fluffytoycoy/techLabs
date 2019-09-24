@@ -26,7 +26,7 @@ function DataEngineering(){
               <div className="selection-wrapper">
                 <div className="reverse">
                   <div className="icon">
-                    <img alt="Cloud with gears" src="/img/Logos/data_icon.svg"/>
+                    <img alt="Cloud with gears" src="/img/Logos/gears.png"/>
                   </div>
                   <div className="info">
                     <h3>Data is an Asset</h3>

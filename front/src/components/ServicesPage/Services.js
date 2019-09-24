@@ -58,7 +58,7 @@ class Services extends Component{
                   </div>
                   <div>
                     <div className="icon">
-                      <ScrollAnimation  animateOnce animateIn="fadeIn"><img alt="data cloud" src="/img/Logos/data_icon.svg"/></ScrollAnimation>
+                      <ScrollAnimation  animateOnce animateIn="fadeIn"><img alt="data cloud" src="/img/Logos/gears.png"/></ScrollAnimation>
                     </div>
                     <div className="info">
                       <h3>Data Engineering</h3>
@@ -67,7 +67,7 @@ class Services extends Component{
                          We focus on streaming and batch data pipelines, in transit data enrichment and standardization, data modeling and storage, data
                          governance and data access. We are motivated by our desire to transform businesses into data driven enterprises.
                        </p>
-                      <Link to="/Services/Cloud"><Button variant="outlined">Read More</Button></Link>
+                      <Link to="/Services/Data-Engineering"><Button variant="outlined">Read More</Button></Link>
                     </div>
                   </div>
                   <div>
@@ -81,8 +81,7 @@ class Services extends Component{
                           based solutions that align to their needs. We manage delivery using an agile process that was developed in
                           by our full-stack engineers to help us stay focused on the right solutions to your toughest engineering problems.
                         </p>
-
-                        <Link to="/Services/Data-Engineering"><Button variant="outlined">Read More</Button></Link>
+                        <Link to="/Services/Cloud"><Button variant="outlined">Read More</Button></Link>
                     </div>
                   </div>
                 </div>
