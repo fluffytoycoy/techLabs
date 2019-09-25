@@ -27,10 +27,11 @@
     box-shadow: black 0 5px 10px;
           background: linear-gradient(#fbf8f5, #c5c5c5);
           h4 {
-            font-size: 1.3rem;
+            font-size: 1.5rem;
             font-weight: 500;
             margin: 15px 10px;
-                color: #aab1ca !important;
+            color: purple !important;
+            font-family: 'Oswald', sans-serif;
           }
 
           p {
@@ -140,7 +141,7 @@
     }
 
     .sidebar {
-      width: 300px;
+      width: 350px;
       min-width: 300px;
       >div{
         h4{

@@ -12,7 +12,7 @@ function Home(props){
         <Hero/>
         <LinkGrid/>
         <LearnMoreBar/>
-        <Info/>
+        <Info blogs={props.blogs}/>
         <Reviews/>
       </div>
     );

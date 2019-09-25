@@ -6,7 +6,7 @@ import Button from '@material-ui/core/Button';
 function GridItem(props){
 
   const styles={
-    background: `radial-gradient(circle, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.75) 90%) , url("${props.item.img}")`,
+    background: `radial-gradient(circle, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.75) 90%) , url("${props.item.src}")`,
     backgroundPosition: 'center',
     backgroundSize: 'cover'
   }

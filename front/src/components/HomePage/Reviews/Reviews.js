@@ -83,14 +83,14 @@ class Reviews extends React.Component{
 
     handleSlideChange =(e) =>{
       if(!this.state.clicked){
-        if((e.slide+1) < this.state.itemsInSlide){
-          this.slideTo(e.slide + 1);
+          if((e.slide+1) < this.state.itemsInSlide){
+            this.slideTo(e.slide + 1);
+          }else{
+            this.slideTo(0);
+          }
         }else{
-          this.slideTo(0);
-        }
-      }else{
+      }
     }
-}
     render(){
       return (
         <div id="blog">
