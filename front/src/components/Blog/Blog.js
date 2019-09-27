@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import BlogGrid from './BlogGrid';
-import BlogSidebar from './BlogSidebar';
+import BlogGrid from './BlogGrid/BlogGrid';
+import BlogSidebar from './BlogGrid/BlogSidebar';
 import Article from './Article/Article';
 import {parseUrl} from '../Utils/UrlHandlers/UrlHandlers';
 import './Blog.scss';

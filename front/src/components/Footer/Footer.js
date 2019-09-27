@@ -26,16 +26,16 @@ function Footer(props){
                   <Link to="/Services">
                     <p>Services</p>
                   </Link>
-                  <Link to="/Services">
+                  <Link to="/Culture">
                     <p>Culture</p>
                   </Link>
-                  <Link to="/Services">
+                  <Link to="/Work">
                     <p>Work</p>
                   </Link>
-                  <Link to="/Services">
+                  <Link to="#contact-us">
                     <p>Contact Us</p>
                   </Link>
-                  <Link to="/Services">
+                  <Link to="/Blog">
                     <p>Blog</p>
                   </Link>
                 </div>

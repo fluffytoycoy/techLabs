@@ -1,7 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './Reviews.scss';
-import {Link} from 'react-router-dom';
-import ScrollAnimation from 'react-animate-on-scroll';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
@@ -64,7 +62,7 @@ class Reviews extends React.Component{
   thumbItem = (item, i) => {
     return (
     <div className={`img-wrapper ${this.state.selectedReview == i ? 'active' : ''}`} onClick={() => this.handleClick(i)}>
-      <img src={`${item.img}`}></img>
+      <img alt={item.name} src={`${item.img}`}></img>
     </div>
     )
   }

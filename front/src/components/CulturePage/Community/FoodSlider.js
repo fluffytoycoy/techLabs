@@ -19,7 +19,7 @@ const FoodSlider = () => {
       <AliceCarousel
           fadeOutAnimation={true}
           dotsDisabled={true}
-          autoPlayInterval={1000}
+          autoPlayInterval={8000}
           autoPlayDirection="lft"
           buttonsDisabled={true}
           autoPlay={true}>

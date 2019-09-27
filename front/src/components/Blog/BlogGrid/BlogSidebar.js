@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {createUrlSlug} from '../Utils/UrlHandlers/UrlHandlers';
+import {createUrlSlug} from '../../Utils/UrlHandlers/UrlHandlers';
 
 class BlogGrid extends React.Component {
     constructor(props){

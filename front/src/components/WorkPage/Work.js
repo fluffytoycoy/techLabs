@@ -15,7 +15,6 @@ class Services extends Component{
     let index = 0;
     if(this.props.blogs.length){
       while(index < this.props.blogs.length){
-        console.log(index)
         const item = this.props.blogs[index];
         if(item.category === 'case study'){
               caseStudies.push(

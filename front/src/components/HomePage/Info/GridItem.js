@@ -17,7 +17,7 @@ function GridItem(props){
       <div style={styles}>
         <div className="hub-info">
             <div className="title">
-            <img src="/img/Icons/up-arrows.svg"/>
+            <img alt="up arrows" src="/img/Icons/up-arrows.svg"/>
               <h4>{props.item.title}</h4>
             </div>
             <div className="body">

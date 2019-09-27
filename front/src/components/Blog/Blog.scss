@@ -12,8 +12,11 @@
     .blog-grid {
       flex: auto;
       margin-top: -10px;
-
-      .image-element-class {
+      .col-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
         width: 100%;
         padding: 10px;
 
@@ -55,6 +58,7 @@
           display: block;
           max-width: 1000px;
           margin: 0 auto;
+          flex-direction: column;
 
       > div{
         padding: 10px;
@@ -69,7 +73,6 @@
           font-size: 2rem;
           text-align: center;
           font-weight: 100;
-          padding-bottom:10px;
 
           i{
             margin-left: 20px;
@@ -105,16 +108,15 @@
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
-
     .blog-grid {
-      flex: auto;
+      .col-wrapper{
+          flex-wrap: nowrap;
+          ul{
+            width: 50%;
+          }
+      }
+      .card {
 
-      .image-element-class {
-        width: 50%;
-
-        img {
-          width: 100%;
-        }
       }
     }
 
@@ -126,27 +128,20 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .blog {
     display: flex;
     max-width: 1400px;
     margin: 0 auto;
     flex-direction: row;
     .blog-grid {
-      flex: auto;
-
-      .image-element-class {
-        width: 50%;
-
-        img {
-          width: 100%;
-        }
+      .card{
       }
     }
 
     .sidebar {
-      width: 350px;
-      min-width: 300px;
+      max-width: 350px;
+          min-width: 300px;
       >div{
         h4{
           i{

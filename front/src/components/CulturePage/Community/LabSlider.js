@@ -22,11 +22,11 @@ import "react-alice-carousel/lib/alice-carousel.css";
         <AliceCarousel
             fadeOutAnimation={true}
             dotsDisabled={true}
-            autoPlayInterval={1000}
+            autoPlayInterval={8000}
             autoPlayDirection="lft"
             buttonsDisabled={true}
-            responsive={responsive}
-            >
+            autoPlay={true}
+            responsive={responsive}>
               {domSlides}
         </AliceCarousel>
       )
