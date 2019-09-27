@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Masonry from 'react-masonry-component';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
 import {createUrlSlug} from '../../Utils/UrlHandlers/UrlHandlers';
@@ -23,7 +22,7 @@ class BlogGrid extends React.Component {
 
     static getDerivedStateFromProps(nextProps, state) {
       console.log(nextProps)
-      
+
       console.log(nextProps.currentCategory !== state.currentCategory)
       if(nextProps.currentCategory !== state.currentCategory){
         return getChildElements(nextProps)

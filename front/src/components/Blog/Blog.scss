@@ -9,9 +9,12 @@
     max-width: 1400px;
     margin: 0 auto;
     flex-direction: column-reverse;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
     .blog-grid {
       flex: auto;
       margin-top: -10px;
+      max-width: 1000px;
       .col-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -55,24 +58,25 @@
     }
     .sidebar {
       width: 100%;
-          display: block;
-          max-width: 1000px;
-          margin: 0 auto;
-          flex-direction: column;
+      display: block;
+      max-width: 1000px;
+      flex: 1;
+      min-width: 300px;
 
       > div{
-        padding: 10px;
         background: linear-gradient(#fbf8f5, #c5c5c5);
         border-radius: 4px;
         box-shadow: black 0 5px 10px;
             margin: 0 10px 20px;
+            overflow: hidden;
         .selected{
-          background: rgb(238, 242, 253);
+          background: white;
         }
         h4{
-          font-size: 2rem;
+          font-size: 1.5rem;
           text-align: center;
           font-weight: 100;
+          padding: 10px 0;
 
           i{
             margin-left: 20px;
@@ -91,9 +95,9 @@
 
             p{
               cursor: pointer;
-              color: blue;
-              text-transform: capitalize;
-                padding: 15px 20px;
+                  color: #932f92;
+                  text-transform: capitalize;
+                  padding: 15px 20px;
             }
           }
         }
@@ -122,7 +126,6 @@
 
     .sidebar {
       >div{
-        padding: 20px;
       }
     }
   }
@@ -136,14 +139,15 @@
     flex-direction: row;
     .blog-grid {
       .card{
+
       }
     }
 
     .sidebar {
-      max-width: 350px;
-          min-width: 300px;
       >div{
         h4{
+          padding: 20px 0;
+          font-size: 2rem;
           i{
             display: none;
           }

@@ -22,45 +22,45 @@ class App extends Component {
     this.state = {
       blogs:  [
           {
-          src: 'https://www.placecage.com/gif/500/300',
+          src: 'https://www.placecage.com/500/300',
           title: 'Modernize Data Management',
           category: 'data engineering',
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews',
           author: "Matt Coy"
         },{
-          src: 'https://www.placecage.com/gif/500/500',
+          src: 'https://www.placecage.com/500/500',
           title: 'Agile Data Management',
           category: 'agile',
           author: "Matt Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/500/249',
+          src: 'https://www.placecage.com/500/249',
           title: 'Agile Testing',
           category: 'agile',
           author: "Matt Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/500/252',
+          src: 'https://www.placecage.com/500/252',
           title: 'News',
           category: 'news',
           author: "Rob Cage",
           description: 'St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },
         {
-          src: 'https://www.placecage.com/gif/500/253',
+          src: 'https://www.placecage.com/500/253',
           title: 'Cage it up',
           category: 'culture',
           author: "Nick Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/500/251',
+          src: 'https://www.placecage.com/500/251',
           title: 'New Resources',
           category: 'resource',
           author: "Joe Ukee",
           description: 'That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },
         {
-          src: 'https://www.placecage.com/gif/500/250',
+          src: 'https://www.placecage.com/500/250',
           title: 'Life Like Cage',
           category: 'culture',
           author: "Rob Cage",

@@ -9,6 +9,7 @@ class BlogGrid extends React.Component {
       }
       this.toggleMenu = this.toggleMenu.bind(this)
     }
+
     handleClick(category){
       this.props.history.push(`/Blog/Category/${createUrlSlug(category)}`)
     }
