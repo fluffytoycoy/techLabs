@@ -22,9 +22,7 @@ class Culture extends Component{
     if(this.props.location.hash){
       setTimeout(() => {
       const id = this.props.location.hash.replace('#','');
-      console.log(id)
       const element = document.getElementById(id);
-      console.log(element)
       if (element){
 
         element.scrollIntoView({behavior: "smooth", scroll: true});

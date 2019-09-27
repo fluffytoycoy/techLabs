@@ -11,21 +11,17 @@ class Article extends Component{
   }
 
   blogExists(){
-    console.log(this.props)
     const blogExists = this.props.blogList.filter(blog=>{
       return blog.title.toLowerCase() === parseUrl(this.props.blogId)
     })[0]
     if(blogExists){
-      console.log(blogExists)
       return blogExists
     }else{
-      console.log('gone back')
       this.props.history.goBack();
     }
   }
 
   componentDidMount(){
-    console.log(this.state.blog)
   }
 
   render(){

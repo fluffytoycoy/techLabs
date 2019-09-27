@@ -29,7 +29,6 @@ class Blog extends Component{
   }
 
   render(props){
-    console.log(this.props.blogs)
     return (
       <div id="root-link">
         <div className={`jumbo  ${this.isPost()}`}>

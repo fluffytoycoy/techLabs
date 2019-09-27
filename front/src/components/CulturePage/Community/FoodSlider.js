@@ -8,9 +8,9 @@ const images = [
   '/img/LabSlider/foodbank3.jpg',
 ];
 
-const domSlides = images.map(image=>{
+const domSlides = images.map((image, index)=>{
 return(
-  <img alt="lab community" src={image}/>
+  <img key={index} alt="lab community" src={image}/>
   )
 });
 

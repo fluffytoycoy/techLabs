@@ -18,7 +18,6 @@ class Services extends Component{
 
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log(this.props.location.pathname === nextProps.location.pathname)
     if(this.props.location.pathname === nextProps.location.pathname)
       return false;
     return true;

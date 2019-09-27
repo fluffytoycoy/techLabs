@@ -12,7 +12,6 @@ function Header(){
     if(window.innerWidth <= 768){
       menuArray.forEach(func=>{
         if(func !== menu){
-          console.log('here')
           func(false);
         }
       })
