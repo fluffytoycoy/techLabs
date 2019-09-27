@@ -46,10 +46,15 @@ class BlogGrid extends React.Component {
 
         return (
             <div>
-              <h4 onClick={this.toggleMenu}>Categories<i className="fas fa-chevron-down"></i></h4>
+              <div onClick={this.toggleMenu} className={`${this.state.menuOpen ? 'open' : ''}`}>
+                <h4>Categories</h4>
+                <div className="img-wrapper">
+                  <img alt="up arrows" src="/img/Icons/up-arrows.svg"/>
+                </div>
+              </div>
                 <ul className={`${this.state.menuOpen ? 'open' : ''}`}>
                   <li className="image-element-class">
-                    <p  onClick={()=>{this.handleClick('')}}>all </p>
+                    <p  onClick={()=>{this.handleClick('')}}>all</p>
                   </li>
                   {childElements}
                 </ul>
