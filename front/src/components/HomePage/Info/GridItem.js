@@ -2,6 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
+import {createUrlSlug} from '../../Utils/UrlHandlers/UrlHandlers';
 
 function GridItem(props){
 
@@ -21,7 +22,7 @@ function GridItem(props){
             </div>
             <div className="body">
             <p>{props.item.description}</p>
-            <Link to="/#contact"><Button variant="outlined">Read More</Button></Link>
+            <Link to={`/Blog/Article/${createUrlSlug(props.item.title)}`}><Button variant="outlined">Read More</Button></Link>
           </div>
         </div>
       </div>
