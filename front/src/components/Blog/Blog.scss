@@ -9,6 +9,9 @@
     max-width: 1400px;
     margin: 0 auto;
     flex-direction: column-reverse;
+    &.post{
+      max-height: 200px;
+    }
     .blog-grid {
       flex: auto;
       margin-top: -10px;
@@ -52,10 +55,12 @@
     }
     .sidebar {
       width: 100%;
-      display: block;
+          display: block;
+          max-width: 1000px;
+          margin: 0 auto;
 
       > div{
-        padding: 20px;
+        padding: 10px;
         background: linear-gradient(#fbf8f5, #c5c5c5);
         border-radius: 4px;
         box-shadow: black 0 5px 10px;
@@ -117,7 +122,9 @@
     }
 
     .sidebar {
-
+      >div{
+        padding: 20px;
+      }
     }
   }
 }

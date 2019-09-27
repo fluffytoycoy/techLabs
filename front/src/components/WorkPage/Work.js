@@ -19,7 +19,7 @@ class Services extends Component{
         const item = this.props.blogs[index];
         if(item.category === 'case study'){
               caseStudies.push(
-                <div className="reverse">
+                <div className="reverse" key={index}>
                 <div className="icon">
                   <img alt="empty field" src={item.src}/>
                 </div>

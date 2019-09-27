@@ -1,5 +1,6 @@
 #article{
   max-width: 1000px;
+margin: 10px;
   h4{
     font-size: 3rem;
         margin-bottom: 20px;
@@ -32,6 +33,38 @@
 
 color: #20232a;
 
+    }
+  }
+}
+
+@media only screen and (min-width){
+  #article{
+    max-width: 1000px;
+    margin: 20px;
+    h4{
+      font-size: 3rem;
+          margin-bottom: 20px;
+          color: green;
+          font-weight: 500;
+    }
+    p{
+      margin-bottom: 20px;
+      color:white;
+    }
+    img{
+      width: 100%;
+      margin-bottom: 40px;
+      max-height: 500px;
+      padding: 20px;
+    }
+    .article-body{
+      line-height: 2.4rem;
+      font-size: 1.2rem;
+      text-indent: 2rem;
+      padding: 40px 20px;
+      p{
+
+      }
     }
   }
 }

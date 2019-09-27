@@ -24,11 +24,15 @@ class Blog extends Component{
     return null;
   }
 
+  isPost(){
+    return this.props.match.params.blogId ? 'post' : '';
+  }
+
   render(props){
     console.log(this.props.blogs)
     return (
       <div id="root-link">
-        <div className={`jumbo services`}>
+        <div className={`jumbo  ${this.isPost()}`}>
           <h1>Blog</h1>
         </div>
         <div className="service-body blog-wrapper">
