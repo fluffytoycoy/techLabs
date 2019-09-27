@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import {createUrlSlug} from '../Utils/UrlHandlers/UrlHandlers';
 
 class Services extends Component{
 
@@ -7,6 +10,32 @@ class Services extends Component{
     justifyContent: 'flex-end'
   }
 
+  renderCaseStudies =  () =>{
+    let caseStudies = [];
+    let index = 0;
+    if(this.props.blogs.length){
+      while(index < this.props.blogs.length){
+        console.log(index)
+        const item = this.props.blogs[index];
+        if(item.category === 'case study'){
+              caseStudies.push(
+                <div className="reverse">
+                <div className="icon">
+                  <img alt="empty field" src={item.src}/>
+                </div>
+                <div className="info">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <Link to={`/Blog/Article/${createUrlSlug(item.title)}`}><Button variant="outlined">Read More</Button></Link>
+                </div>
+              </div>
+            );
+        }
+        index++;
+    }
+  }
+  return caseStudies;
+}
 
 
   render(){
@@ -45,28 +74,8 @@ class Services extends Component{
             </div>
             <div className="selections">
               <div className="selection-wrapper">
-                <div className="reverse">
-                  <div className="icon">
-                    <img alt="empty field" src="/img/HeroSquares/field.jpeg"/>
-                  </div>
-                  <div className="info">
-                    <h3>Field Reporting Tools</h3>
-                    <p>A multinational pharmaceutical and life sciences company endured tedious,
-                    time-intensive processes to compare large sets of crop trial data. We combined reporting platforms into a single
-                    solution that offered more powerful analytic capabilities and improved the overall user experience.</p>
-                  </div>
-                </div>
-                <div className="reverse">
-                  <div className="icon">
-                    <img alt="monolithic stone" src="/img/HeroSquares/mono.jpg" />
-                  </div>
-                  <div className="info">
-                    <h3>Breaking Monoliths</h3>
-                    <p>A telecommunications client needed to scale its individual
-                    applications and services independently and deliver to production faster
-                    to provide greater business value.</p>
-                  </div>
-                </div>
+                {this.renderCaseStudies()}
+
               </div>
             </div>
           </div>

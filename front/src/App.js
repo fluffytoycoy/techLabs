@@ -34,33 +34,33 @@ class App extends Component {
           author: "Matt Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/400/300',
+          src: 'https://www.placecage.com/gif/500/249',
           title: 'Agile Testing',
           category: 'agile',
           author: "Matt Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/300/300',
+          src: 'https://www.placecage.com/gif/500/252',
           title: 'News',
           category: 'news',
           author: "Rob Cage",
           description: 'St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },
         {
-          src: 'https://www.placecage.com/gif/500/300',
+          src: 'https://www.placecage.com/gif/500/253',
           title: 'Cage it up',
           category: 'culture',
           author: "Nick Coy",
           description: 'How can large companies use automation to modernize the ways they manage data? That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },{
-          src: 'https://www.placecage.com/gif/500/300',
+          src: 'https://www.placecage.com/gif/500/251',
           title: 'New Resources',
           category: 'resource',
           author: "Joe Ukee",
           description: 'That question was a key focus of my recent presentation at the Gateway to Innovation conference in St. Louis about a project 1904labs completed with Charter. Joined by Jonathan Andrews'
         },
         {
-          src: 'https://www.placecage.com/gif/400/300',
+          src: 'https://www.placecage.com/gif/500/250',
           title: 'Life Like Cage',
           category: 'culture',
           author: "Rob Cage",
@@ -97,7 +97,7 @@ class App extends Component {
             <Route exact path="/Services/Data-Engineering" render={props => <DataEngineering {...props} />}/>
             <Route exact path="/Services/Cloud" render={props => <Cloud {...props} />}/>
 
-            <Route exact path="/Work/" render={props => <Work {...props} />}/>
+            <Route exact path="/Work/" render={props => <Work blogs={this.state.blogs} {...props} />}/>
 
             <Route exact path="/Culture/" render={props => <Culture {...props} />}/>
             <Route exact path="/Culture/Community" render={props => <Community {...props} />}/>
