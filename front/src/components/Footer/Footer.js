@@ -43,7 +43,7 @@ function Footer(props){
               <div className="company-info">
                 <h5>Info</h5>
                 <div>
-                  <i className="fa fa-phone" aria-hidden="true"></i>
+                  <i className="fas fa-home" aria-hidden="true"></i>
                   <div>
                     <p>21 Revolution Street</p>
                     <p>Paris, France</p>
@@ -56,7 +56,7 @@ function Footer(props){
                   </div>
                 </div>
                 <div>
-                  <i className="fa fa-phone" aria-hidden="true"></i>
+                  <i className="fas fa-envelope" aria-hidden="true"></i>
                   <div>
                     <p>support@company.com</p>
                   </div>

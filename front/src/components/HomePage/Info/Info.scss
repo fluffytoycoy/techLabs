@@ -3,7 +3,7 @@
   justify-content: center;
   overflow: hidden;
   padding: 40px 0;
-  background: url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
+  background: linear-gradient(rgba(32, 35, 42, 0.95),rgba(32, 35, 42, 0.95)), url(/img/Backgrounds/hex-pattern.png), linear-gradient(rgb(32, 35, 42), rgb(32, 35, 42));
       box-shadow: inset 0 5px 8px black ,  inset 0 -5px 8px black;
 
   .info-wrapper {
@@ -57,7 +57,7 @@
 
             &:hover {
               height: 100%;
-              background: rgba(0, 0, 0, 0.6);
+              background: rgba(0, 0, 0, 0.9);
 
               img {
                 transform: rotate(180deg);

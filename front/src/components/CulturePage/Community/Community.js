@@ -9,9 +9,6 @@ function Community(){
     return (
       <div id="root-link">
         <div className={`jumbo community`}>
-          <div className="corner-icon">
-            <img alt="people clipart" src="/img/Logos/community.svg"/>
-          </div>
           <h1 className="long-word">Community</h1>
         </div>
         <div className="service-body">

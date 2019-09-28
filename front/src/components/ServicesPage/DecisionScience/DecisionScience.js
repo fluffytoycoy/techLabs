@@ -6,9 +6,6 @@ function DecisionScience(){
     return (
       <div id="root-link">
         <div className={`jumbo science`}>
-          <div className="corner-icon">
-            <img alt="blue sparky" src="/img/Logos/science_icon.svg"/>
-          </div>
           <h1 className="long-word">Decision Science</h1>
         </div>
         <div className="service-body">
@@ -70,7 +67,7 @@ function DecisionScience(){
                         <li><p>Unify Data Source</p></li>
                         <li><p>Faster Time to Market</p></li>
                     </ul>
-              
+
                 </div>
               </div>
             </div>

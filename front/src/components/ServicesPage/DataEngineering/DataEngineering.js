@@ -5,9 +5,6 @@ function DataEngineering(){
     return (
       <div id="root-link">
         <div className={`jumbo data`}>
-          <div className="corner-icon">
-            <img alt="could with gears" src="/img/Logos/data_icon.svg"/>
-          </div>
           <h1 className="long-word">Data Engineering</h1>
         </div>
         <div className="service-body">
