@@ -1,9 +1,6 @@
 import React from 'react';
 
 function Cloud(){
-  const test =           <div className="corner-icon">
-              <img alt="clip art cloud" src="/img/Logos/cloud_icon.svg"/>
-            </div>
     return (
       <div id="root-link">
         <div className={`jumbo cloud`}>

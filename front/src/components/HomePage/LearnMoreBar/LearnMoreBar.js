@@ -21,7 +21,7 @@ function LearnMoreBar(){
         </div>
       </div>
       <div className="img-wrapper">
-        <img src="img/Logos/pointing_guy.png"/>
+        <img alt="cartoon guy pointing at computer screen" src="img/Logos/pointing_guy.png"/>
       </div>
     </div>
   </section>

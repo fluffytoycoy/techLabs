@@ -61,15 +61,15 @@ class Reviews extends React.Component{
 
   thumbItem = (item, i) => {
     return (
-    <div className={`img-wrapper ${this.state.selectedReview == i ? 'active' : ''}`} onClick={() => this.handleClick(i)}>
+    <div key={i} className={`img-wrapper ${this.state.selectedReview === i ? 'active' : ''}`} onClick={() => this.handleClick(i)}>
       <img alt={item.name} src={`${item.img}`}></img>
     </div>
     )
   }
 
-  domSlides = slides.map(slide=>{
+  domSlides = slides.map((slide, index)=>{
     return(
-      <div className="review">
+      <div key={index} className="review">
         <p><b>"</b>{slide.text}<b>"</b></p>
         <div>
           <h4>{slide.name}</h4>
@@ -79,7 +79,7 @@ class Reviews extends React.Component{
       )
     });
 
-    handleSlideChange =(e) =>{
+  handleSlideChange =(e) =>{
       if(!this.state.clicked){
           if((e.slide+1) < this.state.itemsInSlide){
             this.slideTo(e.slide + 1);
@@ -89,6 +89,7 @@ class Reviews extends React.Component{
         }else{
       }
     }
+
     render(){
       return (
         <div id="blog">

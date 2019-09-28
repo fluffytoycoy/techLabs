@@ -4,12 +4,6 @@ import {Link} from 'react-router-dom';
 import {createUrlSlug} from '../../Utils/UrlHandlers/UrlHandlers';
 import PropTypes from 'prop-types';
 
-const masonryOptions = {
-    transitionDuration: 0
-};
-
-const imagesLoadedOptions = { background: '.my-bg-image-el' }
-
 class BlogGrid extends React.Component {
     constructor(props){
       super(props);
@@ -21,9 +15,6 @@ class BlogGrid extends React.Component {
     }
 
     static getDerivedStateFromProps(nextProps, state) {
-      console.log(nextProps)
-
-      console.log(nextProps.currentCategory !== state.currentCategory)
       if(nextProps.currentCategory !== state.currentCategory){
         return getChildElements(nextProps)
       }
@@ -34,7 +25,7 @@ class BlogGrid extends React.Component {
         let total = 1;
         let leftCol = [];
         let rightCol = [];
-        props.elements.filter((element)=>{
+        props.elements.forEach((element)=>{
           if(isSelectedCategory(element)){
             if(total % 2){
               total++;
@@ -45,7 +36,6 @@ class BlogGrid extends React.Component {
             }
           }
         })
-        console.log(leftCol)
         return {leftCol, rightCol}
       }
 
@@ -56,7 +46,6 @@ class BlogGrid extends React.Component {
     }
 
     renderCol = (elements)=>{
-      console.log(elements)
       return elements.map((element, i)=>{
         return(
           <li key={i} className="card">
