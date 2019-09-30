@@ -2,23 +2,24 @@ import React from 'react';
 import LabSlider from './LabSlider';
 import FoodSlider from './FoodSlider';
 import './CommunitySlider.scss';
+import Jumbo from '../../Utils/Layouts/Jumbo';
 import './Slider.scss';
 
 function Community(){
-
+  const hero = {
+    title:'Community',
+    subTitle:'Committed to Community',
+    info:'We have a focus on serving the community. Some of the recent ways we’ve been able to give back are below. If you have an idea of how we can serve, please contact us.',
+  }
     return (
       <div id="root-link">
-        <div className={`jumbo community`}>
-          <h1 className="long-word">Community</h1>
-        </div>
+      <Jumbo
+        title={hero.title}
+        subTitle={hero.subTitle}
+        info={hero.info}
+      />
         <div className="service-body">
           <div className="body-wrapper community">
-            <div className="title">
-              <div>
-                <h2>Committed to Community</h2>
-                <p>We have a focus on serving the community. Some of the recent ways we’ve been able to give back are below. If you have an idea of how we can serve, please contact us.</p>
-              </div>
-            </div>
             <div className="selections">
               <div className="selection-wrapper">
                 <div>

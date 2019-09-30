@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import CultureCarousel from './CultureCarousel/CultureCarousel'
+import Jumbo from '../Utils/Layouts/Jumbo';
 
 class Culture extends Component{
   constructor(props){
@@ -32,21 +33,20 @@ class Culture extends Component{
   }
 
   render(){
+    const hero = {
+      title:'Culture',
+      subTitle:'Empowering our teams to achieve anything',
+      info:'We know and respect the value of our team members, which is why we’ve created a culture that allows all our employees to thrive, grow and most importantly, feel fulfilled and part of something greater.',
+    }
     return (
       <div id="root-link">
-        <div className={`jumbo services`}>
-          <h1>Culture</h1>
-        </div>
+      <Jumbo
+        title={hero.title}
+        subTitle={hero.subTitle}
+        info={hero.info}
+      />
         <div className="service-body">
           <div className="body-wrapper culture">
-            <div className="title">
-              <div>
-                <h2>Empowering our teams to achieve anything</h2>
-                <p>We know and respect the value of our team members, which is why we’ve created a
-                culture that allows all our employees to thrive, grow and most importantly, feel
-                fulfilled and part of something greater.</p>
-              </div>
-            </div>
             <div className="selections">
               <div className="selection-wrapper">
                 <div>

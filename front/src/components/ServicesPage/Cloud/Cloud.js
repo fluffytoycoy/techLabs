@@ -1,24 +1,17 @@
 import React from 'react';
+import Jumbo from '../../Utils/Layouts/Jumbo';
 
 function Cloud(){
+    const hero = {
+      title:'Cloud',
+      subTitle:'Cloud Application Development',
+      info:'We revolutionize the way applications are designed, built, and managed by starting with users and then creating modern cloud-based solutions that align to their needs. We are focused on developing software with improved time to market, flexibility, and cost savings in an iterative, repeatable fashion.',
+    }
     return (
       <div id="root-link">
-        <div className={`jumbo cloud`}>
-
-          <h1>Cloud</h1>
-        </div>
+        <Jumbo title={hero.title} subTitle={hero.subTitle} info={hero.info}/>
         <div className="service-body">
           <div className="body-wrapper">
-            <div className="title">
-              <div>
-                <h2>Cloud Application Development</h2>
-                <p>We revolutionize the way applications are designed, built, and
-                managed by starting with users and then creating modern cloud-based
-                solutions that align to their needs. We are focused on developing
-                software with improved time to market, flexibility, and cost savings in
-                 an iterative, repeatable fashion.</p>
-               </div>
-            </div>
             <div className="selections">
               <div className="selection-wrapper">
                 <div>

@@ -2,20 +2,15 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Button from '@material-ui/core/Button';
+import Jumbo from '../Utils/Layouts/Jumbo';
 import './Services.scss';
 
 class Services extends Component{
   constructor(props){
     super(props);
     this.state={
-
     }
   }
-
-
-
-
-
 
   shouldComponentUpdate(nextProps, nextState) {
     if(this.props.location.pathname === nextProps.location.pathname)
@@ -24,22 +19,20 @@ class Services extends Component{
   }
 
   render(){
+    const hero = {
+      title:'Services',
+      subTitle:'Designing and delivering specialized software solutions',
+      info:'Companies today need specialized software solutions to maintain a competitive advantage.Users expect more both in functionality and usability from the software. Having access to software developers that understand both the right software technologies and the end user’s requirements can be a challenge for companies. We solve this problem.',
+    }
     return (
       <div id="root-link">
-        <div className={`jumbo services`}>
-          <h1>Services</h1>
-        </div>
+        <Jumbo
+          title={hero.title}
+          subTitle={hero.subTitle}
+          info={hero.info}
+        />
         <div className="service-body">
             <div className="body-wrapper">
-              <div className="title">
-                <div>
-                  <h2>Designing and delivering specialized software solutions</h2>
-                  <p>Companies today need specialized software solutions to maintain a competitive advantage.
-                  Users expect more both in functionality and usability from the software.
-                  Having access to software developers that understand both the right software technologies
-                  and the end user’s requirements can be a challenge for companies. We solve this problem.</p>
-                </div>
-              </div>
               <section className="selections">
                 <div className="selection-wrapper">
                   <div>

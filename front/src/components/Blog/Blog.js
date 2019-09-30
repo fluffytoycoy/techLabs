@@ -3,6 +3,7 @@ import BlogGrid from './BlogGrid/BlogGrid';
 import BlogSidebar from './BlogGrid/BlogSidebar';
 import Article from './Article/Article';
 import {parseUrl} from '../Utils/UrlHandlers/UrlHandlers';
+import Jumbo from '../Utils/Layouts/Jumbo';
 import './Blog.scss';
 
 class Blog extends Component{
@@ -30,11 +31,13 @@ class Blog extends Component{
   }
 
   render(props){
+    const hero = {
+      title:'Blog',
+    }
     return (
       <div id="root-link">
-        <div className={`jumbo  ${this.isPost()}`}>
-          <h1>Blog</h1>
-        </div>
+      <Jumbo
+        title={hero.title}/>
         <div className="service-body blog-wrapper">
           <section className="blog">
             <div>

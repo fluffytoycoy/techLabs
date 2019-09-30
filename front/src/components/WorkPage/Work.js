@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import {createUrlSlug} from '../Utils/UrlHandlers/UrlHandlers';
+import Jumbo from '../Utils/Layouts/Jumbo';
 
 class Services extends Component{
 
@@ -38,22 +39,19 @@ class Services extends Component{
 
 
   render(){
+    const hero = {
+      title:'Our Work',
+      subTitle:'Building the Right Thing the Right Way',
+      info:'In other words: We solve the right problem and make sure the solution we build works the way users want it to work and need it to work',
+    }
     return (
       <div id="root-link">
-        <div className={`jumbo services`}>
-          <h1>Our Work</h1>
-        </div>
+        <Jumbo
+          title={hero.title}
+          subTitle={hero.subTitle}
+          info={hero.info} />
         <div className="service-body">
           <div className="body-wrapper">
-            <div className="title">
-              <div>
-                <h2>Building the Right Thing the Right Way</h2>
-                <p style={{textAlign: 'center'}}>
-                    In other words: We solve the right problem
-                    and make sure the solution we build works the way users want it to work and need it to work
-                </p>
-              </div>
-            </div>
             <div className="selections work">
               <div className="selection-wrapper">
                 <div>
