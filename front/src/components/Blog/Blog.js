@@ -36,13 +36,15 @@ class Blog extends Component{
         </div>
         <div className="service-body blog-wrapper">
           <section className="blog">
-            <div className="blog-grid">
-              {this.props.match.params.blogId ? <Article blogId={this.props.match.params.blogId} blogList={this.props.blogs}/> :
-                <BlogGrid currentCategory={this.state.currentCategory} elements={this.props.blogs}/>
-              }
-            </div>
-            <div className="sidebar">
-              <BlogSidebar {...this.props} currentCategory={this.state.currentCategory} categories={this.state.categories}/>
+            <div>
+              <div className="blog-grid">
+                {this.props.match.params.blogId ? <Article blogId={this.props.match.params.blogId} blogList={this.props.blogs}/> :
+                  <BlogGrid currentCategory={this.state.currentCategory} elements={this.props.blogs}/>
+                }
+              </div>
+              <div className="sidebar">
+                <BlogSidebar {...this.props} currentCategory={this.state.currentCategory} categories={this.state.categories}/>
+              </div>
             </div>
           </section>
         </div>
