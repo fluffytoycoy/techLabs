@@ -14,7 +14,8 @@ class Blog extends Component{
     }
   }
 
-  componentDidMount() {
+  componentDidMount(){
+    console.log(parseUrl(this.props.match.params.category))
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
