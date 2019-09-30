@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "adonis-version": "1.0.0",
   "description": "fake techLabs site",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "test": "node ace test",

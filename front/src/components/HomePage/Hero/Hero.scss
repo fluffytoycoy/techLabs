@@ -1,14 +1,12 @@
 #hero {
   width: 100%;
-  //height: calc(100vh - 74px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
 
   .jumbo {
     position: relative;
+    background: url(/img/Backgrounds/map.png);
+    background-attachment: fixed;
     .img-wrapper {
       height: 100%;
       position: absolute;
@@ -107,35 +105,9 @@
     }
   }
 }
+
 @media only screen and (width: 768px) {
   .title {
-    margin-left: 260px !important;
-  }
-}
-@media only screen and (min-width: 767px) {
-  #hero {
-    .jumbo {
-      .title {
-        h1 {
-          font-size: 1.7rem !important;
-          span {
-            font-size: 2rem;
-          }
-        }
-      }
-      .img-wrapper {
-        img{
-              display: block;
-        }
-      }
-      .col {
-        .title {
-          margin-left: 344px;
-          -webkit-transform:  translateX(-16%);
-          transform: translateX(-16%);
-          -ms-transform: translateX(-16%);
-        }
-      }
-    }
+
   }
 }
