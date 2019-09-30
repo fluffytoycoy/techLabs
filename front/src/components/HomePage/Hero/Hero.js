@@ -12,9 +12,6 @@ function Hero(){
   return(
     <section id="hero">
       <div className="jumbo">
-        <div className="img-wrapper">
-          <ScrollAnimation animateOnce animateIn="fadeInLeft"><img alt="labs square logo"src="/img/Logos/labs_logo.png"/></ScrollAnimation >
-        </div>
         <div className="header-col col">
             <div>
               <div className="title">
