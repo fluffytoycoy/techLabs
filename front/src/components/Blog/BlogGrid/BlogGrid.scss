@@ -1,17 +1,19 @@
-.blog{
+.blog {
   .blog-grid {
     flex: auto;
-
+    margin-top: 5px;
     .col-wrapper {
       display: flex;
       flex-wrap: wrap;
-      ul{
-        margin-right: 5px;
+
+      ul {
         .card {
           width: 100%;
-          &:not(:last-child){
+
+          &:not(:last-child) {
             margin-bottom: 5px;
           }
+
           > div {
             background: linear-gradient(#fbf8f5, #c5c5c5);
 
@@ -25,7 +27,7 @@
 
             p {
               line-height: 1.4rem;
-              padding: 0px 20px 40px;
+              padding: 0 20px 40px;
               font-size: 1.2rem;
               border-radius: 4px;
               font-weight: 100;
@@ -38,66 +40,82 @@
           }
         }
 
-        &:nth-child(1){
-          background: black;
+        &:nth-child(1) {
         }
-        &:nth-child(2){
-          background: black;
+
+        &:nth-child(2) {
         }
-        &:nth-child(3){
-          background: black;
+
+        &:nth-child(3) {
           display: none;
         }
       }
     }
-
-
   }
-
 }
+@media only screen and (min-width: 600px) {
+  .blog {
+    .blog-grid {
+      .col-wrapper {
+        flex-wrap: nowrap;
 
+        ul {
+          margin-right: 5px;
+          width: 50%;
 
-@media only screen and (min-width: 600px){
-  .blog{
-      .blog-grid {
-    .col-wrapper{
-      flex-wrap: nowrap;
-      ul{
-        width: 50%;
-        &:nth-child(1){
-          background: green;
-        }
-        &:nth-child(2){
-          background: green;
-        }
-        &:nth-child(3){
-          background: black;
+          &:nth-child(1) {}
+
+          &:nth-child(2) {
+            margin-right: 0;
+          }
+
+          &:nth-child(3) {}
         }
       }
     }
   }
 }
-}
+@media only screen and (min-width: 1024px) {
+  .blog {
+    .blog-grid {
+      margin-top: 0px;
+      .col-wrapper {
+        flex-wrap: nowrap;
 
-@media only screen and (min-width: 1400px){
-  .blog{
-      .blog-grid {
-    .col-wrapper{
-      ul{
+        ul {
+          margin-right: 5px;
+          width: 50%;
 
-        width: 50%;
-        &:nth-child(1){
-          background: green;
-        }
-        &:nth-child(2){
-          background: green;
-        }
-        &:nth-child(3){
-          background: black;
-          display: block;
+          &:nth-child(1) {}
+
+          &:nth-child(2) {
+            margin-right: 5px;
+          }
+
+          &:nth-child(3) {}
         }
       }
     }
   }
 }
+@media only screen and (min-width: 1400px) {
+  .blog {
+    .blog-grid {
+      .col-wrapper {
+        ul {
+          width: 50%;
+
+          &:nth-child(1) {}
+
+          &:nth-child(2) {
+            margin-right: 5px;
+          }
+
+          &:nth-child(3) {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
