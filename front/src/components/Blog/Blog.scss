@@ -13,49 +13,6 @@
     flex-direction: column-reverse;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-    .blog-grid {
-      flex: auto;
-
-      .col-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        ul{
-          margin-right: 5px;
-          .card {
-            width: 100%;
-            &:not(:last-child){
-              margin-bottom: 5px;
-            }
-            > div {
-              background: linear-gradient(#fbf8f5, #c5c5c5);
-
-              h4 {
-                font-size: 1.5rem;
-                font-weight: 500;
-                margin: 15px 10px;
-                color: purple !important;
-                font-family: 'Oswald', sans-serif;
-              }
-
-              p {
-                line-height: 1.4rem;
-                padding: 0px 20px 40px;
-                font-size: 1.2rem;
-                border-radius: 4px;
-                font-weight: 100;
-              }
-            }
-
-            img {
-              width: 100%;
-              object-fit: cover;
-            }
-          }
-        }
-      }
-
-
-    }
 
     .sidebar {
       width: 100%;
@@ -140,17 +97,6 @@
 @media only screen and (min-width: 768px) {
   .blog {
     >div{
-      .blog-grid {
-        .col-wrapper {
-          flex-wrap: nowrap;
-
-          ul {
-            width: 50%;
-          }
-        }
-
-        .card {}
-      }
 
       .sidebar {
         > div {}
@@ -163,10 +109,6 @@
   .blog {
       >div{
         flex-direction: row;
-
-        .blog-grid {
-          .card {}
-        }
 
         .sidebar {
           > div {
