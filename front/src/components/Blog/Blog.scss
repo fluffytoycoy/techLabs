@@ -17,7 +17,7 @@
     .sidebar {
       width: 100%;
       display: block;
-      max-width: 1000px;
+
       flex: 1;
       min-width: 300px;
 
@@ -111,6 +111,7 @@
         flex-direction: row;
 
         .sidebar {
+          max-width: 300px;
           > div {
             > div{
 

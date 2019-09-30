@@ -41,6 +41,7 @@
         }
 
         &:nth-child(1) {
+          margin-bottom: 5px;
         }
 
         &:nth-child(2) {
@@ -63,7 +64,9 @@
           margin-right: 5px;
           width: 50%;
 
-          &:nth-child(1) {}
+          &:nth-child(1) {
+            margin-bottom: 0px;
+          }
 
           &:nth-child(2) {
             margin-right: 0;
