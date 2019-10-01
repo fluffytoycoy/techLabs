@@ -28,9 +28,13 @@ class Article extends Component{
 
     return (
       <div id="article">
-{        this.state.blog ? <div>
+      { this.state.blog ?
+        <>
+        <div>
+          <div className="title-bar">
             <h4>{this.state.blog.title}</h4>
             <p>By: {this.state.blog.author}</p>
+          </div>
             <div>
               <div className="img-wrapper">
                 <img  alt={this.state.blog.title} src={this.state.blog.src} />
@@ -66,8 +70,11 @@ class Article extends Component{
               </div>
             </div>
         </div>
-      :
-    <>test</>}
+        <div className="info">
+
+        </div>
+        </>
+      : <>Loading</>}
       </div>
 
     );
