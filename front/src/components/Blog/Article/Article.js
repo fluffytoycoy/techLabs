@@ -11,8 +11,9 @@ class Article extends Component{
   }
 
   blogExists(){
-    const blogExists = this.props.blogList.filter(blog=>{
-      return blog.title.toLowerCase() === parseUrl(this.props.blogId)
+    console.log(this.props)
+    const blogExists = this.props.blogs.filter(blog=>{
+      return blog.title.toLowerCase() === parseUrl(this.props.match.params.blogId)
     })[0]
     if(blogExists){
       return blogExists
@@ -25,7 +26,7 @@ class Article extends Component{
   }
 
   render(){
-
+    console.log(this.props.history)
     return (
       <div id="article">
       { this.state.blog ?

@@ -87,14 +87,18 @@ class App extends Component {
 
   render(props) {
     return (
-      <Router>
+      <Router >
       <ScrollToTop >
 				<Header/>
 					<Switch>
 						<Route exact  path="/" render={props => <Home {...props} blogs={this.state.blogs} />}/>
+
             <Route exact path="/Services/" render={props => <Services {...props} />}/>
+
             <Route exact path="/Services/Decision-Science" render={props => <DecisionScience {...props} />}/>
+
             <Route exact path="/Services/Data-Engineering" render={props => <DataEngineering {...props} />}/>
+
             <Route exact path="/Services/Cloud" render={props => <Cloud {...props} />}/>
 
             <Route exact path="/Work/" render={props => <Work blogs={this.state.blogs} {...props} />}/>
@@ -103,9 +107,13 @@ class App extends Component {
             <Route exact path="/Culture/Community" render={props => <Community {...props} />}/>
 
             <Route exact path="/Blog/" render={props => <Blog blogs={this.state.blogs} {...props}/>}/>
+
             <Route exact path="/Blog/Category/" render={props => <Blog {...props} blogs={this.state.blogs} {...props}/>}/>
-            <Route exact path="/Blog/Category/:category" render={props => <Blog {...props} blogs={this.state.blogs} {...props}/>}/>
+
+            <Route exact path="/Blog/Category/:category" render={props => <Blog {...props} blogs={this.state.blogs} history={this.history} {...props}/>}/>
+
             <Route exact path="/Blog/Article/:blogId" render={props => <Blog {...props} blogs={this.state.blogs} {...props}/>}/>
+
             <Route component={NotFound}/>
 				   </Switch>
         <Route render={props => <Footer {...props}/>}/>

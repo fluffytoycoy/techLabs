@@ -42,7 +42,10 @@ class Blog extends Component{
           <section className="blog">
             <div>
               <div className="blog-grid">
-                {this.props.match.params.blogId ? <Article blogId={this.props.match.params.blogId} blogList={this.props.blogs}/> :
+                {
+                  this.props.match.params.blogId ?
+                  <Article {...this.props}/>
+                  :
                   <BlogGrid currentCategory={this.state.currentCategory} elements={this.props.blogs}/>
                 }
               </div>
