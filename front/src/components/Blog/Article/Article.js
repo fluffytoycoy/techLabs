@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import {parseUrl} from '../../Utils/UrlHandlers/UrlHandlers';
+import MoreBlogSidebar from './MoreBlogSidebar/MoreBlogSidebar';
 import './Article.scss';
 
 class Article extends Component{
   constructor(props){
     super(props);
     this.state={
-      blog: this.blogExists()
+      blog: this.blogExists(),
+      blogsTest: 'on'
     }
+    this.toggleBlogsTest = this.toggleBlogsTest.bind(this)
   }
 
   blogExists(){
@@ -25,6 +28,12 @@ class Article extends Component{
   componentDidMount(){
   }
 
+  toggleBlogsTest(){
+    this.setState({
+      blogsTest: this.state.blogsTest == 'on' ? 'off' : 'on'
+    })
+  }
+
   render(){
     console.log(this.props.history)
     return (
@@ -33,7 +42,7 @@ class Article extends Component{
         <>
         <div>
           <div className="title-bar">
-            <h4>{this.state.blog.title}</h4>
+            <h4 onClick={this.toggleBlogsTest}>{this.state.blog.title}</h4>
             <p>By: {this.state.blog.author}</p>
           </div>
             <div>
@@ -71,9 +80,7 @@ class Article extends Component{
               </div>
             </div>
         </div>
-        <div className="info">
-
-        </div>
+        <MoreBlogSidebar selectedBlog={this.state.blog} blogs={this.props.blogs}/>
         </>
       : <>Loading</>}
       </div>
