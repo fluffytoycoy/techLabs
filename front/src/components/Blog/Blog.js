@@ -12,16 +12,24 @@ class Blog extends Component{
     this.state={
       categories: ['data engineering','agile','news','resource','culture','case study'],
       currentCategory: parseUrl(this.props.match.params.category),
+      selectedBlog: this.props.match.params.blogId
     }
   }
 
-  componentDidMount(){
-    console.log(parseUrl(this.props.match.params.category))
-  }
 
   static getDerivedStateFromProps(nextProps, prevState) {
+    console.log(prevState.selectedBlog, nextProps.match.params)
+    if(prevState.selectedBlog !== nextProps.match.params.blogId){
+      return ({
+        selectedBlog: nextProps.match.params.blogId,
+        currentCategory: parseUrl(nextProps.match.params.category)
+      });
+    }
     if(prevState.currentCategory !== nextProps.match.params.category){
-      return ({currentCategory: parseUrl(nextProps.match.params.category)});
+      return ({
+        currentCategory: parseUrl(nextProps.match.params.category),
+        selectedBlog: undefined
+      });
     }
     return null;
   }
@@ -36,21 +44,20 @@ class Blog extends Component{
     }
     return (
       <div id="root-link">
-      <Jumbo
-        title={hero.title}/>
+      <Jumbo className={this.isPost() ? 'post': ''} title={hero.title}/>
         <div className="service-body blog-wrapper">
           <section className="blog">
             <div>
               <div className="blog-grid">
                 {
-                  this.props.match.params.blogId ?
-                  <Article {...this.props}/>
+                  this.state.selectedBlog ?
+                  <Article {...this.props} {...this.state}/>
                   :
                   <BlogGrid currentCategory={this.state.currentCategory} elements={this.props.blogs}/>
                 }
               </div>
               <div className="sidebar">
-                <BlogSidebar {...this.props} currentCategory={this.state.currentCategory} categories={this.state.categories}/>
+                <BlogSidebar {...this.props} {...this.state}/>
               </div>
             </div>
           </section>

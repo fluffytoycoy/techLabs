@@ -8,9 +8,6 @@
   position: relative;
     background: url(/img/Backgrounds/map.png);
     background-attachment: fixed;
-  &.post {
-    min-height: 200px;
-  }
 
   .col {
     min-height: 100px;
@@ -38,6 +35,9 @@
           letter-spacing: 0.5rem;
           text-align: center;
         }
+      }
+      &.post{
+        min-height: 100px;
       }
     }
 
@@ -106,10 +106,6 @@
 
 @media only screen and (min-width: 1400px){
   #jumbo {
-    &.post {
-      min-height: 100px;
-    }
-
     .col {
       min-height: 400px;
       &.header {

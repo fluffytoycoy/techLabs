@@ -19,12 +19,14 @@
       font-size: 1.2rem;
       text-indent: 2rem;
       background: linear-gradient(#fbf8f5, #c5c5c5);
-      padding: 40px 20px;
+      padding: 0px 20px;
       box-shadow: black 0 5px 10px;
-      p{
-        color: #20232a;
-        &:not(:last-child){
-          margin-bottom: 20px;
+      .text-body{
+        p{
+          color: #20232a;
+          &:not(:last-child){
+            margin-bottom: 20px;
+          }
         }
       }
     }
@@ -32,11 +34,12 @@
     .title-bar{
       h4{
         font-size: 3rem;
-            margin: 20px 0;
-            color: green;
-            font-weight: 500;
-            font-family: 'Oswald', sans-serif;
-
+        margin: 15px 0 20px;
+        color: green;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 1px;
       }
       p{
         color: white;
@@ -64,7 +67,7 @@
         line-height: 2.4rem;
         font-size: 1.2rem;
         text-indent: 2rem;
-        padding: 40px 40px;
+        padding: 0px 40px;
         p{
 
           &:not(:last-child){
@@ -99,9 +102,12 @@
 
         }
       }
-
+      .article{
+        height: 100%;
+      }
       .article-body{
-        padding: 40px 100px;
+        padding: 0px 100px;
+        height: 100%;
         p{
 
           &:not(:last-child){

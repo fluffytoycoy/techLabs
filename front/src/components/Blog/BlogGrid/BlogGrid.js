@@ -64,6 +64,9 @@ class BlogGrid extends React.Component {
     }
 
     static getDerivedStateFromProps(nextProps, state) {
+      console.log(nextProps)
+      console.log(state.currentCategory)
+      console.log(nextProps.currentCategory !== state.currentCategory)
       if (nextProps.currentCategory !== state.currentCategory) {
         return getChildElements(nextProps)
       }

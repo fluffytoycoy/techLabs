@@ -2,6 +2,7 @@
   min-width: 300px;
   background: linear-gradient(#fbf8f5, #c5c5c5);
   margin-right: 5px;
+  max-width: 300px;
   >div{
     display: flex;
     flex-direction: column;
@@ -16,8 +17,34 @@
     }
     .blog-wrap{
       width: 100%;
-      img{
-        width: 100%;
+      .blog-extra{
+        display: flex;
+        flex-direction: column;
+        &:not(:first-child){
+          border-top: 5px solid;
+        }
+        img{
+          width: 100%;
+          padding: 0 10px;
+        }
+        h5{
+          padding: 20px 15px;
+              text-align: center;
+              font-size: 1.3rem;
+              font-family: 'Oswald', sans-serif;
+              letter-spacing: 1px;
+        }
+        p{
+          margin: 10px 15px;
+          line-height: 1.2;
+          text-align: center;
+          font-weight: 100;
+        }
+        a{
+          align-self: flex-end;
+          margin: 10px;
+          color: #932f92 !important;
+        }
       }
     }
   }
