@@ -19,12 +19,13 @@ class Blog extends Component{
 
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log(prevState.selectedBlog, nextProps.match.params)
-    if(prevState.selectedBlog !== nextProps.match.params.blogId){
+    if(nextProps.match.params.blogId){
       return ({
         selectedBlog: nextProps.match.params.blogId,
         currentCategory: parseUrl(nextProps.match.params.category)
       });
     }
+    console.log(prevState.currentCategory, nextProps.match.params.category)
     if(prevState.currentCategory !== nextProps.match.params.category){
       return ({
         currentCategory: parseUrl(nextProps.match.params.category),
@@ -42,6 +43,7 @@ class Blog extends Component{
     const hero = {
       title:'Blog',
     }
+    console.log(this.props.match.params.blogId)
     return (
       <div id="root-link">
       <Jumbo className={this.isPost() ? 'post': ''} title={hero.title}/>
