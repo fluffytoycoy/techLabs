@@ -41,14 +41,44 @@
         font-family: 'Oswald', sans-serif;
         letter-spacing: 1px;
       }
-      p{
-        color: white;
-        margin-bottom:5px;
+      .article-info{
+        display: flex;
+        align-items: center;
+        p{
+          color: white;
+          margin-bottom:5px;
+        }
+        .share-icons{
+          margin-left: auto;
+          a{
+            height: 40px;
+            width: 40px;
+            background: green;
+            padding: 5px;
+            display: inline-block;
+            cursor: pointer;
+            &:not(:last-child){
+              margin-right: 2px;
+            }
+            &:hover{
+              svg{
+                fill: white;
+              }
+            }
+            svg{
+              fill: #dad9d8;
+            }
+          }
+        }
       }
+
     }
 
   }
 
+.MuiSnackbar-anchorOriginTopRight{
+  top: 76px;
+}
 
 
 }
@@ -89,6 +119,9 @@
 
       }
     }
+  }
+  .MuiSnackbar-anchorOriginTopRight{
+    top: 84px;
   }
 }
 

@@ -3,7 +3,7 @@ import SidebarBlog from './SidebarBlog';
 import './MoreBlogSidebar.scss';
 
 
-function MoreBlogSidebar(props){
+const MoreBlogSidebar = React.memo(props =>{
   const [blogs, setBlogs] = useState(props.blogs);
 
   useEffect(() => {
@@ -57,6 +57,6 @@ function MoreBlogSidebar(props){
       </div>
     </div>
   )
-}
+});
 
 export default MoreBlogSidebar;

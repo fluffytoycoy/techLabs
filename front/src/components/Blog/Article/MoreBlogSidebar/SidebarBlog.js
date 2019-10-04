@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {createUrlSlug} from '../../../Utils/UrlHandlers/UrlHandlers';
 
-function MoreBlogSidebar(props){
+function SidebarBlog(props){
   return (
     <div key={props.key} className="blog-extra">
       <h5>{props.blog.title}</h5>
@@ -13,4 +13,4 @@ function MoreBlogSidebar(props){
   )
 }
 
-export default MoreBlogSidebar;
+export default SidebarBlog;
