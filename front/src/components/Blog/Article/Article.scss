@@ -1,7 +1,6 @@
 #article{
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  flex: 1 1;
   > div{
     .img-wrapper{
       max-height: 500px;
@@ -21,6 +20,7 @@
       background: linear-gradient(#fbf8f5, #c5c5c5);
       padding: 0px 20px;
       box-shadow: black 0 5px 10px;
+      flex: 1 1;
       .text-body{
         p{
           color: #20232a;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {parseUrl} from '../../Utils/UrlHandlers/UrlHandlers';
-import MoreBlogSidebar from './MoreBlogSidebar/MoreBlogSidebar';
 import './Article.scss';
 import ShareFBBtn from '../../Utils/ShareButtons/ShareFBBtn';
 import ShareTwitterBtn from '../../Utils/ShareButtons/ShareTwitterBtn';
@@ -11,33 +10,20 @@ import CopySnackbar from './CopySnackbar';
 function Article(props){
   const [copied, setCopied] = useState(false);
 
-  const parseSelectedBlog = ()=> {
-    const blog = props.blogs.filter(blog => {
-      return blog.title.toLowerCase() === parseUrl(props.selectedBlog)
-    })[0]
-    if (blog) {
-      return blog
-    } else {
-      props.history.goBack();
-    }
-  }
-
-    const blog = parseSelectedBlog();
-
     const handleCopy = () =>{
       setCopied(true)
     }
 
     return (
       <div id="article">
-      { blog ?
+      { props.selectedBlog ?
         <>
         <div>
 
           <div className="title-bar">
-            <h4>{blog.title}</h4>
+            <h4>{props.selectedBlog.title}</h4>
             <div className="article-info">
-              <p>By: {blog.author}</p>
+              <p>By: {props.selectedBlog.author}</p>
               <div className="share-icons">
                 <ShareFBBtn/>
                 <ShareTwitterBtn/>
@@ -48,7 +34,7 @@ function Article(props){
           </div>
           <div className="article">
               <div className="img-wrapper">
-                <img  alt={blog.title} src={blog.src} />
+                <img  alt={props.selectedBlog.title} src={props.selectedBlog.src} />
               </div>
               <div className="article-body">
                 <div className="text-body">
@@ -78,7 +64,6 @@ function Article(props){
               </div>
           </div>
         </div>
-        <MoreBlogSidebar selectedBlog={blog} blogs={props.blogs}/>
         </>
       : <>Loading</>}
       <CopySnackbar open={copied} setCopied={setCopied}/>

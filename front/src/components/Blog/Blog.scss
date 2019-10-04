@@ -13,7 +13,7 @@
     flex-direction: column-reverse;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
-
+    flex-wrap: wrap;
     .sidebar {
       width: 100%;
       display: block;
@@ -47,10 +47,9 @@
 
           }
           h4 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             text-align: center;
             font-weight: 700;
-            border-bottom: 1px solid;
             padding: 10px 0;
           }
           .img-wrapper{
@@ -124,6 +123,8 @@
               }
               h4 {
                 padding: 20px 0;
+                border-bottom: 1px solid;
+                font-size: 1.5rem;
               }
             }
 
@@ -134,5 +135,13 @@
           }
         }
       }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .blog {
+    .blog-grid{
+      flex-wrap: nowrap;
+    }
   }
 }

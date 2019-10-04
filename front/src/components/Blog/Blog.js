@@ -3,6 +3,7 @@ import BlogGrid from './BlogGrid/BlogGrid';
 import BlogSidebar from './BlogGrid/BlogSidebar';
 import Article from './Article/Article';
 import {parseUrl} from '../Utils/UrlHandlers/UrlHandlers';
+import MoreBlogSidebar from './MoreBlogSidebar/MoreBlogSidebar';
 import Jumbo from '../Utils/Layouts/Jumbo';
 import './Blog.scss';
 
@@ -12,7 +13,7 @@ class Blog extends Component{
     this.state={
       categories: ['data engineering','agile','news','resource','culture','case study'],
       currentCategory: parseUrl(this.props.match.params.category),
-      selectedBlog: this.props.match.params.blogId
+      selectedBlog: this.props.match.params.blogId,
     }
   }
 
@@ -39,25 +40,37 @@ class Blog extends Component{
     return this.props.match.params.blogId ? 'post' : '';
   }
 
+  getBlog() {
+    const blog = this.props.blogs.filter(blog => {
+      return blog.title.toLowerCase() === parseUrl(this.state.selectedBlog)
+    })[0]
+    if (blog) {
+      return blog
+    } else {
+      this.props.history.goBack();
+    }
+  }
+
   render(props){
     const hero = {
       title:'Blog',
     }
-    console.log(this.props.match.params.blogId)
+
     return (
       <div id="root-link">
       <Jumbo className={this.isPost() ? 'post': ''} title={hero.title}/>
         <div className="service-body blog-wrapper">
           <section className="blog">
-            <div>
-              <div className="blog-grid">
+            <div className="blog-grid">
                 {
                   this.state.selectedBlog ?
-                  <Article {...this.props} {...this.state}/>
+                  <>
+                    <MoreBlogSidebar selectedBlog={this.getBlog()} blogs={this.props.blogs}/>
+                    <Article selectedBlog={this.getBlog()}/>
+                  </>
                   :
                   <BlogGrid currentCategory={this.state.currentCategory} elements={this.props.blogs}/>
                 }
-              </div>
               <div className="sidebar">
                 <BlogSidebar {...this.props} {...this.state}/>
               </div>

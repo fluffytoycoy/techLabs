@@ -1,7 +1,6 @@
 import React from 'react';
 import ShareButtonHOC from './ShareButtonHOC';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
-import SnackbarContent from '@material-ui/core/SnackbarContent';
 
 function CopyLink(props){
     return (

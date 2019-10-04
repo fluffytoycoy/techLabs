@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {createUrlSlug} from '../../../Utils/UrlHandlers/UrlHandlers';
+import {createUrlSlug} from '../../Utils/UrlHandlers/UrlHandlers';
 
 function SidebarBlog(props){
   return (
