@@ -1,8 +1,8 @@
 .blog-sidebar{
   min-width: 300px;
   background: linear-gradient(#fbf8f5, #c5c5c5);
-  margin-right: 5px;
   width: 100%;
+  margin-top: 5px;
   >div{
     display: flex;
     flex-direction: column;
@@ -17,15 +17,21 @@
     }
     .blog-wrap{
       width: 100%;
+      display: flex;
+      flex-wrap: wrap;
       .blog-extra{
         display: flex;
         flex-direction: column;
+        width: 100%;
         &:not(:first-child){
           border-top: 5px solid;
         }
         img{
           width: 100%;
-          padding: 0 10px;
+              padding: 0 10px;
+              min-height: 300px;
+              max-height: 300px;
+              object-fit: cover;
         }
         h5{
           padding: 20px 15px;
@@ -35,20 +41,54 @@
               letter-spacing: 1px;
         }
         p{
-          margin: 10px 15px;
+          margin: 10px 15px 20px;
           line-height: 1.2;
           text-align: center;
           font-weight: 100;
         }
         a{
-          align-self: flex-end;
-          margin: 10px;
+          align-self: center;
+          margin: auto 10px 10px;
           color: #932f92 !important;
         }
       }
     }
   }
 
+}
+
+
+@media only screen and (min-width: 768px){
+  .blog-sidebar{
+    >div{
+
+      h4{
+
+      }
+      .blog-wrap{
+        flex-wrap: nowrap;
+        .blog-extra{
+
+          &:not(:first-child){
+            border: none;
+          }
+          img{
+
+          }
+          h5{
+
+          }
+          p{
+            font-size: 1.1rem;
+          }
+          a{
+
+          }
+        }
+      }
+    }
+
+  }
 }
 
 @media only screen and (min-width: 1024px){
@@ -64,6 +104,7 @@
         .blog-extra{
 
           &:not(:first-child){
+
           }
           img{
 
@@ -89,6 +130,7 @@
     min-width: 300px;
     margin-right: 5px;
     max-width: 300px;
+    margin-top: 0px;
     order: 0;
     >div{
       display: flex;
