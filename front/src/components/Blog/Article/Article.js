@@ -25,15 +25,15 @@ function Article(props){
         <div>
           <div className="title-bar">
             <h4>{blog.title}</h4>
+            <div className="article-info">
+              <p>By: {blog.author}</p>
+            </div>
           </div>
           <div className="article">
               <div className="img-wrapper">
                 <img  alt={blog.title} src={blog.src} />
               </div>
               <div className="article-body">
-                <div className="article-info">
-                  <p>By: {blog.author}</p>
-                </div>
                 <div className="text-body">
                   <p>
                     Lorem ipsum dolor amet godard artisan shoreditch kinfolk cliche

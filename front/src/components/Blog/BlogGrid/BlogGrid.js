@@ -18,9 +18,9 @@ class BlogGrid extends React.Component {
     }
 
     updateDimensions = () => {
+
       //If we have elements
       if(this.props.elements){
-
         //To desktop from ipad
         //shift half of first 2 columns to thrid column
         if(window.innerWidth >= 1400 && this.state.width < 1400){
@@ -65,10 +65,10 @@ class BlogGrid extends React.Component {
 
     static getDerivedStateFromProps(nextProps, state) {
       console.log(nextProps)
-      console.log(state.currentCategory)
-      console.log(nextProps.currentCategory !== state.currentCategory)
-      if (nextProps.currentCategory !== state.currentCategory) {
-        return getChildElements(nextProps)
+      if(nextProps.elements){
+        if (nextProps.currentCategory !== state.currentCategory) {
+          return getChildElements(nextProps)
+        }
       }
 
       return null;
