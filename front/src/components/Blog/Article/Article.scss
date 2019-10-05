@@ -100,8 +100,6 @@
 
 @media only screen and (min-width: 768px){
   #article{
-    display: flex;
-    flex: 1 1;
     > div{
 
       .title-bar{
@@ -112,45 +110,16 @@
           align-items: center;
           margin-bottom: 5px;
           .share-icons{
-            display: flex;
+            align-self: flex-end;
             width: unset;
-            justify-content: center;
-                align-self: flex-end;
-            a{
-              width: 40px;
-                  background: green;
-                  padding: 5px;
-                  display: inline-block;
-                  cursor: pointer;
-              &:not(:last-child){
-                margin-right: 2px;
-              }
-              &:hover{
-                svg{
-                  fill: white;
-                }
-              }
-              svg{
-                fill: #dad9d8;
-              }
-            }
           }
 
         }
         .author-info{
-          align-items: center;
-          display: flex;
           margin-bottom: 0px;
           img{
-            height: 50px;
-            width: 50px;
-            object-fit: cover;
-            border-radius: 50px;
-            margin-right: 20px;
           }
           p{
-            color: white;
-            display: inline-block;
           }
         }
       }
