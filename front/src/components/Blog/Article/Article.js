@@ -23,7 +23,10 @@ function Article(props){
           <div className="title-bar">
             <h4>{props.selectedBlog.title}</h4>
             <div className="article-info">
-              <p>By: {props.selectedBlog.author}</p>
+              <div className="author-info">
+                <img alt={props.selectedBlog.author} src={props.selectedBlog.authorImg}/>
+                <p>{props.selectedBlog.author}</p>
+              </div>
               <div className="share-icons">
                 <ShareFBBtn/>
                 <ShareTwitterBtn/>

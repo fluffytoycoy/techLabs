@@ -20,14 +20,14 @@ const slides = [
     img: "/img/HeroSquares/review-icon-2.png"
   },
   {
-    text: 'If it weren’t for 1904labs, we would not be in the cloud which is now a huge advantage. We are grateful for their relentless commitment to getting us there.',
+    text: 'If it weren’t for techlabs, we would not be in the cloud which is now a huge advantage. We are grateful for their relentless commitment to getting us there.',
     name: "Jim Clark",
     position: "Project Manager",
     company: 'Global Scope Inc.',
     img: "/img/HeroSquares/review-icon-3.png"
   },
   {
-    text: 'If it weren’t for 1904labs, we would not be in the cloud which is now a huge advantage. We are grateful for their relentless commitment to getting us there.',
+    text: 'Techlabs, is the best period.',
     name: "Chris Long",
     position: "Tech Lead",
     company: 'Voom Tech',

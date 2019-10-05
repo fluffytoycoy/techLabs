@@ -20,7 +20,7 @@ function Hero(){
               </div>
             </div>
         </div>
-        <div className="map-col col">
+        <div className="sub col">
           <div>
             <div className="title">
               <h1>1904 WAS A YEAR THAT BROUGHT TREMENDOUS PASSION, TALENT, AND

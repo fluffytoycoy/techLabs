@@ -42,20 +42,19 @@
       }
       .article-info{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        p{
-          color: white;
-          margin-bottom:5px;
-        }
         .share-icons{
-          margin-left: auto;
+          display: flex;
+          width: 100%;
+          justify-content: center;
           a{
-            height: 40px;
             width: 40px;
-            background: green;
-            padding: 5px;
-            display: inline-block;
-            cursor: pointer;
+                background: green;
+                padding: 5px;
+                display: inline-block;
+                cursor: pointer;
             &:not(:last-child){
               margin-right: 2px;
             }
@@ -69,8 +68,25 @@
             }
           }
         }
-      }
 
+      }
+      .author-info{
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+        img{
+          height: 50px;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 50px;
+          margin-right: 20px;
+        }
+        align-items: center;
+        p{
+          color: white;
+          display: inline-block;
+        }
+      }
     }
 
   }
@@ -81,6 +97,74 @@
 
 
 }
+
+@media only screen and (min-width: 768px){
+  #article{
+    display: flex;
+    flex: 1 1;
+    > div{
+
+      .title-bar{
+        .article-info{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 5px;
+          .share-icons{
+            display: flex;
+            width: unset;
+            justify-content: center;
+                align-self: flex-end;
+            a{
+              width: 40px;
+                  background: green;
+                  padding: 5px;
+                  display: inline-block;
+                  cursor: pointer;
+              &:not(:last-child){
+                margin-right: 2px;
+              }
+              &:hover{
+                svg{
+                  fill: white;
+                }
+              }
+              svg{
+                fill: #dad9d8;
+              }
+            }
+          }
+
+        }
+        .author-info{
+          align-items: center;
+          display: flex;
+          margin-bottom: 0px;
+          img{
+            height: 50px;
+            width: 50px;
+            object-fit: cover;
+            border-radius: 50px;
+            margin-right: 20px;
+          }
+          p{
+            color: white;
+            display: inline-block;
+          }
+        }
+      }
+
+    }
+
+  .MuiSnackbar-anchorOriginTopRight{
+    top: 76px;
+  }
+
+
+  }
+}
+
 
 @media only screen and (min-width: 1024px){
   #article{

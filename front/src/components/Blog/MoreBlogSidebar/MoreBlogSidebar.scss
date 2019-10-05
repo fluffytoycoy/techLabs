@@ -146,6 +146,7 @@
       }
       .blog-wrap{
         width: 100%;
+        flex-wrap: wrap;
         .blog-extra{
           display: flex;
           flex-direction: column;
@@ -155,6 +156,7 @@
           img{
             width: 100%;
             padding: 0 10px;
+            min-height: unset;
           }
           h5{
             padding: 20px 15px;
@@ -165,6 +167,7 @@
           }
           p{
             margin: 10px 15px;
+            font-size: 1rem;
             line-height: 1.2;
             text-align: center;
             font-weight: 100;
