@@ -18,13 +18,27 @@
       font-size: 1.2rem;
       text-indent: 2rem;
       background: linear-gradient(#fbf8f5, #c5c5c5);
-      padding: 0px 20px;
+      padding: 40px 20px;
       flex: 1 1;
       .text-body{
+        display: flex;
+        flex-direction: column;
         p{
           color: #20232a;
           &:not(:last-child){
             margin-bottom: 20px;
+          }
+        }
+        .img-wrapper{
+          width: 100%;
+          display: flex;
+          margin: 20px 0 40px;
+          border-radius: 4px;
+          img{
+            align-self: center;
+                justify-self: center;
+                border-radius: 4px;
+                
           }
         }
       }
@@ -33,7 +47,7 @@
     .title-bar{
       h4{
         font-size: 3rem;
-        margin: 15px 0 20px;
+        margin: 15px 0 40px;
         color: green;
         font-weight: 500;
         text-align: center;
@@ -48,7 +62,7 @@
           display: flex;
           width: 100%;
           justify-content: center;
-          a{
+          .share-btn{
             width: 40px;
                 background: green;
                 padding: 5px;
@@ -153,9 +167,8 @@
 
       .article-body{
         line-height: 2.4rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-indent: 2rem;
-        padding: 0px 40px;
         p{
 
           &:not(:last-child){
@@ -197,8 +210,8 @@
         height: 100%;
       }
       .article-body{
-        padding: 0px 100px;
-        height: 100%;
+        padding: 40px 100px;
+            height: 100%;
         p{
 
           &:not(:last-child){

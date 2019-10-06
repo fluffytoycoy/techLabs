@@ -19,7 +19,6 @@ class Blog extends Component{
 
 
   static getDerivedStateFromProps(nextProps, prevState) {
-    console.log(prevState.selectedBlog, nextProps.match.params)
     if(nextProps.match.params.blogId){
       return ({
         selectedBlog: nextProps.match.params.blogId,

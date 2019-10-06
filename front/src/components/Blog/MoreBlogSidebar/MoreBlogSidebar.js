@@ -1,4 +1,4 @@
-import React, {Component, useState, useEffect } from 'react';
+import React, {useState, useEffect } from 'react';
 import SidebarBlog from './SidebarBlog';
 import './MoreBlogSidebar.scss';
 
@@ -16,13 +16,13 @@ const MoreBlogSidebar = React.memo(props =>{
     if (blogs) {
       if (blogs.length <= 4) {
         blogList = blogs.filter(blog => {
-          return blog.title != props.blog.title
+          return blog.title !== props.blog.title
         });
       } else {
         const getRandomBlog = randomNoRepeats(blogs);
         for (let i = 0; i < 3; i++) {
           let item = getRandomBlog();
-          if (item.title == props.selectedBlog.title) {
+          if (item.title === props.selectedBlog.title) {
             item = getRandomBlog();
           }
           blogList.push(item);

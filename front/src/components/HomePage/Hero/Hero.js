@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import Button from '@material-ui/core/Button';
-import ScrollAnimation from 'react-animate-on-scroll';
 import './Hero.scss'
 
 

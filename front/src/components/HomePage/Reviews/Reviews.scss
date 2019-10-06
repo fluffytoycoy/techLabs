@@ -91,6 +91,40 @@
 }
 @media only screen and (min-width: 768px) {
   #home {
-    #blog {}
+    #blog {
+      .review {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        p {
+          font-size: 1.6rem;
+          font-style: italic;
+          margin-bottom: 20px;
+          line-height: 1.8;
+          text-align: center;
+          font-weight: 100;
+
+          b {
+            font-weight: 700;
+          }
+        }
+
+        > div {
+          width: unset;
+          align-self: flex-end;
+
+          h4 {
+            font-size: 1.7rem;
+            text-transform: capitalize;
+            color: #6b007f;
+            font-weight: 500;
+          }
+        }
+      }
+    }
   }
 }
