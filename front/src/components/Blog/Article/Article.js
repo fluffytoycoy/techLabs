@@ -25,7 +25,10 @@ function Article(props){
             <div className="article-info">
               <div className="author-info">
                 <img alt={props.selectedBlog.author} src={props.selectedBlog.authorImg}/>
-                <p>{props.selectedBlog.author}</p>
+                <div>
+                  <p>{props.selectedBlog.author}</p>
+                  <p>July 13 20019</p> 
+                </div>
               </div>
               <div className="share-icons">
                 <ShareFBBtn/>

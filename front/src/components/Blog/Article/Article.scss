@@ -43,7 +43,6 @@
       .article-info{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         .share-icons{
           display: flex;
@@ -71,20 +70,27 @@
 
       }
       .author-info{
-        align-items: center;
         display: flex;
         margin-bottom: 20px;
         img{
-          height: 50px;
-          width: 50px;
+          height: 40px;
+          width: 40px;
           object-fit: cover;
           border-radius: 50px;
           margin-right: 20px;
         }
-        align-items: center;
-        p{
-          color: white;
-          display: inline-block;
+        >div{
+          flex-direction: column;
+          display: flex;
+          justify-content: space-between;
+          p{
+            color: white;
+            display: inline-block;
+            &:first-child{
+              font-weight: 900;
+              letter-spacing: 2px;
+            }
+          }
         }
       }
     }
