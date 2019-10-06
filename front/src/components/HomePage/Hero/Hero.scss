@@ -91,7 +91,9 @@
     }
   }
 }
-@media only screen and (min-width: 1200px) {
+
+
+@media only screen and (min-width:  768px) {
   #hero {
     .jumbo {
       .img-wrapper {
@@ -107,6 +109,7 @@
 
             span {
               font-size: 4.7rem;
+              text-shadow: black 0 0 3px;
             }
           }
         }

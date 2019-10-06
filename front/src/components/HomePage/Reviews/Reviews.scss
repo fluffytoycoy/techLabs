@@ -1,7 +1,7 @@
 #home {
   #blog {
     background: linear-gradient(rgb(251, 248, 245), rgb(197, 197, 197));
-    padding: 60px 0;
+    padding: 20px 0;
 
     .alice-carousel__wrapper {
       display: flex;
@@ -54,7 +54,7 @@
     }
 
     .thumb-items {
-      margin-top: 40px;
+      margin-top: 20px;
 
       > div {
         display: flex;
@@ -92,6 +92,7 @@
 @media only screen and (min-width: 768px) {
   #home {
     #blog {
+      padding: 40px 0;
       .review {
         max-width: 1400px;
         margin: 0 auto;
@@ -124,6 +125,9 @@
             font-weight: 500;
           }
         }
+      }
+      .thumb-items {
+        padding-top: 40px;
       }
     }
   }

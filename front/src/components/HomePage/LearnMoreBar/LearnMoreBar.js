@@ -21,7 +21,11 @@ function LearnMoreBar(){
         </div>
       </div>
       <div className="img-wrapper">
-        <img alt="cartoon guy pointing at computer screen" src="img/Logos/pointing_guy.png"/>
+      <picture>
+        <source media="(min-width: 769px)" srcSet="img/Logos/pointing_guy.png"/>
+        <source media="(min-width: 800px)" srcSet="img/Logos/pointing_up_guy.png"/>
+          <img src="img/Logos/pointing_up_guy.png" alt="cartoon guy pointing at computer screen"/>
+        </picture>
       </div>
     </div>
   </section>

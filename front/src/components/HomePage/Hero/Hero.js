@@ -14,8 +14,8 @@ function Hero(){
         <div className="header-col col">
             <div>
               <div className="title">
-                <h1><span>Develope specialized software solutions</span><br/>
-                From proof of concept to ready to deploy solutions</h1>
+                <h1><span>Develope specialized software</span><br/>
+                From proof of concept to deployment </h1>
               </div>
             </div>
         </div>
