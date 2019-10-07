@@ -57,7 +57,7 @@ function Article(props){
                     Semiotics whatever blog yuccie 8-bit wolf lo-fi gluten-free, seitan pour-over lyft. Kombucha shoreditch succulents, tilde roof party forage plaid. Banjo 90's health goth chambray, freegan hell of raclette small batch hot chicken deep v man braid.
                   </p>
                   <div className="img-wrapper">
-                    <img src="https://picsum.photos/500/500"/>
+                    <img alt="demo placeholder " src="https://picsum.photos/500/500"/>
                   </div>
                   <p>
                     Intelligentsia helvetica lo-fi ramps, master cleanse plaid brooklyn vaporware waistcoat. Helvetica retro subway tile, vape narwhal cornhole migas pickled cloud bread organic chartreuse taiyaki occupy bitters affogato. Knausgaard street art hexagon whatever four loko pitchfork hell of farm-to-table bespoke copper mug beard wolf. Whatever bicycle rights woke YOLO readymade

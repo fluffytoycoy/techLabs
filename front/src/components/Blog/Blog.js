@@ -25,7 +25,6 @@ class Blog extends Component{
         currentCategory: parseUrl(nextProps.match.params.category)
       });
     }
-    console.log(prevState.currentCategory, nextProps.match.params.category)
     if(prevState.currentCategory !== nextProps.match.params.category){
       return ({
         currentCategory: parseUrl(nextProps.match.params.category),
